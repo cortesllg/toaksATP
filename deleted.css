@@ -137,3 +137,46 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Adding drop shadow to the text *//* Horizontal offset, Vertical offset, Blur radius, Shadow color */
     /*background-color: rgba(0, 0, 0, 0.5); /* Optional background to make text readable on top of the image */
   }
+
+
+  .goal-box {
+    position: absolute; /* Ensures it overlaps the image */
+    bottom: -20%; /* Moves it up into the image */
+    left: 50%; /* Centers it horizontally */
+    transform: translate(-50%, -50%); /* Ensures proper centering */
+    background-color: white; /* Solid white background */
+    width: 75%; /* Same width as .overlay-box */
+    height: 200px; /* Fixed height like .overlay-box */
+    padding: 15px; /* Padding for better spacing */
+    z-index: 5; /* Ensures it appears above the image */
+    display: flex;
+    align-items: center; /* Aligns text vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  }
+  
+  .goal-content {
+    display: flex;
+    align-items: center; /* Ensures everything aligns properly */
+    gap: 15px;
+  }
+  
+  .goal-title {
+    color: #537744;
+    font-weight: bold;
+    font-size: 1.2rem;
+    white-space: nowrap; /* Ensures it stays in one line */
+  }
+  
+  .goal-content .divider {
+    border-left: 1px solid #aca6a6; /* Vertical divider */
+    height: auto; /* Allows it to stretch naturally */
+    min-height: 150px; /* Ensures it's tall enough */
+    width: .1px; /* Keeps it visible */
+  }
+  
+  .goal-text {
+    color: #444;
+    font-size: 22px; /* Font size for the text */
+    line-height: 1.6;
+    flex: 1; /* Allows text to take available space */
+  }

@@ -11,6 +11,7 @@ html, body {
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
   width: 100%; /* Ensure the page is 100% width */
+  flex-direction: column;
 }
 
 /* Header - Remove previous styles and add image */
@@ -62,12 +63,14 @@ section {
   text-align: center; /* Centers the text */
   font-size: 40px; /* Font size of the text */
   font-weight: normal; /* Use normal weight or bold if needed */
-  padding: 20px; /* Padding for better spacing */
+  padding: 10px; /* Padding for better spacing */
   font-family: 'Georgia', serif; /* Use Georgia font for the text */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle drop shadow to make the text stand out */
   width: 80%; /* Ensure the overlay takes full width */
   z-index: 10; /* Make sure the text is above the image */
 }
+
+
 
 /* Style the h2 text */
 .overlay-text h2 {
@@ -81,8 +84,75 @@ section {
   font-size: 40px; /* Adjust font size for the paragraph */
   font-weight: normal; /* Regular font weight for the paragraph */
   margin-top: 0; /* Add some space above the paragraph */
+}
+
+.overlay-button {
+  display: inline-block;
+  margin-top: 0px;
+  padding: 12px 24px;
+  background-color: #A3C7C7;
+  color: white;
+  font-size: 22px;
+  font-weight: normal; /* Normal weight for the button text */
+  text-decoration: none;
+  font-style: italic;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.overlay-button:hover {
+  background-color: #313F58;
+  text-decoration-color: #E2DBBE; /* Change text color on hover */
+  color: #E2DBBE; /* Change text color on hover */
+}
+
+.goal-box {
+  position: relative;
+  margin-top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 75%;
+  height: 200px;
+  padding: 15px;
+  z-index: 5;
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
   
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Light shadow for the paragraph */
+}
+
+.goal-content {
+  padding: 20px;
+  padding-left: 30px; /*Add left padding for spacing */
+  padding-right: 30px;
+  display: flex;
+  align-items: flex-start; /* Top-align elements */
+  gap: 15px;
+}
+
+.goal-title {
+  color: #537744;
+  font-weight: bold;
+  font-size: 22px;
+  white-space: nowrap;
+  padding-top: 4px; /* Optional: slight nudge to align with paragraph */
+}
+
+
+
+.goal-content .divider {
+  border-left: 1px solid #aca6a6; /* KEEPING this exactly as you had it */
+  height: auto;
+  min-height: 150px;
+  width: 0.1px;
+}
+
+.goal-text {
+  color: #444;
+  font-size: 22px;
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+  padding-top: 16px; /* Optional: aligns better with goal-title */
 }
 
 /* For specific images, like one that should be larger */
@@ -173,10 +243,13 @@ section h2 {
   }
 }
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #444342;
+  background-image: url('/images/linen-footer.jpg'); /* Replace with your actual image path */
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  padding: 40px 20px;
   color: white;
+  text-align: center;
 }
 
 ul {
