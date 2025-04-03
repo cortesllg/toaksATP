@@ -27,19 +27,19 @@ export default function RootLayout({
             <span>HOME</span>
             <div className="cta-description">Home page</div>
           </Link>
-          <Link href="/pages/get-involved" className="cta-button">
+          <Link href="/get-involved" className="cta-button">
             <span>GET INVOLVED</span>
             <div className="cta-description">Share your input with us</div>
           </Link>
-          <Link href="/pages/project-status" className="cta-button">
+          <Link href="/project-status" className="cta-button">
             <span>PROJECT STATUS</span>
             <div className="cta-description">Project Overview and Events</div>
           </Link>
-          <Link href="/pages/documentation" className="cta-button">
+          <Link href="/documentation" className="cta-button">
             <span>DOCUMENTATION</span>
             <div className="cta-description">Available Documentation</div>
           </Link>
-          <Link href="/pages/contact-us" className="cta-button">
+          <Link href="/contact-us" className="cta-button">
             <span>CONTACT US</span>
             <div className="cta-description">Get in Touch, Send a Message</div>
           </Link>
