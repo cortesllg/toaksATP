@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif; /* Arial for default body text */
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header - Remove previous styles and add image */
+  header.hero {
+    display: flex;
+    justify-content: flex-start; /* Align image to the left */
+    align-items: center; /* Vertically center the image */
+    padding: 18px; /* Adjust padding to fit your layout */
+    padding-left: 318px; /* Add left padding for spacing */
+    ;
+  }
+  
+  header.hero img {
+    max-height: 129px; /* Limit the size of the image */
+    max-width: 120%; /* Ensure image scales responsively */
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  section h2 {
+    font-family: Georgia, serif; /* Georgia for section headings */
+    font-size: 2rem;
+    color: #313F58;
+  }
+  
+  .intro, .updates, .call-to-action {
+    background-color: #E2DBBE;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action {
+    background-color: #444342;
+    color: white;
+  }
+  
+  /* Button container to align buttons horizontally */
+  .button-container {
+    display: flex;
+    padding-left: 318px; /* Add left padding for spacing - match the city logo*/
+    /*justify-content: center; /* Center the buttons horizontally NOT NEEDED (KEEP JUST IN CASE */
+    /*gap: 20px; /* Add space between buttons IF NEEDED currently no gap to resemble OFFICIAL website */
+    margin-top: 8px; /* Add space between header and buttons */
+    width: 100%; /* Ensure the container takes up full width */
+  }
+  
+  /* Style each button */
+  .cta-button {
+    display: flex;
+    flex-direction: column; /* Stack main text and secondary text vertically */
+    justify-content: center; /* Vertically center the text */
+    align-items: center; /* Center text horizontally */
+    background-color: white; /* White background */
+    color: #000000; /* Green text color */
+    border: 2px solid #537744; /* Green border */
+    padding: 12px 20px; /* Padding inside the button */
+    width: 200px; /* Set width for consistency */
+    border-radius: 5px; /* Optional: Rounded corners for buttons */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .cta-button:hover {
+    background-color: #537744; /* Green background on hover */
+    color: #E2DBBE; /* Light green color for text on hover */
+  }
+  
+  /* Style the secondary description text */
+  .cta-description {
+    font-size: 0.875rem; /* Smaller font for secondary text */
+    color: #444342; /* Dark grey text color */
+    font-weight: normal; /* Lighter font weight */
+    margin-top: 8px; /* Add space between main text and description */
+  }
+  
+  /* Style the secondary description text */
+  .cta-description:hover {
+    font-size: 0.875rem; /* Smaller font for secondary text */
+    color: #E2DBBE; /* Dark grey text color */
+    font-weight: normal; /* Lighter font weight */
+    margin-top: 8px; /* Add space between main text and description */
+  }
+  
+  /* Optional: Make buttons responsive and adjust for smaller screens */
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      gap: 10px; /* Adjust gap between buttons */
+    }
+  
+    .cta-button {
+      width: 100%; /* Make buttons full width on small screens */
+    }
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #444342;
+    color: white;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+
+  /* Text overlay */
+.overlay-text {
+    position: absolute; /* Position the text relative to the container */
+    top: 50%; /* Centers text vertically */
+    left: 50%; /* Centers text horizontally */
+    transform: translate(-50%, -50%); /* Moves the text by half of its width and height for perfect centering */
+    color: white; /* Text color, you can change this to whatever you prefer */
+    text-align: center; /* Centers the text */
+    font-size: 40px; /* Adjust the font size as necessary */
+    font-weight: normal; /* Optional: make the text bold */
+    padding: 5px; /* Optional padding for text */
+    font-family: Georgia,  serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Adding drop shadow to the text *//* Horizontal offset, Vertical offset, Blur radius, Shadow color */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Optional background to make text readable on top of the image */
+  }

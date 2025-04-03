@@ -1,0 +1,189 @@
+body {
+  font-family: Arial, sans-serif; /* Arial for default body text */
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal overflow/scrolling */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  width: 100%; /* Ensure the page is 100% width */
+}
+
+/* Header - Remove previous styles and add image */
+header.hero {
+  display: flex;
+  justify-content: center; /* Align image to the center */
+  align-items: center; /* Vertically center the image */
+  padding: 18px; /* Adjust padding to fit your layout */
+  /* padding-left: 318px; Add left padding for spacing */
+  ;
+}
+
+header.hero img {
+  max-height: 129px; /* Limit the size of the image */
+  max-width: 120%; /* Ensure image scales responsively */
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Container for the image */
+.image-container {
+  width: 100%; /* Full width of the viewport */
+  height: 60vh; /* Keep height based on the image's aspect ratio or use a fixed height if needed */
+  padding: 0; /* Remove any padding */
+  object-fit: cover; /* Ensure the image covers the container */
+  margin: 0; /* Ensure no margin is added */
+  display: block; /* Ensure it's a block-level element */
+  overflow: hidden; /* Prevent image overflow */
+}
+
+/* Style the image itself */
+.header-image {
+  width: 100%; /* Ensure the image spans the full width of the container */
+  height: 100%; /* Ensure the image spans the full height of the container */
+  object-fit: cover; /* Cover the container while maintaining the aspect ratio */
+  display: block; /* Remove any unwanted space below the image */
+}
+
+/* Text overlay */
+.overlay-text {
+  position: absolute; /* Position the text relative to the container */
+  top: 50%; /* Centers text vertically */
+  left: 50%; /* Centers text horizontally */
+  transform: translate(-50%, -50%); /* Moves the text by half of its width and height for perfect centering */
+  color: white; /* Text color */
+  text-align: center; /* Centers the text */
+  font-size: 40px; /* Font size of the text */
+  font-weight: normal; /* Use normal weight or bold if needed */
+  padding: 20px; /* Padding for better spacing */
+  font-family: 'Georgia', serif; /* Use Georgia font for the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle drop shadow to make the text stand out */
+  width: 80%; /* Ensure the overlay takes full width */
+  z-index: 10; /* Make sure the text is above the image */
+}
+
+/* Style the h2 text */
+.overlay-text h2 {
+  font-size: 80px; /* Adjust font size for heading */
+  font-weight: normal; /* Make heading bold */
+  margin-bottom: 0; /* Add some space below the heading */
+}
+
+/* Style the p2 (paragraph) text */
+.overlay-text .p2 {
+  font-size: 40px; /* Adjust font size for the paragraph */
+  font-weight: normal; /* Regular font weight for the paragraph */
+  margin-top: 0; /* Add some space above the paragraph */
+  
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Light shadow for the paragraph */
+}
+
+/* For specific images, like one that should be larger */
+.special-image {
+  max-width: 80%; /* Make this image smaller or adjust as needed */
+  max-height: 500px; /* Limit height */
+  object-fit: cover; /* Ensure it covers the container without stretching */
+}
+
+section h2 {
+  font-family: Georgia, serif; /* Georgia for section headings */
+  font-size: 2rem;
+  color: #313F58;
+}
+
+.intro, .updates, .call-to-action {
+  background-color: #E2DBBE;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.call-to-action {
+  background-color: #444342;
+  color: white;
+}
+
+/* Button container to align buttons horizontally */
+.button-container {
+  display: flex;
+  /* padding-left: 318px; Add left padding for spacing - match the city logo */
+  justify-content: center; /* Center the buttons horizontally NOT NEEDED (KEEP JUST IN CASE
+  /*gap: 20px; /* Add space between buttons IF NEEDED currently no gap to resemble OFFICIAL website */
+  margin-top: 8px; /* Add space between header and buttons */
+  width: 100%; /* Ensure the container takes up full width */
+}
+
+/* Style each button */
+.cta-button {
+  display: flex;
+  flex-direction: column; /* Stack main text and secondary text vertically */
+  text-align: center; /* Centers text */
+  align-items: center; /* Centers the content */
+  background-color: white; /* White background */
+  color: #000000; /* Green text color */
+  /*border: 2px solid #537744; /* Green border */
+  padding: 12px 30px; /* Padding inside the button */
+  width: 200px; /* Set width for consistency */
+  /*border-radius: 5px; /* Optional: Rounded corners for buttons */
+  font-size: 20px; /* Font size */
+  font-weight: normal; /* Bold text */
+  text-decoration: none; /* Remove underline */
+  text-align: left; /* Center text */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+  background-color: #537744; /* Green background on hover */
+  color: #E2DBBE; /* Light green color for text on hover */
+}
+
+/* Make sure the secondary text color changes on hover */
+.cta-button:hover .cta-description {
+  color: #E2DBBE; /* Change secondary text color to match primary text color */
+}
+
+/* Style the secondary description text */
+.cta-description {
+  font-size: 0.875rem; /* Smaller font for secondary text */
+  color: #444342; /* Dark grey text color */
+  font-weight: normal; /* Lighter font weight */
+  margin-top: 8px; /* Add space between main text and description */
+}
+
+
+
+/* Optional: Make buttons responsive and adjust for smaller screens */
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 30px;
+  }
+  .overlay-text h2 {
+    font-size: 50px;
+  }
+  .overlay-text .p2 {
+    font-size: 25px;
+  }
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #444342;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
