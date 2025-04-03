@@ -36,6 +36,8 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Navigation buttons */}
       
       <section className="intro">
         <h2>About the Plan</h2>

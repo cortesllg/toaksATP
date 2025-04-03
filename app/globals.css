@@ -128,7 +128,7 @@ section {
   align-items: flex-start; /* Top-align elements */
   gap: 15px;
 }
-
+/* */
 .goal-title {
   color: #537744;
   font-weight: bold;
