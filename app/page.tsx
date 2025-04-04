@@ -40,6 +40,11 @@ export default function Home() {
       {/* Navigation buttons */}
 
       <section className="description">
+        {/* leaves */}
+        <div className="leaf-container">
+          <img src="/images/simple leaf decor-green-flipped.png" alt="Leaf Left" className="leaf-left" />
+          <img src="/images/simple leaf decor-green.png" alt="Leaf Right" className="leaf-right" />
+        </div>
         <div className="description-content">
           <span className="description-title">WHAT IS AN</span>
           <h2>Active Transportation Plan Update?</h2>
@@ -79,7 +84,7 @@ export default function Home() {
           viable and attractive option for all residents and visitors.
         </p>
       </section>
-      
+
     </div>
   );
 }

@@ -278,6 +278,36 @@ This is the structure of the description of what is an ATP
   max-width: 800px; /* Keep it from stretching too wide */
   line-height: 1.6;
 }
+
+.leaf-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* Prevents interference with user interaction */
+}
+
+.leaf-container img {
+  width: 280; /* Adjust as needed */
+  height: auto;
+}
+
+.leaf-left {
+  position: absolute;
+  left: -300px; /* Move further left to avoid overlap */
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg); /* Optional: Slight tilt for aesthetics */
+}
+
+.leaf-right {
+  position: absolute;
+  right: -250px; /* Move further right to avoid overlap */
+  top: 50%;
+  transform: translateY(-50%) rotate(15deg); /* Optional: Slight tilt for aesthetics */
+}
+
 .updates,
 .call-to-action {
   background-color: #e2dbbe;
