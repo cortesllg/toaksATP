@@ -96,5 +96,35 @@ return (
           Go to nextjs.org →
         </a>
       </footer>
+
+      <section className="updates">
+        <h2>Latest Updates</h2>
+        <ul>
+          <li>
+            <strong>March 2025:</strong> Public meetings scheduled to discuss
+            proposed improvements.
+          </li>
+          <li>
+            <strong>February 2025:</strong> Completed the first phase of
+            community feedback.
+          </li>
+          <li>
+            <strong>January 2025:</strong> Initial draft of the updated plan is
+            now available for review.
+          </li>
+        </ul>
+      </section>
+
+      <section className="call-to-action">
+        <h2>Get Involved</h2>
+        <p>
+          We encourage residents to get involved in the planning process. Stay
+          updated, provide feedback, and help shape the future of transportation
+          in Thousand Oaks.
+        </p>
+        <Link href="/get-involved" className="cta-button">
+          Learn How to Get Involved
+        </Link>
+      </section>
     </div>
   );

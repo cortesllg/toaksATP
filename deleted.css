@@ -180,3 +180,57 @@ body {
     line-height: 1.6;
     flex: 1; /* Allows text to take available space */
   }
+
+  .description {
+    position: relative;
+    margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e2dbbe; /* Beige background */
+    width: 56%; /* Adjust width to align specifically with the vertical line for OUR GOAL*/
+    padding: 20px;
+    z-index: 5;
+  }
+  
+  .description-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align content to the left */
+  }
+  
+  .description-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #444342; /* Dark gray */
+    text-transform: uppercase;
+  }
+  
+  .description h2 {
+    font-family: Arial, sans-serif; /* Arial for default body text */
+    font-size: 32px;
+    font-weight: bold;
+    color: #313f58; /* Dark blue */
+    margin: 5px 0;
+  }
+  
+  .description-box {
+    background-color: #313f58; /* Dark Blue */
+    color: white; /* White text */
+    font-weight: bold /* Bold text */;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Keep it from stretching too wide */
+    line-height: 1.6;
+  }
+  .updates,
+  .call-to-action {
+    background-color: #e2dbbe;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action {
+    background-color: #444342;
+    color: white;
+  }

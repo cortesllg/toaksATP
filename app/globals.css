@@ -230,7 +230,7 @@ section h2 {
 /***************************************************
 ****************************************************
 
-This is the structure of the image and text overlay and goal box
+This is the structure of the description of what is an ATP
 
 ****************************************************
 ****************************************************
@@ -238,9 +238,9 @@ This is the structure of the image and text overlay and goal box
 
 .description {
   position: relative;
-  margin-top: 80px;
+  margin-top: 20px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
   background-color: #e2dbbe; /* Beige background */
   width: 56%; /* Adjust width to align specifically with the vertical line for OUR GOAL*/
   padding: 20px;
@@ -290,13 +290,20 @@ This is the structure of the image and text overlay and goal box
   color: white;
 }
 
+/***************************************************
+****************************************************
+
+This is the structure of the image and dividing the 'what is an ATP'/'MISSION' statement
+
+****************************************************
+****************************************************
+*/
 
 .full-width-image {
   width: 100%;
   overflow: hidden;
-  margin: 40px 0; /* Adds some spacing around the image */
+  margin-bottom: 80px; /* ✅ Add or increase this for space below */
 }
-
 .full-width-img {
   width: 100%;
   height: auto;
@@ -307,7 +314,7 @@ This is the structure of the image and text overlay and goal box
 /***************************************************
 ****************************************************
 
-This is the structure of the image and text overlay and goal box
+This is the structure of the mission statement
 
 ****************************************************
 ****************************************************
@@ -339,6 +346,22 @@ This is the structure of the image and text overlay and goal box
   font-size: 20px;
   color: #444342;
   line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0; /* so it starts invisible */
 }
 
 /* Optional: Make buttons responsive and adjust for smaller screens */
