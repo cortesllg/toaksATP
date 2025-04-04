@@ -5,7 +5,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "City of Thousand Oaks Active Transportation Plan Update",
-  description: "Official updates for the Thousand Oaks Active Transportation Plan.",
+  description:
+    "Official updates for the Thousand Oaks Active Transportation Plan.",
 };
 
 export default function RootLayout({
@@ -18,7 +19,10 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {/* Header with logo */}
         <header className="hero">
-          <img src="/images/city-header-logo.jpg" alt="City of Thousand Oaks Logo" />
+          <img
+            src="/images/city-header-logo.jpg"
+            alt="City of Thousand Oaks Logo"
+          />
         </header>
 
         {/* Navigation buttons */}
