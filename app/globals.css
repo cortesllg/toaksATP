@@ -302,7 +302,7 @@ This is the structure of the image and dividing the 'what is an ATP'/'MISSION' s
 .full-width-image {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 80px; /* ✅ Add or increase this for space below */
+  margin-bottom: 50px; /* ✅ Add or increase this for space below */
 }
 .full-width-img {
   width: 100%;
