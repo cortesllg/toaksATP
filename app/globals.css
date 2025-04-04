@@ -290,6 +290,20 @@ This is the structure of the image and text overlay and goal box
   color: white;
 }
 
+
+.full-width-image {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px 0; /* Adds some spacing around the image */
+}
+
+.full-width-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 /***************************************************
 ****************************************************
 

@@ -66,6 +66,15 @@ export default function Home() {
         </div>
       </section>
 
+    {/* NEW FULL-WIDTH IMAGE BETWEEN DESCRIPTION AND MISSION */}
+    <div className="full-width-image">
+      <img
+        src="/images/Header Image.jpg"
+        alt="Community biking and walking"
+        className="full-width-img"
+      />
+    </div>
+
       <section className="mission-section">
         <h2 className="mission-title">The Mission of Thousand Oaks</h2>
         <hr className="mission-divider" />
