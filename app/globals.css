@@ -367,8 +367,8 @@ This is the structure of the mission statement
 
 .mission-divider {
   border: none;
-  border-top: 2px dotted #313f58;
-  width: 53%;
+  border-top: 2px dotted #444342; /* Dotted line */
+  width: 54%;
   margin: 0 auto 20px;
 }
 
@@ -378,6 +378,7 @@ This is the structure of the mission statement
   line-height: 1.6;
 }
 
+/* fade in effect for certain objects in .tsx files*/
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -415,15 +416,86 @@ This is the structure of the mission statement
   display: block; /* Remove any unwanted space below the image */
 }
 
-footer {
-  background-image: url("/images/linen-footer.jpg"); /* Replace with your actual image path */
+/***************************************************
+****************************************************
+
+This is the structure of the footer
+
+****************************************************
+****************************************************
+*/
+
+.footer {
+  background-image: url("/images/linen-footer.jpg");
   background-repeat: repeat;
   background-size: auto;
   background-position: top center;
   padding: 40px 20px;
   color: white;
-  text-align: center;
 }
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 250px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  color: #444342;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact {
+  text-align: right;
+  max-width: 300px;
+}
+
+.footer-contact h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
 
 ul {
   list-style-type: none;

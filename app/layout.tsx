@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "City of Thousand Oaks Active Transportation Plan Update",
   description:
     "Official updates for the Thousand Oaks Active Transportation Plan.",
+  icons: {
+    icon: "images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -53,8 +56,44 @@ export default function RootLayout({
         <main>{children}</main>
 
         {/* Footer */}
-        <footer>
-          <p>&copy; 2025 City of Thousand Oaks. All rights reserved.</p>
+        <footer className="footer">
+          <div className="footer-container">
+            <div className="footer-logo">
+              <img src="/images/admin-logo-white.png" alt="City of Thousand Oaks" />
+            </div>
+            <div className="footer-links">
+              <div>
+                <h3>Get in Touch</h3>
+                <ul>
+                  <li><Link href="/">Home</Link></li>
+                  <li><Link href="/get-involved">Get Involved</Link></li>
+                  <li><Link href="/contact-us">Send a Message</Link></li>
+                  <li><Link href="/feedback">Website Feedback</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3>Explore</h3>
+                <ul>
+                  <li><Link href="/project-status">Ongoing Project Status</Link></li>
+                  <li><Link href="/project-status">Project Events</Link></li>
+                  <li><Link href="/documentation">Project Information</Link></li>
+                </ul>
+              </div>
+            </div>
+            <div className="footer-contact">
+              <h3>Thousand Oaks City Hall</h3>
+              <p>2100 Thousand Oaks Blvd.<br />Thousand Oaks, CA 91362</p>
+              <p>805.449.2100</p>
+              <p><a href="mailto:city@toaks.gov">city@toaks.gov</a></p>
+              <div className="social-icons">
+                <a href="https://www.facebook.com/CityofThousandOaks/"><img src="/images/facebook-icon.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com/cityofthousandoaks/"><img src="/images/instagram-icon.png" alt="Instagram" /></a>
+                <a href="https://www.youtube.com/cityofthousandoaks"><img src="/images/youtube-icon.png" alt="YouTube" /></a>
+                <a href="https://x.com/cityofto"><img src="/images/twitter-icon.png" alt="Twitter" /></a>
+                <a href="mailto:city@toaks.gov"><img src="/images/email-icon.png" alt="Email" /></a>
+              </div>
+            </div>
+          </div>
         </footer>
       </body>
     </html>
