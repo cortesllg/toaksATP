@@ -273,12 +273,13 @@ export default function GetInvolved() {
                   color: "white",
                   fontWeight: "bold",
                   padding: "0.5rem 1.5rem",
-                  fontSize: "13px",
+                  fontSize: "14px",
                   borderRadius: "9999px",
                   border: "none",
                   cursor: "pointer",
                   transition: "background-color 0.3s",
                   textTransform: "uppercase",
+                  alignSelf: "center",
                 }}
                 onMouseOver={(e) =>
                   (e.currentTarget.style.backgroundColor = "#005fa3")

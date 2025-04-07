@@ -4,83 +4,116 @@ interface SurveyProps {
 
 const Survey = ({ isMobile }: SurveyProps) => {
   return (
-    <div>
-      {/* Intro Paragraph */}
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "1.5rem",
+        maxWidth: "100%",
+        padding: isMobile ? "1rem" : "2rem",
+      }}
+    >
+      {/* Survey Invitation */}
       <p
         style={{
           fontSize: isMobile ? "15px" : "16px",
           color: "#1f2937",
           fontWeight: 500,
+          textAlign: "left",
           lineHeight: "1.75",
-          textAlign: isMobile ? "left" : "center",
-          maxWidth: "100%",
-          margin: "0 auto",
         }}
       >
-        We believe the best ideas come from the people who live, work, and
-        travel in our community every day — and that includes you! The City of
-        Thousand Oaks is updating its Active Transportation Plan, and your input
-        is critical to ensuring the plan reflects your real needs. There are
-        four ways to get involved:
+        Help shape the future of active transportation in the City of Thousand
+        Oaks! Take a few minutes to complete our online survey and share your
+        experiences, concerns, and ideas.
       </p>
 
-      {/* Steps List */}
-      <ol
+      {/* Survey Details */}
+      <div
         style={{
-          listStyle: "decimal inside",
-          paddingLeft: isMobile ? "1rem" : "2rem",
-          color: "#4b5563",
-          fontSize: isMobile ? "15px" : "16px",
-          lineHeight: "1.75",
+          backgroundColor: "#f9fafb",
+          padding: "1.5rem",
+          borderRadius: "8px",
+          border: "1px solid #d1d5db",
+          textAlign: "center",
           display: "flex",
           flexDirection: "column",
-          gap: "0.5rem",
-          marginTop: "1rem",
+          gap: "1rem",
         }}
       >
-        <li>
-          <strong>Visit Our Engagement Platform</strong>
-        </li>
-        <li>
-          <strong>Complete Our Online Survey</strong>
-        </li>
-        <li>
-          <strong>Attend a Public Workshop</strong>
-        </li>
-        <li>
-          <strong>Contact Us Directly</strong>
-        </li>
-      </ol>
+        <h2
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#007a33",
+            margin: 0,
+          }}
+        >
+          Survey Details
+        </h2>
 
-      {/* Closing Paragraph */}
-      <p
-        style={{
-          fontSize: isMobile ? "15px" : "16px",
-          color: "#1f2937",
-          fontWeight: 500,
-          lineHeight: "1.75",
-          textAlign: isMobile ? "left" : "center",
-          marginTop: "1.5rem",
-          maxWidth: "100%",
-        }}
-      >
-        Your experiences are crucial to understanding what’s working — and
-        what’s not — on our streets today. Your suggestions will help us
-        prioritize future improvements.
-      </p>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📝 <strong>Deadline:</strong> May 17, 2025
+        </p>
+
+        <p
+          style={{
+            fontSize: "15px",
+            color: "#4b5563",
+            marginTop: "1rem",
+          }}
+        >
+          Your feedback will directly impact transportation planning efforts —
+          don't miss this opportunity to share your voice!
+        </p>
+
+        {/* Survey Button */}
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            backgroundColor: "#007a33",
+            color: "white",
+            fontWeight: "bold",
+            padding: "0.75rem 1.5rem",
+            fontSize: "14px",
+            borderRadius: "9999px",
+            textDecoration: "none",
+            textTransform: "uppercase",
+            marginTop: "1rem",
+            display: "inline-block",
+            alignSelf: "center",
+            transition: "background-color 0.3s",
+          }}
+          onMouseOver={(e) =>
+            (e.currentTarget.style.backgroundColor = "#005fa3")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.style.backgroundColor = "#007a33")
+          }
+        >
+          Take the Survey
+        </a>
+      </div>
 
       {/* Call to Action */}
       <p
         style={{
-          fontSize: isMobile ? "17px" : "18px",
+          fontSize: "18px",
           color: "#007a33",
           fontWeight: "700",
           textAlign: "center",
           marginTop: "2rem",
-          maxWidth: "100%",
         }}
       >
-        Get involved today — we’re excited to hear from you!
+        Thank you for helping us create a safer, more connected community!
       </p>
     </div>
   );

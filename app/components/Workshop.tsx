@@ -4,83 +4,97 @@ interface WorkshopProps {
 
 const Workshop = ({ isMobile }: WorkshopProps) => {
   return (
-    <div>
-      {/* Intro Paragraph */}
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "1.5rem",
+        maxWidth: "100%",
+        padding: isMobile ? "1rem" : "2rem",
+      }}
+    >
+      {/* Workshop Invitation */}
       <p
         style={{
           fontSize: isMobile ? "15px" : "16px",
           color: "#1f2937",
           fontWeight: 500,
+          textAlign: "left",
           lineHeight: "1.75",
-          textAlign: isMobile ? "left" : "center",
-          maxWidth: "100%",
-          margin: "0 auto",
         }}
       >
-        We believe the best ideas come from the people who live, work, and
-        travel in our community every day — and that includes you! The City of
-        Thousand Oaks is updating its Active Transportation Plan, and your input
-        is critical to ensuring the plan reflects your real needs. There are
-        four ways to get involved:
+        We invite you to join our upcoming public workshop! Share your ideas,
+        concerns, and feedback to help improve active transportation in the City
+        of Thousand Oaks. Your voice matters and we look forward to hearing from
+        you.
       </p>
 
-      {/* Steps List */}
-      <ol
+      {/* Workshop Details */}
+      <div
         style={{
-          listStyle: "decimal inside",
-          paddingLeft: isMobile ? "1rem" : "2rem",
-          color: "#4b5563",
-          fontSize: isMobile ? "15px" : "16px",
-          lineHeight: "1.75",
+          backgroundColor: "#f9fafb",
+          padding: "1.5rem",
+          borderRadius: "8px",
+          border: "1px solid #d1d5db",
+          textAlign: "center",
           display: "flex",
           flexDirection: "column",
-          gap: "0.5rem",
-          marginTop: "1rem",
+          gap: "1rem",
         }}
       >
-        <li>
-          <strong>Visit Our Engagement Platform</strong>
-        </li>
-        <li>
-          <strong>Complete Our Online Survey</strong>
-        </li>
-        <li>
-          <strong>Attend a Public Workshop</strong>
-        </li>
-        <li>
-          <strong>Contact Us Directly</strong>
-        </li>
-      </ol>
+        <h2
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#007a33",
+            margin: 0,
+          }}
+        >
+          Next Workshop Details
+        </h2>
 
-      {/* Closing Paragraph */}
-      <p
-        style={{
-          fontSize: isMobile ? "15px" : "16px",
-          color: "#1f2937",
-          fontWeight: 500,
-          lineHeight: "1.75",
-          textAlign: isMobile ? "left" : "center",
-          marginTop: "1.5rem",
-          maxWidth: "100%",
-        }}
-      >
-        Your experiences are crucial to understanding what’s working — and
-        what’s not — on our streets today. Your suggestions will help us
-        prioritize future improvements.
-      </p>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📅 <strong>Date:</strong> April 19th (Saturday)
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📍 <strong>Location:</strong> XXX (insert address here)
+        </p>
+
+        <p
+          style={{
+            fontSize: "15px",
+            color: "#4b5563",
+            marginTop: "1rem",
+          }}
+        >
+          No registration needed — just show up and get involved!
+        </p>
+      </div>
 
       {/* Call to Action */}
       <p
         style={{
-          fontSize: isMobile ? "17px" : "18px",
+          fontSize: "18px",
           color: "#007a33",
           fontWeight: "700",
           textAlign: "center",
           marginTop: "2rem",
-          maxWidth: "100%",
         }}
       >
-        Get involved today — we’re excited to hear from you!
+        Let's work together to make Thousand Oaks safer and more connected!
       </p>
     </div>
   );
