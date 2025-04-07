@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   font-family: Arial, sans-serif; /* Arial for default body text */
   background-color: white;
