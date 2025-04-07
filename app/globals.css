@@ -111,47 +111,44 @@ This is the structure of the image and text overlay and goal box
 
 /* Text overlay */
 .overlay-text {
-  position: absolute; /* Position the text relative to the container */
-  top: 50%; /* Centers text vertically */
-  left: 50%; /* Centers text horizontally */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Moves the text by half of its width and height for perfect centering */
-  color: white; /* Text color */
-  text-align: center; /* Centers the text */
-  font-size: 40px; /* Font size of the text */
-  font-weight: normal; /* Use normal weight or bold if needed */
-  padding: 10px; /* Padding for better spacing */
-  font-family: "Georgia", serif; /* Use Georgia font for the text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle drop shadow to make the text stand out */
-  width: 80%; /* Ensure the overlay takes full width */
-  z-index: 10; /* Make sure the text is above the image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  padding: 10px;
+  font-family: "Georgia", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-height: 90%; /* Prevent it from spilling out vertically */
+  overflow-y: auto; /* Adds scroll if necessary */
+  box-sizing: border-box;
+  z-index: 10;
 }
 
 /* Style the h2 text */
 .overlay-text h2 {
-  font-size: 80px; /* Adjust font size for heading */
-  font-weight: normal; /* Make heading bold */
-  margin-bottom: 0; /* Add some space below the heading */
+  font-size: clamp(28px, 6vw, 80px); /* Responsive font sizing */
+  font-weight: normal;
+  margin-bottom: 0;
 }
 
 /* Style the p2 (paragraph) text */
 .overlay-text .p2 {
-  font-size: 40px; /* Adjust font size for the paragraph */
-  font-weight: normal; /* Regular font weight for the paragraph */
-  margin-top: 0; /* Add some space above the paragraph */
+  font-size: clamp(18px, 3vw, 40px); /* Shrinks gracefully */
+  font-weight: normal;
+  margin-top: 0;
 }
 
+/* Button style */
 .overlay-button {
-  display: inline-block;
-  margin-top: 0px;
+  font-size: clamp(16px, 2vw, 22px); /* Responsive text */
   padding: 12px 24px;
   background-color: #a3c7c7;
   color: white;
-  font-size: 22px;
-  font-weight: normal; /* Normal weight for the button text */
-  text-decoration: none;
   font-style: italic;
   transition: background-color 0.3s ease-in-out;
 }
@@ -169,7 +166,8 @@ This is the structure of the image and text overlay and goal box
   transform: translate(-50%, -50%);
   background-color: white;
   width: 75%;
-  height: 200px;
+  min-height: 200px;
+  height: auto; /* Allow height to adjust based on content */
   padding: 15px;
   z-index: 5;
   display: flex;
@@ -183,31 +181,33 @@ This is the structure of the image and text overlay and goal box
   display: flex;
   align-items: flex-start; /* Top-align elements */
   gap: 15px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 /* */
 .goal-title {
   color: #537744;
   font-weight: bold;
-  font-size: 22px;
+  font-size: clamp(18px, 2.5vw, 22px); /* Responsive with upper/lower limit */
   white-space: nowrap;
-  padding-top: 4px; /* Optional: slight nudge to align with paragraph */
+  padding-top: 4px;
+}
+
+.goal-text {
+  color: #444;
+  font-size: clamp(16px, 2.3vw, 22px); /* Shrinks gracefully on smaller screens */
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+  padding-top: 16px;
 }
 
 .goal-content .divider {
-  border-left: 1px solid #aca6a6; /* KEEPING this exactly as you had it */
+  border-left: 1px solid #aca6a6;
   height: auto;
   min-height: 150px;
   width: 0.1px;
 }
 
-.goal-text {
-  color: #444;
-  font-size: 22px;
-  line-height: 1.6;
-  flex: 1;
-  margin: 0;
-  padding-top: 16px; /* Optional: aligns better with goal-title */
-}
 
 /* Optional: Changes the 'What we strive for to green */
 .goal-text strong {
@@ -416,6 +416,79 @@ This is the structure of the mission statement
   display: block; /* Remove any unwanted space below the image */
 }
 
+
+/***************************************************
+****************************************************
+
+This is the structure of the image and text overlay for secondary pages
+such as: project-status/page.tsx
+
+****************************************************
+****************************************************
+
+/* Container for the image */
+.image-container1 {
+  width: 100%;
+  height: 60vh;
+  padding: 0;
+  object-fit: cover;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+/* Triangle that goes on the bottom right of the picture*/
+.image-container1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #537744;     /* Shorter height (vertical) */
+  border-left: 1000px solid transparent; /* Longer length (horizontal) */
+  z-index: 5;
+}
+
+/* Overlay wrapper to hold both text layers */
+.overlay-text1 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 90%;
+  height: auto;
+  z-index: 10;
+}
+
+/* Large transparent heading in the background */
+.overlay-text1 .bg-heading {
+  position: absolute;
+  top: -60px; /* Slight upward offset */
+  left: clamp(-20px, -5vw, -50px); /* Responsive left offset */
+  font-size: clamp(60px, 12vw, 130px); /* Responsive clamp */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.2); /* More transparent for subtle effect */
+  z-index: 1;
+  white-space: nowrap;
+  text-shadow: none;
+}
+
+/* Opaque foreground subtitle */
+.overlay-text1 .fg-subtitle {
+  position: relative;
+  font-size: clamp(20px, 4vw, 40px); /* Responsive clamp */
+  top: 35px;
+  left: clamp(20px, 8vw, 100px); /* Responsive left offset */
+  font-weight: normal;
+  font-family: "Georgia", serif; /* Use Georgia font for the text */
+  color: white;
+  z-index: 2;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 /***************************************************
 ****************************************************
 
@@ -466,9 +539,13 @@ This is the structure of the footer
   margin-bottom: 10px;
 }
 
-.footer-links a {
+.footer a {
   color: white;
   text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer-contact {

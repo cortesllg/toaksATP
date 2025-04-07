@@ -11,14 +11,14 @@ export default function ProjectStatus() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="image-container">
-        <img src="/images/header-image-from-site.jpg" alt="Header Image" className="header-image" />
-        <div className="overlay-text">
-          <h2>THE STATUS OF THE PROJECT</h2>
-          <p className="p2">See what is ongoing with the improvements in the City of Thousand Oaks</p>
+      <div className="image-container1">
+        <img src="/images/Header Image.jpg" alt="Header Image" className="header-image" />
+        <div className="overlay-text1">
+          <div className="bg-heading">PROJECT STATUS</div>
+          <div className="fg-subtitle">See what is ongoing with the improvements in the City of Thousand Oaks</div>
         </div>
       </div>
-      
+            
     </div>
   );
   }
