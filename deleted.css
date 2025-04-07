@@ -245,3 +245,147 @@ body {
     text-align: center;
   }
   
+
+  /***************************************************
+****************************************************
+
+This is the structure of the project status page
+and the project status table
+
+****************************************************
+****************************************************
+*/
+
+/* Wrapper around the overview + events */
+.content-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    padding: 4rem 4rem;
+  }
+}
+
+/* Add underline similar to sample image */
+.with-underline {
+  border-bottom: 2px solid #d8d8d8;
+  padding-bottom: 0.5rem;
+}
+
+/* Update title color */
+.project-overview-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #007c41; /* Green tone like in the image */
+  margin-bottom: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Body text consistent */
+.project-overview-text {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #444342;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Events wrapper */
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Individual event cards */
+.event-card {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #537744;
+  margin-bottom: 1rem;
+}
+
+.event-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.event-text {
+  color: #444342;
+  margin-bottom: 0.5rem;
+}
+
+.event-subtext {
+  font-size: 0.875rem;
+  color: #444342;
+}
+
+/* Two-column layout for overview */
+.overview-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Survey (left side) */
+.survey-box {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.survey-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.survey-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.survey-button {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.survey-button:hover {
+  background-color: #0055a5;
+}
+
+/* Right side text */
+.project-overview-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+  min-width: 280px;
+}
+
