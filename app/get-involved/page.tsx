@@ -3,8 +3,15 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 
+import InvolvedIntro from "../components/InvolvedIntro";
+import Engagement from "../components/Engagement";
+import Survey from "../components/Survey";
+import Workshop from "../components/Workshop";
+import Contact from "../components/Contact";
+
 export default function GetInvolved() {
   const [isMobile, setIsMobile] = useState(false);
+  const [activeSection, setActiveSection] = useState("InvolvedIntro");
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,10 +23,11 @@ export default function GetInvolved() {
   }, []);
 
   const participationItems = [
-    "Engagement Platform",
-    "Online Survey",
-    "Public Workshops",
-    "Contact Us",
+    { label: "Get Started", section: "InvolvedIntro" },
+    { label: "Engagement Platform", section: "Engagement" },
+    { label: "Online Survey", section: "Survey" },
+    { label: "Public Workshops", section: "Workshop" },
+    { label: "Contact Us", section: "Contact" },
   ];
 
   const pollOptions = [
@@ -106,9 +114,10 @@ export default function GetInvolved() {
           {participationItems.map((item, index) => (
             <div
               key={index}
+              onClick={() => setActiveSection(item.section)}
               style={{
-                color: "#005fa3",
-                fontWeight: "300",
+                color: activeSection === item.section ? "#003f7d" : "#005fa3",
+                fontWeight: activeSection === item.section ? "600" : "400",
                 fontSize: "14px",
                 cursor: "pointer",
                 transition: "color 0.2s",
@@ -117,14 +126,14 @@ export default function GetInvolved() {
                 ((e.target as HTMLDivElement).style.color = "#003f7d")
               }
               onMouseOut={(e) =>
-                ((e.target as HTMLDivElement).style.color = "#005fa3")
+                ((e.target as HTMLDivElement).style.color =
+                  activeSection === item.section ? "#003f7d" : "#005fa3")
               }
             >
-              {item}
+              {item.label}
             </div>
           ))}
         </aside>
-
         {/* Center Content */}
         <main
           style={{
@@ -149,7 +158,6 @@ export default function GetInvolved() {
           >
             Share Your Thoughts
           </h1>
-
           {/* Divider */}
           <hr
             style={{
@@ -159,83 +167,13 @@ export default function GetInvolved() {
               margin: "0 auto",
             }}
           />
-
-          {/* Intro Paragraph */}
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              fontWeight: 500,
-              lineHeight: "1.75",
-              textAlign: "left",
-              maxWidth: "100%",
-              margin: "0 auto",
-            }}
-          >
-            We believe the best ideas come from the people who live, work, and
-            travel in our community every day — and that includes you! The City
-            of Thousand Oaks is updating its Active Transportation Plan, and
-            your input is critical to ensuring the plan reflects your real
-            needs. There are four ways to get involved:
-          </p>
-
-          {/* Steps List */}
-          <ol
-            style={{
-              listStyle: "decimal inside",
-              paddingLeft: "1rem",
-              color: "#4b5563",
-              fontSize: "16px",
-              lineHeight: "1.75",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.25rem",
-            }}
-          >
-            <li>
-              <strong>Visit Our Engagement Platform</strong>
-            </li>
-            <li>
-              <strong>Complete Our Online Survey</strong>
-            </li>
-            <li>
-              <strong>Attend a Public Workshop</strong>
-            </li>
-            <li>
-              <strong>Contact Us Directly</strong>
-            </li>
-          </ol>
-
-          {/* Closing Paragraph */}
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              fontWeight: 500,
-              lineHeight: "1.75",
-              textAlign: "left",
-              maxWidth: "100%",
-              margin: "0 auto",
-            }}
-          >
-            Your experiences are crucial to understanding what’s working — and
-            what’s not — on our streets today. Your suggestions will help us
-            prioritize future improvements.
-          </p>
-
-          {/* Call to Action */}
-          <p
-            style={{
-              fontSize: "18px",
-              color: "#007a33",
-              fontWeight: "700",
-              textAlign: "center",
-              marginTop: "1rem",
-              maxWidth: "100%",
-            }}
-          >
-            Get involved today — we’re excited to hear from you!
-          </p>
+          {activeSection === "InvolvedIntro" && (
+            <InvolvedIntro isMobile={isMobile} />
+          )}
+          {activeSection === "Engagement" && <Engagement isMobile={isMobile} />}
+          {activeSection === "Survey" && <Survey isMobile={isMobile} />}
+          {activeSection === "Workshop" && <Workshop isMobile={isMobile} />}
+          {activeSection === "Contact" && <Contact isMobile={isMobile} />}
         </main>
 
         {/* Right Sidebar */}
