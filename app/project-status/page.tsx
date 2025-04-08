@@ -24,18 +24,21 @@ export default function ProjectStatus() {
         <div className="overlay-text1">
           <div className="bg-heading">PROJECT STATUS</div>
           <div className="fg-subtitle">
-            See what is ongoing with the improvements in the City of Thousand Oaks
+            See what is ongoing with the improvements in the City of Thousand
+            Oaks
           </div>
         </div>
       </div>
 
       <div className="content-section">
+        {/* Move title outside the grid to align only with right content */}
+
         <div className="overview-grid">
           {/* Left side - Survey */}
           <div className="survey-box">
             <h3 className="survey-title">Help Shape the Future</h3>
             <p className="survey-description">
-              Your feedback is essential to improving transportation in Thousand
+              Your feedback is essential towards improvements in Thousand
               Oaks. Take our quick survey to share your thoughts!
             </p>
             <Link href="https://www.surveylink.com" passHref legacyBehavior>
@@ -49,18 +52,20 @@ export default function ProjectStatus() {
             </Link>
           </div>
 
-          {/* Right side - Text and Title */}
-          <div className="project-overview-text">
-            <h2 className="project-overview-title with-underline">
+          <div className="overview-text-group">
+            <div className="project-overview-title with-underline">
               PROJECT OVERVIEW
-            </h2>
-            The City of Thousand Oaks, in collaboration with LLG Engineers, a
-            transportation consulting firm, is actively working on the Active
-            Transportation Plan (APT) Update. The team has begun initial tasks,
-            including data collection, public outreach, reviewing background
-            documents, and developing a Community Engagement Plan. We encourage
-            everyone to share their input and help shape a stronger, more
-            effective APT update for the City.
+            </div>
+            {/* Right side - Paragraph only */}
+            <div className="project-overview-text">
+              The City of Thousand Oaks, in collaboration with LLG Engineers, a
+              transportation consulting firm, is actively working on the Active
+              Transportation Plan (APT) Update. The team has begun initial
+              tasks, including data collection, public outreach, reviewing
+              background documents, and developing a Community Engagement Plan.
+              We encourage everyone to share their input and help shape a
+              stronger, more effective APT update for the City.
+            </div>
           </div>
         </div>
 

@@ -100,13 +100,9 @@ This is the structure of the image and text overlay and goal box
 
 /* Container for the image */
 .image-container {
-  width: 100%; /* Full width of the viewport */
-  height: 60vh; /* Keep height based on the image's aspect ratio or use a fixed height if needed */
-  padding: 0; /* Remove any padding */
-  object-fit: cover; /* Ensure the image covers the container */
-  margin: 0; /* Ensure no margin is added */
-  display: block; /* Ensure it's a block-level element */
-  overflow: hidden; /* Prevent image overflow */
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 /* Text overlay */
@@ -396,7 +392,11 @@ This is the structure of the mission statement
 }
 
 /* Optional: Make buttons responsive and adjust for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-height: 500px) {
+  .overlay-text1 .bg-heading {
+    font-size: 24px;
+    display: none; /* or scale it down dramatically */
+  }
   .overlay-text {
     font-size: 30px;
   }
@@ -407,6 +407,8 @@ This is the structure of the mission statement
     font-size: 25px;
   }
 }
+
+
 
 /* Style the image itself */
 .header-image {
@@ -426,6 +428,7 @@ such as: project-status/page.tsx
 ****************************************************
 ****************************************************
 
+/* Container for the image */
 /* Container for the image */
 .image-container1 {
   width: 100%;
@@ -492,6 +495,7 @@ such as: project-status/page.tsx
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-break: break-word; /* Ensures long words break instead of overflowing */
 }
+
 
 
 /***************************************************
