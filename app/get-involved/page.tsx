@@ -83,9 +83,10 @@ export default function GetInvolved() {
         style={{
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          maxWidth: "1200px",
-          marginTop: "2rem",
-          padding: "2rem 2rem",
+          maxWidth: "80%",
+          alignContent: "center",
+          marginTop: "3rem",
+          padding: "3rem 3rem",
           gap: "2rem",
         }}
       >
