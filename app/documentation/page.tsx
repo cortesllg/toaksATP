@@ -11,13 +11,22 @@ export default function Documentation() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="image-container">
-        <img src="/images/header-image-from-site.jpg" alt="Header Image" className="header-image" />
-        <div className="overlay-text">
-          <h2>INFORMATION AND DOCUMENTATION</h2>
-          <p className="p2">Get a more in-depth view of what is being done</p>
+      <div className="image-container1">
+        <img
+          src="/images/Header Image.jpg"
+          alt="Header Image"
+          className="header-image"
+        />
+        <div className="overlay-text1">
+          <div className="bg-heading">PROJECT INFORMATION</div>
+          <div className="fg-subtitle">
+          Get a more in-depth view of what is being done
+          </div>
         </div>
       </div>
+
+
+
       
     </div>
   );

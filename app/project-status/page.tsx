@@ -99,8 +99,8 @@ export default function ProjectStatus() {
                 textAlign: "left",
               }}
             >
-              Your feedback is essential towards making improvements in Thousand Oaks.
-              Take our quick survey to share your thoughts!
+              Your feedback is essential towards making improvements in Thousand
+              Oaks. Take our quick survey to share your thoughts!
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
@@ -136,18 +136,175 @@ export default function ProjectStatus() {
           </aside>
 
           {/* Center Text Section */}
-          <div className="overview-text-group">
-            <div className="project-overview-title with-underline">
+          <div
+            className="overview-text-group"
+            style={{
+              padding: isMobile ? "1rem" : "2rem 5rem",
+              maxWidth: "800px",
+              margin: "0 auto",
+            }}
+          >
+            <div
+              className="project-overview-title with-underline"
+              style={{
+                fontSize: "2rem",
+                fontWeight: "bold",
+                marginBottom: "1.5rem",
+                borderBottom: "2px solid #ccc",
+                paddingBottom: "0.5rem",
+                textAlign: "center",
+              }}
+            >
               PROJECT OVERVIEW
             </div>
-            <div className="project-overview-text">
+
+            <div
+              className="project-overview-text"
+              style={{
+                fontSize: "1.1rem",
+                lineHeight: "1.8",
+                color: "#4b5563",
+                marginBottom: "2.5rem",
+                textAlign: "center",
+              }}
+            >
               The City of Thousand Oaks, in collaboration with LLG Engineers, a
               transportation consulting firm, is actively working on the Active
-              Transportation Plan (APT) Update. The team has begun initial
-              tasks, including data collection, public outreach, reviewing
-              background documents, and developing a Community Engagement Plan.
-              We encourage everyone to share their input and help shape a
-              stronger, more effective APT update for the City.
+              Transportation Plan (APT) Update. We encourage everyone to share
+              their input and help shape a stronger, more effective APT update
+              for the City.
+            </div>
+
+            {/* Events Section */}
+            <div
+              className="events-grid"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "2rem",
+                marginTop: "2rem",
+              }}
+            >
+              {/* Upcoming Events */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #c8e6c9",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Upcoming Event: Community Workshop
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Next Workshop Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> April 19th (Saturday)
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> XXX (insert address here)
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "1rem",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    fontStyle: "italic",
+                  }}
+                >
+                  No registration needed — just show up and get involved!
+                </p>
+              </div>
+
+              {/* Past Events */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#f9f9f9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  🕒
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Events
+                </h3>
+
+                <p
+                  className="event-text"
+                  style={{
+                    fontSize: "1rem",
+                    marginBottom: "0.5rem",
+                    color: "#374151",
+                  }}
+                >
+                  Check back for more information to stay up-to-date.
+                </p>
+
+                <p
+                  className="event-subtext"
+                  style={{ fontSize: "0.9rem", color: "#6b7280" }}
+                >
+                  Previous project milestones and community events will be
+                  documented here.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -159,6 +316,7 @@ export default function ProjectStatus() {
               padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              marginLeft: isMobile ? "0" : "1.5rem",
             }}
           >
             <h3
@@ -265,31 +423,6 @@ export default function ProjectStatus() {
         </div>
 
         {/* Events Section */}
-        <div className="events-grid">
-          <div className="event-card">
-            <h3 className="event-title">« Upcoming Events »</h3>
-            <div className="event-icon">📅</div>
-            <p className="event-text">
-              Check back for more information to stay up-to-date.
-            </p>
-            <p className="event-subtext">
-              Future community meetings and engagement opportunities will be
-              posted here.
-            </p>
-          </div>
-
-          <div className="event-card">
-            <h3 className="event-title">« Past Events »</h3>
-            <div className="event-icon">🕒</div>
-            <p className="event-text">
-              Check back for more information to stay up-to-date.
-            </p>
-            <p className="event-subtext">
-              Previous project milestones and community events will be
-              documented here.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

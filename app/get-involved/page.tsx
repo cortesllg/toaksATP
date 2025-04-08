@@ -9,6 +9,8 @@ import Survey from "../components/Survey";
 import Workshop from "../components/Workshop";
 import Contact from "../components/Contact";
 
+import "./get-involved.css"; // Assuming this is the new CSS file
+
 export default function GetInvolved() {
   const [isMobile, setIsMobile] = useState(false);
   const [activeSection, setActiveSection] = useState("InvolvedIntro");
@@ -57,10 +59,11 @@ export default function GetInvolved() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Hero section */}
       <div className="image-container1">
         <img
           src="/images/Header Image.jpg"
-          alt="Header Image"
+          alt="Header"
           className="header-image"
         />
         <div className="overlay-text1">
@@ -71,46 +74,48 @@ export default function GetInvolved() {
         </div>
       </div>
 
-      {/* Main Section */}
-      <div
+      {/* Main Content Section */}
+      <section
         style={{
-          width: "100%",
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: isMobile ? "32px 16px" : "48px 32px",
-          boxSizing: "border-box",
+          padding: "3rem 1.5rem",
+          backgroundColor: "#ffffff",
         }}
       >
         <div
           style={{
             display: "flex",
             flexDirection: isMobile ? "column" : "row",
-            gap: "32px",
-            width: "100%",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            gap: "2rem",
+            padding: isMobile ? "0" : "0 5rem",
+            marginTop: "2rem",
+            marginBottom: "2rem",
           }}
         >
           {/* Left Sidebar */}
           <aside
             style={{
-              flex: isMobile ? "1 1 100%" : "0 0 20%",
-              backgroundColor: "#e8f4ea",
-              padding: "24px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "16px",
+              flex: isMobile ? "unset" : "0 0 22%",
+              backgroundColor: "white",
+              padding: "1rem 1rem",
+              fontSize: "14px",
               alignSelf: "flex-start",
             }}
           >
-            <h1
+            <h3
+              className="sidebar-title"
               style={{
-                fontSize: "20px",
-                fontWeight: "bold",
+                textDecoration: "underline",
+                textAlign: "center",
                 color: "#007a33",
+                fontWeight: "bold",
+                textTransform: "uppercase",
                 marginBottom: "1rem",
               }}
             >
               How to Participate
-            </h1>
+            </h3>
             {participationItems.map((item, index) => (
               <div
                 key={index}
@@ -120,6 +125,7 @@ export default function GetInvolved() {
                   fontWeight: activeSection === item.section ? "600" : "400",
                   fontSize: "14px",
                   cursor: "pointer",
+                  marginBottom: "0.5rem",
                   transition: "color 0.2s",
                 }}
                 onMouseOver={(e) =>
@@ -134,39 +140,35 @@ export default function GetInvolved() {
               </div>
             ))}
           </aside>
+
           {/* Center Content */}
           <main
             style={{
-              flex: isMobile ? "1 1 100%" : "0 0 50%",
+              flex: isMobile ? "unset" : "0 0 600px",
               backgroundColor: "white",
-              padding: "32px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "24px",
+              padding: "2rem",
             }}
           >
-            {/* Title */}
             <h1
               style={{
                 fontSize: "28px",
                 fontWeight: "700",
                 color: "#007a33",
                 textTransform: "uppercase",
-                margin: 0,
+                marginBottom: "1rem",
                 textAlign: "center",
               }}
             >
               Share Your Thoughts
             </h1>
-            {/* Divider */}
-            <hr
+            <div
               style={{
-                border: "none",
-                borderTop: "3px double #d1d5db",
-                width: "60%",
-                margin: "0 auto",
+                borderBottom: "2px solid #d8d8d8",
+                paddingBottom: "0.5rem",
+                marginBottom: "1rem",
               }}
-            />
+            ></div>
+
             {activeSection === "InvolvedIntro" && (
               <InvolvedIntro isMobile={isMobile} />
             )}
@@ -178,31 +180,23 @@ export default function GetInvolved() {
             {activeSection === "Contact" && <Contact isMobile={isMobile} />}
           </main>
 
-          {/* Right Sidebar */}
+          {/* Right Sidebar - Poll */}
           <aside
             style={{
-              flex: isMobile ? "1 1 100%" : "0 0 20%",
+              flex: isMobile ? "unset" : "0 0 22%",
               backgroundColor: "white",
-              padding: "24px",
+              padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              marginLeft: isMobile ? "0" : "1.5rem",
             }}
           >
             <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: "#313F58",
-                textAlign: "center",
-                textTransform: "uppercase",
-                textDecoration: "underline",
-                textUnderlineOffset: "4px",
-                marginBottom: "1rem",
-              }}
+              className="sidebar-title"
+              style={{ textDecoration: "underline", textAlign: "center" }}
             >
               Quick Poll
             </h3>
-
             <p
               style={{
                 marginBottom: "1.5rem",
@@ -216,8 +210,6 @@ export default function GetInvolved() {
               What do you think are the top three (3) issues affecting your
               safety in Thousand Oaks?
             </p>
-
-            {/* Poll Form */}
             <form
               style={{
                 display: "flex",
@@ -232,16 +224,8 @@ export default function GetInvolved() {
                     display: "flex",
                     alignItems: "center",
                     fontWeight: "500",
-                    color: "#005fa3",
                     cursor: "pointer",
-                    transition: "color 0.2s",
                   }}
-                  onMouseOver={(e) =>
-                    ((e.target as HTMLDivElement).style.color = "#003f7d")
-                  }
-                  onMouseOut={(e) =>
-                    ((e.target as HTMLDivElement).style.color = "#313F58")
-                  }
                 >
                   <input
                     type="checkbox"
@@ -270,8 +254,6 @@ export default function GetInvolved() {
                   </label>
                 </div>
               ))}
-
-              {/* Submit Button */}
               <div style={{ paddingTop: "1.5rem", textAlign: "center" }}>
                 <button
                   type="submit"
@@ -286,7 +268,6 @@ export default function GetInvolved() {
                     cursor: "pointer",
                     transition: "background-color 0.3s",
                     textTransform: "uppercase",
-                    alignSelf: "center",
                   }}
                   onMouseOver={(e) =>
                     (e.currentTarget.style.backgroundColor = "#005fa3")
@@ -301,7 +282,7 @@ export default function GetInvolved() {
             </form>
           </aside>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
