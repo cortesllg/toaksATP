@@ -57,24 +57,17 @@ export default function GetInvolved() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Hero Section */}
-      <div style={{ position: "relative", textAlign: "center" }}>
+      <div className="image-container">
         <img
           src="/images/header-image-from-site.jpg"
           alt="Header Image"
-          style={{ width: "100%", height: "auto" }}
+          className="header-image"
         />
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            color: "white",
-          }}
-        >
-          <h2 style={{ fontSize: "36px", fontWeight: "bold" }}>GET INVOLVED</h2>
-          <p>Learn how you can get involved with improvements in your city</p>
+        <div className="overlay-text">
+          <h2>GET INVOLVED</h2>
+          <p className="p2">
+            Learn how you can get involved with improvements in your city
+          </p>
         </div>
       </div>
 
