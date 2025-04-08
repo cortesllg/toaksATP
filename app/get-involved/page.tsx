@@ -142,42 +142,24 @@ export default function GetInvolved() {
           </aside>
 
           {/* Center Content */}
-          <main
-            style={{
-              flex: isMobile ? "unset" : "0 0 600px",
-              backgroundColor: "white",
-              padding: "2rem",
-            }}
-          >
-            <h1
-              style={{
-                fontSize: "28px",
-                fontWeight: "700",
-                color: "#007a33",
-                textTransform: "uppercase",
-                marginBottom: "1rem",
-                textAlign: "center",
-              }}
-            >
-              Share Your Thoughts
-            </h1>
-            <div
-              style={{
-                borderBottom: "2px solid #d8d8d8",
-                paddingBottom: "0.5rem",
-                marginBottom: "1rem",
-              }}
-            ></div>
+          <main className="center-content">
+            <div>
+              <h2 className="involved-title with-underline">
+                Get Involved in the Process
+              </h2>
+            </div>
 
-            {activeSection === "InvolvedIntro" && (
-              <InvolvedIntro isMobile={isMobile} />
-            )}
-            {activeSection === "Engagement" && (
-              <Engagement isMobile={isMobile} />
-            )}
-            {activeSection === "Survey" && <Survey isMobile={isMobile} />}
-            {activeSection === "Workshop" && <Workshop isMobile={isMobile} />}
-            {activeSection === "Contact" && <Contact isMobile={isMobile} />}
+            <div>
+              {activeSection === "InvolvedIntro" && (
+                <InvolvedIntro isMobile={isMobile} />
+              )}
+              {activeSection === "Engagement" && (
+                <Engagement isMobile={isMobile} />
+              )}
+              {activeSection === "Survey" && <Survey isMobile={isMobile} />}
+              {activeSection === "Workshop" && <Workshop isMobile={isMobile} />}
+              {activeSection === "Contact" && <Contact isMobile={isMobile} />}
+            </div>
           </main>
 
           {/* Right Sidebar - Poll */}
