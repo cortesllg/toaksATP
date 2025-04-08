@@ -159,6 +159,7 @@ export default function ProjectStatus() {
               padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              marginLeft: isMobile ? "0" : "1.5rem",
             }}
           >
             <h3
