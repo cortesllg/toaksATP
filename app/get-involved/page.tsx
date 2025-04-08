@@ -57,17 +57,17 @@ export default function GetInvolved() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="image-container">
+      <div className="image-container1">
         <img
-          src="/images/header-image-from-site.jpg"
+          src="/images/Header Image.jpg"
           alt="Header Image"
           className="header-image"
         />
-        <div className="overlay-text">
-          <h2>GET INVOLVED</h2>
-          <p className="p2">
+        <div className="overlay-text1">
+          <div className="bg-heading">GET INVOLVED</div>
+          <div className="fg-subtitle">
             Learn how you can get involved with improvements in your city
-          </p>
+          </div>
         </div>
       </div>
 

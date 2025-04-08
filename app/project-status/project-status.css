@@ -22,6 +22,7 @@
   /* Project Overview Title */
   .project-overview-title {
     font-size: 42px;
+    text-align: center;
     font-weight: 700;
     color: #007c41;
     margin-bottom: 1rem;
@@ -65,20 +66,25 @@
   .overview-grid {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    margin-top: 0;
-    flex-wrap: wrap;
-    align-items: flex-start; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; /* controls spacing between the three sections */
+    padding: 0 2rem; /* adds side spacing */
+    margin-top: 2rem;
     margin-bottom: 2rem;
-    font-family: Arial, sans-serif;
-  }
+  }  
   
+  /* Right side text */
+  .overview-text-group {
+    flex: 1 1 20%;
+    max-width: 58%;
+  }
   /* Survey (left side) */
   .survey-box {
     background-color: #ffffff;
     padding: 20px;
     width: 250px;
-    margin-top: 45px;
+
   }
   
   .survey-title {
@@ -108,14 +114,17 @@
   .survey-button:hover {
     background-color: #95B387;
   }
-  
-  /* Right side text */
-  .overview-text-group {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding-top: 0.25rem; /* fine-tuning alignment */
+
+  .sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007a33;
+    text-transform: uppercase;
+    margin: 0 0 0.5rem 0; /* remove top margin */
+    min-height: 24px;
   }
+  
+
   
   /* Events section layout */
   @media (min-width: 768px) {
