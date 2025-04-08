@@ -452,8 +452,8 @@ such as: project-status/page.tsx
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 20px solid #537744;     /* Shorter height (vertical) */
-  border-left: 70vw solid transparent; /* Longer length (horizontal) */
+  border-bottom: 50px solid #537744;     /* Shorter height (vertical) */
+  border-left: 80vw solid transparent; /* Longer length (horizontal) */
   z-index: 5;
 }
 
