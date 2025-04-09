@@ -18,7 +18,7 @@ export default function Documentation() {
           className="header-image"
         />
         <div className="overlay-text1">
-          <div className="bg-heading">PROJECT INFORMATION</div>
+          <div className="bg-heading">DOCUMENTATION</div>
           <div className="fg-subtitle">
           Get a more in-depth view of what is being done
           </div>
