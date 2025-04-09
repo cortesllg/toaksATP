@@ -236,6 +236,17 @@ export default function ProjectStatus() {
                 >
                   📅 <strong>Date:</strong> April 19th (Saturday)
                 </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 10:00 AM – 12:00 PM
+                </div>
+
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -243,18 +254,44 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> XXX (insert address here)
+                  📍 <strong>Location:</strong> Thousand Oaks Community Center
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2525 N. Moorpark Rd., Thousand Oaks {" "}
                 </div>
 
                 <p
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "15px",
                     color: "#4b5563",
                     marginTop: "1.5rem",
-                    fontStyle: "italic",
+                    lineHeight: "1.7",
                   }}
                 >
-                  No registration needed — just show up and get involved!
+                  <strong>No registration needed</strong> — just show up and get
+                  involved!
+                  <br />
+                  <br />
+                  The festivities begin at 10:00 AM in the park area and parking
+                  lot of the Thousand Oaks Community Center at 2525 N. Moorpark
+                  Road.
+                  <br />
+                  <br />
+                  <em>Note:</em> This community event may be photographed and/or
+                  videotaped for possible use on the city (and library) websites
+                  and social media. Your participation constitutes consent for
+                  the City to publish your likeness for publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
                 </p>
               </div>
 

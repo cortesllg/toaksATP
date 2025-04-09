@@ -1,8 +1,12 @@
+import { useState } from "react";
+
 interface InvolvedIntroProps {
   isMobile: boolean;
 }
 
 const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
+  const [showThankYou, setShowThankYou] = useState(false);
+
   const pollOptions = [
     "People driving too fast",
     "Drivers not yielding or stopping at intersections",
@@ -18,15 +22,25 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
     "Other (please specify)",
   ];
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // prevent page reload
+    setShowThankYou(true); // show the Thank You modal
+  };
+
+  const handleClose = () => {
+    setShowThankYou(false); // close the modal
+  };
+
   return (
     <aside
       style={{
         flex: isMobile ? "unset" : "0 0 22%",
         backgroundColor: "white",
-        padding: "1rem 1rem",
+        padding: "1rem",
         fontSize: "14px",
         alignSelf: "flex-start",
         marginLeft: isMobile ? "0" : "1.5rem",
+        position: "relative",
       }}
     >
       <h3
@@ -35,6 +49,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
       >
         Quick Poll
       </h3>
+
       <p
         style={{
           marginBottom: "1.5rem",
@@ -48,7 +63,9 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
         What do you think are the top three (3) issues affecting your safety in
         Thousand Oaks?
       </p>
+
       <form
+        onSubmit={handleSubmit}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -75,7 +92,6 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
                 marginRight: "0.75rem",
                 border: "1.5px solid #d1d5db",
                 borderRadius: "0.25rem",
-                appearance: "none",
                 accentColor: "#16a34a",
               }}
             />
@@ -92,6 +108,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
             </label>
           </div>
         ))}
+
         <div style={{ paddingTop: "1.5rem", textAlign: "center" }}>
           <button
             type="submit"
@@ -118,6 +135,64 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
           </button>
         </div>
       </form>
+
+      {/* Thank You Modal */}
+      {showThankYou && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 9999,
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "white",
+              padding: "2rem",
+              borderRadius: "12px",
+              textAlign: "center",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+            }}
+          >
+            <h2 style={{ marginBottom: "1rem", color: "#007a33" }}>
+              Thank you!
+            </h2>
+            <p style={{ marginBottom: "1.5rem", fontSize: "1rem" }}>
+              We appreciate your input to make Thousand Oaks safer.
+            </p>
+            <button
+              onClick={handleClose}
+              style={{
+                backgroundColor: "#007a33",
+                color: "white",
+                fontWeight: "bold",
+                padding: "0.5rem 1.5rem",
+                fontSize: "14px",
+                borderRadius: "9999px",
+                border: "none",
+                cursor: "pointer",
+                transition: "background-color 0.3s",
+                textTransform: "uppercase",
+              }}
+              onMouseOver={(e) =>
+                (e.currentTarget.style.backgroundColor = "#005fa3")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.backgroundColor = "#007a33")
+              }
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </aside>
   );
 };
