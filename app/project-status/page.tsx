@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 
 export default function ProjectStatus() {
   const [isMobile, setIsMobile] = useState(false);
-  // const [activeSection, setActiveSection] = useState("InvolvedIntro");
 
   useEffect(() => {
     const handleResize = () => {
@@ -156,7 +155,7 @@ export default function ProjectStatus() {
                 textAlign: "center",
               }}
             >
-              PROJECT OVERVIEW
+              Project Overview
             </div>
 
             <div

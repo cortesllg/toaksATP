@@ -30,7 +30,7 @@ export default function RootLayout({
         {/* Header with logo */}
         <header className="hero">
           <img
-            src="/images/city-header-logo.jpg"
+            src="/images/TO ATP Logo-FINAL.png"
             alt="City of Thousand Oaks Logo"
           />
         </header>
