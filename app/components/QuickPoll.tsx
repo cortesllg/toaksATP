@@ -6,6 +6,7 @@ interface InvolvedIntroProps {
 
 const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
   const [showThankYou, setShowThankYou] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]); // <-- NEW
 
   const pollOptions = [
     "People driving too fast",
@@ -22,13 +23,50 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
     "Other (please specify)",
   ];
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // prevent page reload
-    setShowThankYou(true); // show the Thank You modal
+  const handleCheckboxChange = (option: string) => {
+    setSelectedOptions((prevSelected) => {
+      if (prevSelected.includes(option)) {
+        return prevSelected.filter((item) => item !== option);
+      } else {
+        return [...prevSelected, option];
+      }
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (selectedOptions.length === 0) {
+      alert("Please select at least one option before submitting.");
+      return;
+    }
+
+    try {
+      await fetch("https://sheetdb.io/api/v1/4nu6h7j9p9z0u", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              Date: new Date().toISOString(),
+              SelectedOptions: selectedOptions.join(", "),
+            },
+          ],
+        }),
+      });
+
+      console.log("Data sent to SheetDB!");
+      setShowThankYou(true);
+      setSelectedOptions([]); // Clear after submit
+    } catch (error) {
+      console.error("Error submitting to SheetDB:", error);
+    }
   };
 
   const handleClose = () => {
-    setShowThankYou(false); // close the modal
+    setShowThankYou(false);
   };
 
   return (
@@ -86,6 +124,8 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
               type="checkbox"
               id={`option-${index}`}
               name="safety-concerns"
+              checked={selectedOptions.includes(option)}
+              onChange={() => handleCheckboxChange(option)} // <-- NEW
               style={{
                 width: "18px",
                 height: "18px",
@@ -136,7 +176,6 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
         </div>
       </form>
 
-      {/* Thank You Modal */}
       {showThankYou && (
         <div
           style={{
