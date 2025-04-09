@@ -80,7 +80,7 @@ const Contact = ({ isMobile }: ContactProps) => {
             backgroundColor: "#007a33",
             color: "white",
             fontWeight: "bold",
-            padding: "0.75rem 1.5rem",
+            padding: "0.5rem 1.5rem",
             fontSize: "14px",
             borderRadius: "9999px",
             border: "none",

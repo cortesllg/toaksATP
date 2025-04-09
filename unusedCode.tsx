@@ -492,3 +492,74 @@ return (
 //     </div>
 //   );
 // }
+
+
+// <aside
+// style={{
+//   flex: isMobile ? "unset" : "0 0 22%",
+//   backgroundColor: "white",
+//   padding: "1rem 1rem",
+//   fontSize: "14px",
+//   alignSelf: "flex-start",
+// }}
+// >
+// <h3
+//   className="sidebar-title"
+//   style={{
+//     textDecoration: "underline",
+//     textAlign: "center",
+//     color: "#007a33",
+//     fontWeight: "bold",
+//     textTransform: "uppercase",
+//     marginBottom: "1rem",
+//   }}
+// >
+//   Help Shape the Future
+// </h3>
+
+// <p
+//   style={{
+//     marginBottom: "1.5rem",
+//     color: "#4b5563",
+//     fontSize: "16px",
+//     fontWeight: "bold",
+//     lineHeight: "1.5",
+//     textAlign: "left",
+//   }}
+// >
+//   Your feedback is essential towards making improvements in Thousand
+//   Oaks. Take our quick survey to share your thoughts!
+// </p>
+
+// <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
+//   <Link href="https://www.surveylink.com" passHref legacyBehavior>
+//     <a
+//       style={{
+//         backgroundColor: "#007a33",
+//         color: "white",
+//         fontWeight: "bold",
+//         padding: "0.5rem 1.5rem",
+//         fontSize: "14px",
+//         borderRadius: "9999px",
+//         border: "none",
+//         cursor: "pointer",
+//         transition: "background-color 0.3s",
+//         textTransform: "uppercase",
+//         textDecoration: "none",
+//         display: "inline-block",
+//       }}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       onMouseOver={(e) =>
+//         (e.currentTarget.style.backgroundColor = "#005fa3")
+//       }
+//       onMouseOut={(e) =>
+//         (e.currentTarget.style.backgroundColor = "#007a33")
+//       }
+//     >
+//       Take the Survey
+//     </a>
+//   </Link>
+// </div>
+
+// </aside>

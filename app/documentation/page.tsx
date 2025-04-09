@@ -7,6 +7,7 @@ import "./documentation.css"; // Assuming you have a CSS file for styling
 import { useState, useEffect } from "react";
 
 export default function Documentation() {
+  //const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isMobile, setIsMobile] = useState(false);
   // const [activeSection, setActiveSection] = useState("InvolvedIntro");
 
@@ -73,63 +74,139 @@ export default function Documentation() {
               alignSelf: "flex-start",
             }}
           >
-            <h3
-              className="sidebar-title"
+            {/* Help Shape the Future Box */}
+            <div
               style={{
-                textDecoration: "underline",
-                textAlign: "center",
-                color: "#007a33",
-                fontWeight: "bold",
-                textTransform: "uppercase",
-                marginBottom: "1rem",
-              }}
-            >
-              Help Shape the Future
-            </h3>
-
-            <p
-              style={{
+                backgroundColor: "#f1fdf1",
+                padding: "1rem",
                 marginBottom: "1.5rem",
-                color: "#4b5563",
-                fontSize: "16px",
-                fontWeight: "bold",
-                lineHeight: "1.5",
-                textAlign: "left",
+                borderRadius: "8px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                display: "block", // Ensure each box is treated as a block-level element
               }}
             >
-              Your feedback is essential towards making improvements in Thousand
-              Oaks. Take our quick survey to share your thoughts!
-            </p>
+              <h3
+                className="sidebar-title"
+                style={{
+                  textDecoration: "underline",
+                  textAlign: "center",
+                  color: "#007a33",
+                  fontWeight: "bold",
+                  textTransform: "uppercase",
+                  marginBottom: "1rem",
+                }}
+              >
+                Help Shape the Future
+              </h3>
 
-            <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link href="https://www.surveylink.com" passHref legacyBehavior>
-                <a
-                  style={{
-                    backgroundColor: "#007a33",
-                    color: "white",
-                    fontWeight: "bold",
-                    padding: "0.5rem 1.5rem",
-                    fontSize: "14px",
-                    borderRadius: "9999px",
-                    border: "none",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    display: "inline-block",
-                  }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseOver={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#005fa3")
-                  }
-                  onMouseOut={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#007a33")
-                  }
-                >
-                  Take the Survey
-                </a>
-              </Link>
+              <p
+                style={{
+                  marginBottom: "1.5rem",
+                  color: "#4b5563",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  lineHeight: "1.5",
+                  textAlign: "left",
+                }}
+              >
+                Your feedback is essential towards making improvements in
+                Thousand Oaks. Take our quick survey to share your thoughts!
+              </p>
+
+              <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
+                <Link href="https://www.surveylink.com" passHref legacyBehavior>
+                  <a
+                    style={{
+                      backgroundColor: "#007a33",
+                      color: "white",
+                      fontWeight: "bold",
+                      padding: "0.5rem 1.5rem",
+                      fontSize: "14px",
+                      borderRadius: "9999px",
+                      border: "none",
+                      cursor: "pointer",
+                      transition: "background-color 0.3s",
+                      textTransform: "uppercase",
+                      textDecoration: "none",
+                      display: "inline-block",
+                    }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseOver={(e) =>
+                      (e.currentTarget.style.backgroundColor = "#005fa3")
+                    }
+                    onMouseOut={(e) =>
+                      (e.currentTarget.style.backgroundColor = "#007a33")
+                    }
+                  >
+                    Take the Survey
+                  </a>
+                </Link>
+              </div>
+            </div>
+
+            {/* Additional Box (Separate Box) */}
+            <div
+              style={{
+                backgroundColor: "#f9f9f9",
+                padding: "1rem",
+                borderRadius: "8px",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+                display: "block", // Ensure each box is treated as a block-level element
+              }}
+            >
+              <h3
+                className="sidebar-title"
+                style={{
+                  textDecoration: "underline",
+                  textAlign: "center",
+                  color: "#007a33",
+                  fontWeight: "bold",
+                  textTransform: "uppercase",
+                  marginBottom: "1rem",
+                }}
+              >
+                Additional Box Title
+              </h3>
+
+              <p
+                style={{
+                  marginBottom: "1.5rem",
+                  color: "#4b5563",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  lineHeight: "1.5",
+                  textAlign: "left",
+                }}
+              >
+                Add any content or information related to this box.
+              </p>
+
+              <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
+                {/* Add a Link or Button for additional action */}
+                <Link href="#" passHref legacyBehavior>
+                  <a
+                    style={{
+                      backgroundColor: "#007a33",
+                      color: "white",
+                      fontWeight: "bold",
+                      padding: "0.5rem 1.5rem",
+                      fontSize: "14px",
+                      borderRadius: "9999px",
+                      border: "none",
+                      cursor: "pointer",
+                      transition: "background-color 0.3s",
+                      textTransform: "uppercase",
+                      textDecoration: "none",
+                      display: "inline-block",
+                    }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Take Action
+                  </a>
+                </Link>
+              </div>
             </div>
           </aside>
 

@@ -7,6 +7,12 @@
  ****************************************************
  ***************************************************/
 
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Wrapper around the overview + events */
 .content-section {
     padding: 3rem 1.5rem;
