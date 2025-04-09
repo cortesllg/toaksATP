@@ -10,7 +10,7 @@ import Workshop from "../components/Workshop";
 import Contact from "../components/Contact";
 import QuickPoll from "../components/QuickPoll";
 
-import "./get-involved.css"; // Assuming this is the new CSS file
+import "./get-involved.css";
 
 export default function GetInvolved() {
   const [isMobile, setIsMobile] = useState(false);
@@ -61,13 +61,9 @@ export default function GetInvolved() {
       </div>
 
       {/* Main Content Section */}
-      <section
-        style={{
-          padding: "3rem 1.5rem",
-          backgroundColor: "#ffffff",
-        }}
-      >
+      <section className="content-section">
         <div
+          className="overview-grid"
           style={{
             display: "flex",
             flexDirection: isMobile ? "column" : "row",
@@ -75,7 +71,7 @@ export default function GetInvolved() {
             alignItems: "flex-start",
             gap: "2rem",
             padding: isMobile ? "0" : "0 5rem",
-            marginTop: "2rem",
+            marginTop: ".78rem",
             marginBottom: "2rem",
           }}
         >
@@ -102,17 +98,20 @@ export default function GetInvolved() {
             >
               How to Participate
             </h3>
+
             {participationItems.map((item, index) => (
               <div
                 key={index}
                 onClick={() => setActiveSection(item.section)}
                 style={{
-                  color: activeSection === item.section ? "#003f7d" : "#005fa3",
+                  color:
+                    activeSection === item.section ? "#003f7d" : "#005fa3",
                   fontWeight: activeSection === item.section ? "600" : "400",
-                  fontSize: "14px",
+                  fontSize: "16px",
                   cursor: "pointer",
                   marginBottom: "0.5rem",
                   transition: "color 0.2s",
+                  textAlign: "center",
                 }}
                 onMouseOver={(e) =>
                   ((e.target as HTMLDivElement).style.color = "#003f7d")
@@ -128,11 +127,26 @@ export default function GetInvolved() {
           </aside>
 
           {/* Center Content */}
-          <main className="center-content">
-            <div>
-              <h2 className="involved-title with-underline">
-                Get Involved in the Process
-              </h2>
+          <main
+            className="overview-text-group"
+            style={{
+              padding: isMobile ? "1rem" : "2rem 5rem",
+              maxWidth: "800px",
+              margin: "0 auto",
+            }}
+          >
+            <div
+              className="project-overview-title with-underline"
+              style={{
+                fontSize: "2rem",
+                fontWeight: "bold",
+                marginBottom: "1.5rem",
+                borderBottom: "2px solid #ccc",
+                paddingBottom: "0.5rem",
+                textAlign: "center",
+              }}
+            >
+              Get Involved in the Process
             </div>
 
             <div>

@@ -2,6 +2,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaXTwitter,
+  FaEnvelope,
+} from "react-icons/fa6";
 
 export const metadata: Metadata = {
   title: "City of Thousand Oaks Active Transportation Plan Update",
@@ -98,8 +105,10 @@ export default function RootLayout({
               </div>
             </div>
             <div className="footer-contact">
-              <h3>Thousand Oaks City Hall</h3>
+
               <p>
+                Thousand Oaks City Hall
+                <br />
                 2100 Thousand Oaks Blvd.
                 <br />
                 Thousand Oaks, CA 91362
@@ -109,20 +118,36 @@ export default function RootLayout({
                 <a href="mailto:city@toaks.gov">city@toaks.gov</a>
               </p>
               <div className="social-icons">
-                <a href="https://www.facebook.com/CityofThousandOaks/">
-                  <img src="/images/facebook-icon.png" alt="Facebook" />
+                <a
+                  href="https://www.facebook.com/CityofThousandOaks/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook size={24} />
                 </a>
-                <a href="https://www.instagram.com/cityofthousandoaks/">
-                  <img src="/images/instagram-icon.png" alt="Instagram" />
+                <a
+                  href="https://www.instagram.com/cityofthousandoaks/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram size={24} />
                 </a>
-                <a href="https://www.youtube.com/cityofthousandoaks">
-                  <img src="/images/youtube-icon.png" alt="YouTube" />
+                <a
+                  href="https://www.youtube.com/cityofthousandoaks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube size={24} />
                 </a>
-                <a href="https://x.com/cityofto">
-                  <img src="/images/twitter-icon.png" alt="Twitter" />
+                <a
+                  href="https://x.com/cityofto"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaXTwitter size={24} />
                 </a>
                 <a href="mailto:city@toaks.gov">
-                  <img src="/images/email-icon.png" alt="Email" />
+                  <FaEnvelope size={24} />
                 </a>
               </div>
             </div>

@@ -9,7 +9,7 @@ const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
       <p
         style={{
           fontSize: isMobile ? "15px" : "16px",
-          color: "#1f2937",
+          color: "#4b5563",
           fontWeight: 500,
           lineHeight: "1.75",
           textAlign: "left",
@@ -42,7 +42,17 @@ const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
           <strong>Visit Our Engagement Platform</strong>
         </li>
         <li>
-          <strong>Complete Our Online Survey</strong>
+          <strong>
+            Complete Our{" "}
+            <a
+              href="https://www.surveylink.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#005fa3", textDecoration: "underline" }}
+            >
+              Online Survey
+            </a>
+          </strong>
         </li>
         <li>
           <strong>Attend a Public Workshop</strong>
@@ -56,7 +66,7 @@ const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
       <p
         style={{
           fontSize: isMobile ? "15px" : "16px",
-          color: "#1f2937",
+          color: "#4b5563",
           fontWeight: 500,
           lineHeight: "1.75",
           textAlign: "left",

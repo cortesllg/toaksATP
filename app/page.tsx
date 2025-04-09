@@ -1,9 +1,23 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  const [activeSection, setActiveSection] = useState("InvolvedIntro");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
       <div className="image-container">

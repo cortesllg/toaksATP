@@ -162,7 +162,7 @@ export default function ProjectStatus() {
             <div
               className="project-overview-text"
               style={{
-                fontSize: "1.1rem",
+                fontSize: isMobile ? "15px" : "16px",
                 lineHeight: "1.8",
                 color: "#4b5563",
                 marginBottom: "2.5rem",

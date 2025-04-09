@@ -17,7 +17,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
       <p
         style={{
           fontSize: isMobile ? "15px" : "16px",
-          color: "#1f2937",
+          color: "#4b5563",
           fontWeight: 500,
           textAlign: "left",
           lineHeight: "1.75",
