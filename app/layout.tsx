@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -29,10 +30,12 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {/* Header with logo */}
         <header className="hero">
-          <img
-            src="/images/TO ATP Logo-FINAL.png"
-            alt="City of Thousand Oaks Logo"
-          />
+          <Link href={"/"}>
+            <img
+              src="/images/TO ATP Logo-FINAL.png"
+              alt="City of Thousand Oaks Logo"
+            />
+          </Link>
         </header>
 
         {/* Navigation buttons */}
@@ -90,7 +93,9 @@ export default function RootLayout({
                 <h3>Explore</h3>
                 <ul>
                   <li>
-                    <Link href="https://www.surveymonkey.com/r/VJGGYRX">Take the Survey</Link>
+                    <Link href="https://www.surveymonkey.com/r/VJGGYRX">
+                      Take the Survey
+                    </Link>
                   </li>
                   <li>
                     <Link href="/project-status">Project Events</Link>

@@ -61,10 +61,23 @@ export default function ProjectStatus() {
         </div>
       </div>
 
-      <div className="content-section">
+      <div className="content-section"
+        style={{ marginTop: "1.3rem"}}>
         {/* Move title outside the grid to align only with right content */}
 
-        <div className="overview-grid">
+        <div
+          className="overview-grid"
+          style={{
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            gap: "2rem",
+            padding: isMobile ? "0" : "0 5rem",
+            marginTop: ".78rem",
+            marginBottom: "2rem",
+          }}
+        >
           {/* Left Sidebar - Survey */}
           <aside
             style={{
@@ -105,7 +118,11 @@ export default function ProjectStatus() {
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link href="https://www.surveymonkey.com/r/VJGGYRX" passHref legacyBehavior>
+              <Link
+                href="https://www.surveymonkey.com/r/VJGGYRX"
+                passHref
+                legacyBehavior
+              >
                 <a
                   style={{
                     backgroundColor: "#007a33",

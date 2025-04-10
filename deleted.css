@@ -389,3 +389,71 @@ and the project status table
   min-width: 280px;
 }
 
+.image-container1 {
+  width: 100%;
+  height: 60vh;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+/* Triangle that goes on the bottom right of the picture*/
+.image-container1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #537744;     /* Shorter height (vertical) */
+  border-left: 80vw solid transparent; /* Longer length (horizontal) */
+  z-index: 5;
+}
+
+/* Overlay wrapper to hold both text layers */
+.overlay-text1 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 95%;
+  height: auto;
+  z-index: 10;
+}
+
+/* Large transparent heading in the background */
+.overlay-text1 .bg-heading {
+  position: absolute;
+  top: -60px;
+  left: clamp(0px, 2vw, 20px); /* avoid negative values */
+  font-size: clamp(40px, 10vw, 130px);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  white-space: normal; /* allow wrapping */
+  max-width: 90vw;     /* prevent overflow */
+  text-shadow: none;
+  line-height: 1;      /* tighter line spacing for big text */
+}
+
+/* Opaque foreground subtitle */
+.overlay-text1 .fg-subtitle {
+  position: relative;
+  font-size: clamp(18px, 2vw, 28px);
+  ;
+  top: 35px;
+  left: 0; /* Remove large left offset */
+  margin-left: clamp(10px, 6vw, 80px); /* Responsive left margin */
+  margin-right: clamp(10px, 6vw, 80px); /* Responsive right margin */
+  font-weight: normal;
+  font-family: "Georgia", serif;
+  color: white;
+  z-index: 2;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  word-break: break-word; /* Ensures long words break instead of overflowing */
+}
+
+

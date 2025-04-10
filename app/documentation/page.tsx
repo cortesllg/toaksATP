@@ -7,9 +7,7 @@ import "./documentation.css"; // Assuming you have a CSS file for styling
 import { useState, useEffect } from "react";
 
 export default function Documentation() {
-  //const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [isMobile, setIsMobile] = useState(false);
-  // const [activeSection, setActiveSection] = useState("InvolvedIntro");
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,20 +18,6 @@ export default function Documentation() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const pollOptions = [
-    "People driving too fast",
-    "Drivers not yielding or stopping at intersections",
-    "Distracted driving",
-    "Lack of connected sidewalks/bike paths",
-    "Poor maintenance of sidewalks/bike paths",
-    "Lack of crosswalks",
-    "Lack of protected bike lanes",
-    "Lack of lighting",
-    "Poor visibility at intersections",
-    "Lack of traffic violation enforcement",
-    "Potholes",
-    "Other (please specify)",
-  ];
   return (
     <div>
       <Head>
@@ -60,10 +44,22 @@ export default function Documentation() {
         </div>
       </div>
 
-      <div className="content-section">
+      <div className="content-section" style={{ marginTop: "1.3rem" }}>
         {/* Move title outside the grid to align only with right content */}
 
-        <div className="overview-grid">
+        <div
+          className="overview-grid"
+          style={{
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            justifyContent: "center",
+            alignItems: "flex-start",
+            gap: "2rem",
+            padding: isMobile ? "0" : "0 5rem",
+            marginTop: ".78rem",
+            marginBottom: "2rem",
+          }}
+        >
           {/* Left Sidebar - Survey */}
           <aside
             style={{
@@ -115,7 +111,11 @@ export default function Documentation() {
               </p>
 
               <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-                <Link href="https://www.surveymonkey.com/r/VJGGYRX" passHref legacyBehavior>
+                <Link
+                  href="https://www.surveymonkey.com/r/VJGGYRX"
+                  passHref
+                  legacyBehavior
+                >
                   <a
                     style={{
                       backgroundColor: "#007a33",

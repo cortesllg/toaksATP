@@ -42,11 +42,10 @@ The button overlay that is shared between all pages
 */
 
 /* Button container to align buttons horizontally */
+/* Button container to align buttons horizontally */
 .button-container {
   display: flex;
-  /* padding-left: 318px; Add left padding for spacing - match the city logo */
-  justify-content: center; /* Center the buttons horizontally NOT NEEDED (KEEP JUST IN CASE
-  /*gap: 20px; /* Add space between buttons IF NEEDED currently no gap to resemble OFFICIAL website */
+  justify-content: center; /* Center the buttons horizontally */
   margin-top: 8px; /* Add space between header and buttons */
   width: 100%; /* Ensure the container takes up full width */
 }
@@ -59,10 +58,8 @@ The button overlay that is shared between all pages
   align-items: center; /* Centers the content */
   background-color: white; /* White background */
   color: #000000; /* Green text color */
-  /*border: 2px solid #537744; /* Green border */
   padding: 12px 30px; /* Padding inside the button */
   width: 300px; /* Set width for consistency */
-  /*border-radius: 5px; /* Optional: Rounded corners for buttons */
   font-size: 20px; /* Font size */
   font-weight: normal; /* Bold text */
   text-decoration: none; /* Remove underline */
@@ -88,6 +85,25 @@ The button overlay that is shared between all pages
   margin-top: 8px; /* Add space between main text and description */
 }
 
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center-align items */
+  }
+
+  .cta-button {
+    width: 100%; /* Use most of the screen width */
+    padding: 10px 20px; /* Slightly smaller padding */
+    font-size: 16px; /* Slightly smaller main text */
+  }
+
+  .cta-description {
+    font-size: 0.75rem; /* Smaller secondary text */
+  }
+}
+
+
 /***************************************************
 ****************************************************
 
@@ -100,7 +116,7 @@ This is the structure of the image and text overlay and goal box
 .image-container {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 76vh;
   overflow: hidden;
 }
 
@@ -402,15 +418,6 @@ This is the structure of the mission statement
     font-size: 24px;
     display: none; /* or scale it down dramatically */
   }
-  .overlay-text {
-    font-size: 30px;
-  }
-  .overlay-text h2 {
-    font-size: 50px;
-  }
-  .overlay-text .p2 {
-    font-size: 25px;
-  }
   .goal-box,
   .description {
     width: 90%;
@@ -437,7 +444,7 @@ such as: project-status/page.tsx
 ****************************************************
 ****************************************************
 
-/* Container for the image */
+
 /* Container for the image */
 .image-container1 {
   width: 100%;

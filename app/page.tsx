@@ -31,9 +31,43 @@ export default function Home() {
             CITY OF THOUSAND OAKS ACTIVE TRANSPORTATION PLAN UPDATE
           </h2>
           <p className="p2 fade-in">Get involved by sharing your input!</p>
-          <Link href="https://www.surveymonkey.com/r/VJGGYRX" className="overlay-button fade-in">
-            TAKE THE SURVEY
-          </Link>
+            <div 
+            className="fade-in"
+            style={{textAlign: "center" }}>
+              <Link
+                href="https://www.surveymonkey.com/r/VJGGYRX"
+                passHref
+                legacyBehavior
+              >
+                <a
+                  style={{
+                    backgroundColor: "#007a33",
+                    color: "white",
+                    fontWeight: "bold",
+                    padding: "0.5rem 1.5rem",
+                    fontSize: "16px",
+                    borderRadius: "9999px",
+                    border: "none",
+                    cursor: "pointer",
+                    fontFamily: "Arial, sans-serif",
+                    transition: "background-color 0.3s",
+                    textTransform: "uppercase",
+                    textDecoration: "none",
+                    display: "inline-block",
+                  }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#005fa3")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#007a33")
+                  }
+                >
+                  Take the Survey
+                </a>
+              </Link>
+            </div>
         </div>
       </div>
 

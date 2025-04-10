@@ -82,7 +82,8 @@ export default function GetInvolved() {
               backgroundColor: "#e8f5e9",
               padding: "1rem 1rem",
               fontSize: "14px",
-              alignSelf: "flex-start",
+              alignSelf: isMobile ? "center" : "flex-start", // CENTER on mobile
+              width: isMobile ? "100%" : "auto", // Optional: give it a nice width on mobile
               transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
               boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)", // Added shadow for depth
               transition: "transform 0.3s ease, box-shadow 0.3s ease", // Smooth transition for visual effects
