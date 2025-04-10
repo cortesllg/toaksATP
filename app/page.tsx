@@ -28,7 +28,7 @@ export default function Home() {
         />
         <div className="overlay-text">
           <h2 className="fade-in">
-            CITY OF THOUSAND OAKS ACTIVE TRANSPORTATION PLAN UPDATE
+            CITY OF THOUSAND OAKS<br />ACTIVE TRANSPORTATION PLAN UPDATE
           </h2>
           <p className="p2 fade-in">Get involved by sharing your input!</p>
             <div 

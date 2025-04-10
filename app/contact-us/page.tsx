@@ -133,16 +133,20 @@ export default function ContactUs() {
             </div>
           </aside>
 
-          {/* Center Text Section with Contact-us section */}
-
+          {/* Center Text Section with Send a Message Section */}
           <div
             className="overview-text-group"
             style={{
               padding: isMobile ? "1rem" : "2rem 5rem",
               maxWidth: "800px",
               margin: "0 auto",
+              backgroundColor: "#e8f5e9", // Light background color
+              border: "2px solid #e8f5e9", // Soft border color for the section
+              borderRadius: "8px", // Rounded corners for a smooth effect
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)", // Light shadow for depth
             }}
           >
+            {/* Title */}
             <div
               className="project-overview-title with-underline"
               style={{
@@ -152,10 +156,13 @@ export default function ContactUs() {
                 borderBottom: "2px solid #ccc",
                 paddingBottom: "0.5rem",
                 textAlign: "center",
+                color: "#007a33",
+                letterSpacing: "1px",
               }}
             >
               Send a Message
             </div>
+
             {/* Intro Text */}
             <p
               style={{
@@ -167,8 +174,8 @@ export default function ContactUs() {
               }}
             >
               We'd love to hear from you! Please share your transportation
-              safety concerns or general suggestions to help shape the future of
-              active transportation in the City of Thousand Oaks.
+              safety concerns or suggestions to help shape the future of active
+              transportation in the City of Thousand Oaks.
             </p>
 
             {/* Contact Form */}
@@ -186,8 +193,10 @@ export default function ContactUs() {
                 style={{
                   padding: "0.75rem 1rem",
                   fontSize: "14px",
-                  border: "1px solid #d1d5db",
+                  border: "2px solid #d1d5db",
                   borderRadius: "0.375rem",
+                  backgroundColor: "#ffffff",
+                  outlineColor: "#007a33",
                 }}
               />
 
@@ -198,8 +207,10 @@ export default function ContactUs() {
                 style={{
                   padding: "0.75rem 1rem",
                   fontSize: "14px",
-                  border: "1px solid #d1d5db",
+                  border: "2px solid #d1d5db",
                   borderRadius: "0.375rem",
+                  backgroundColor: "#ffffff",
+                  outlineColor: "#007a33",
                 }}
               />
 
@@ -210,9 +221,11 @@ export default function ContactUs() {
                 style={{
                   padding: "1rem",
                   fontSize: "14px",
-                  border: "1px solid #d1d5db",
+                  border: "2px solid #d1d5db",
                   borderRadius: "0.375rem",
+                  backgroundColor: "#ffffff",
                   resize: "vertical",
+                  outlineColor: "#007a33",
                 }}
               />
 
@@ -228,22 +241,24 @@ export default function ContactUs() {
                   borderRadius: "9999px",
                   border: "none",
                   cursor: "pointer",
-                  transition: "background-color 0.3s",
+                  transition: "background-color 0.3s, transform 0.3s",
                   textTransform: "uppercase",
                   alignSelf: "center",
+                  boxShadow: "0 4px 14px rgba(0, 122, 51, 0.25)",
                 }}
-                onMouseOver={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#005fa3")
-                }
-                onMouseOut={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#007a33")
-                }
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#005fa3";
+                  e.currentTarget.style.transform = "scale(1.05)";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = "#007a33";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
               >
                 Submit
               </button>
             </form>
           </div>
-
         </div>
       </section>
     </div>

@@ -62,7 +62,7 @@ export default function ProjectStatus() {
       </div>
 
       <div className="content-section"
-        style={{ marginTop: "1.3rem"}}>
+        style={{ marginTop: "1.25rem"}}>
         {/* Move title outside the grid to align only with right content */}
 
         <div
