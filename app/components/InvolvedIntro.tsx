@@ -1,8 +1,9 @@
 interface InvolvedIntroProps {
   isMobile: boolean;
+  setActiveSection: (section: string) => void;
 }
 
-const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
+const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
   return (
     <div>
       {/* Intro Paragraph */}
@@ -15,6 +16,7 @@ const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
           textAlign: "left",
           maxWidth: "100%",
           margin: "0 auto",
+          marginTop: "4.5rem",
         }}
       >
         We believe the best ideas come from the people who live, work, and
@@ -39,13 +41,25 @@ const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
         }}
       >
         <li>
-          <strong>Visit Our Engagement Platform</strong>
+          <strong>
+            Visit Our{" "}
+            <span
+              onClick={() => setActiveSection("Engagement")}
+              style={{
+                color: "#005fa3",
+                textDecoration: "underline",
+                cursor: "pointer",
+              }}
+            >
+              Engagement Platform
+            </span>
+          </strong>
         </li>
         <li>
           <strong>
             Complete Our{" "}
             <a
-              href="https://www.surveylink.com"
+              href="https://www.surveymonkey.com/r/VJGGYRX"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#005fa3", textDecoration: "underline" }}
@@ -55,10 +69,35 @@ const InvolvedIntro = ({ isMobile }: InvolvedIntroProps) => {
           </strong>
         </li>
         <li>
-          <strong>Attend a Public Workshop</strong>
+          <strong>
+            Attend a{" "}
+            <span
+              onClick={() => setActiveSection("Workshop")}
+              style={{
+                color: "#005fa3",
+                textDecoration: "underline",
+                cursor: "pointer",
+              }}
+            >
+              Public Workshop
+            </span>
+          </strong>
         </li>
+
         <li>
-          <strong>Contact Us Directly</strong>
+          <strong>
+            <span
+              onClick={() => setActiveSection("Contact")}
+              style={{
+                color: "#005fa3",
+                textDecoration: "underline",
+                cursor: "pointer",
+              }}
+            >
+              Contact Us
+            </span>{" "}
+            Directly
+          </strong>
         </li>
       </ol>
 

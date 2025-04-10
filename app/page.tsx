@@ -31,7 +31,7 @@ export default function Home() {
             CITY OF THOUSAND OAKS ACTIVE TRANSPORTATION PLAN UPDATE
           </h2>
           <p className="p2 fade-in">Get involved by sharing your input!</p>
-          <Link href="/get-involved" className="overlay-button fade-in">
+          <Link href="https://www.surveymonkey.com/r/VJGGYRX" className="overlay-button fade-in">
             TAKE THE SURVEY
           </Link>
         </div>

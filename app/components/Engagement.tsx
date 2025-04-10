@@ -11,6 +11,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
         gap: "1.5rem",
         maxWidth: "100%",
         padding: isMobile ? "1rem" : "2rem",
+                  marginTop: "1rem",
       }}
     >
       {/* Intro Text */}
@@ -21,6 +22,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           fontWeight: 500,
           textAlign: "left",
           lineHeight: "1.75",
+          width: "100%",
         }}
       >
         Help us make Thousand Oaks safer and more connected by sharing your

@@ -61,7 +61,7 @@ The button overlay that is shared between all pages
   color: #000000; /* Green text color */
   /*border: 2px solid #537744; /* Green border */
   padding: 12px 30px; /* Padding inside the button */
-  width: 200px; /* Set width for consistency */
+  width: 300px; /* Set width for consistency */
   /*border-radius: 5px; /* Optional: Rounded corners for buttons */
   font-size: 20px; /* Font size */
   font-weight: normal; /* Bold text */
@@ -534,7 +534,10 @@ This is the structure of the footer
   margin: 0 auto;
 }
 
+
 .footer-logo img {
+  align-self: center;
+  margin-top: 15px;
   max-width: 250px;
 }
 
@@ -603,6 +606,15 @@ This is the structure of the footer
   height: 24px;
 }
 
+.footer-links ul {
+  list-style-type: disc; /* This will add the default bullet points */
+  padding-left: 20px; /* Adjusts the indentation of the bullets */
+}
+
+.footer-links li {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
 
 ul {
   list-style-type: none;

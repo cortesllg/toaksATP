@@ -79,10 +79,13 @@ export default function GetInvolved() {
           <aside
             style={{
               flex: isMobile ? "unset" : "0 0 22%",
-              backgroundColor: "white",
+              backgroundColor: "#e8f5e9",
               padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
+              boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)", // Added shadow for depth
+              transition: "transform 0.3s ease, box-shadow 0.3s ease", // Smooth transition for visual effects
             }}
           >
             <h3
@@ -104,22 +107,30 @@ export default function GetInvolved() {
                 key={index}
                 onClick={() => setActiveSection(item.section)}
                 style={{
-                  color:
-                    activeSection === item.section ? "#003f7d" : "#005fa3",
+                  color: activeSection === item.section ? "#313F58" : "#005fa3",
                   fontWeight: activeSection === item.section ? "600" : "400",
                   fontSize: "16px",
                   cursor: "pointer",
-                  marginBottom: "0.5rem",
-                  transition: "color 0.2s",
+                  marginBottom: "1.5rem", // Increased spacing for better separation
+                  transition:
+                    "color 0.3s, transform 0.3s, background-color 0.3s", // Added transition for hover background
                   textAlign: "center",
+                  padding: "0.5rem", // Added padding for touch targets
+                  borderRadius: "8px", // Rounded edges for items
                 }}
-                onMouseOver={(e) =>
-                  ((e.target as HTMLDivElement).style.color = "#003f7d")
-                }
-                onMouseOut={(e) =>
-                  ((e.target as HTMLDivElement).style.color =
-                    activeSection === item.section ? "#003f7d" : "#005fa3")
-                }
+                onMouseOver={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.color = "#003f7d";
+                  target.style.transform = "scale(1.05)";
+                  target.style.backgroundColor = "#f0fdf4"; // Light background color on hover
+                }}
+                onMouseOut={(e) => {
+                  const target = e.target as HTMLElement;
+                  target.style.color =
+                    activeSection === item.section ? "#003f7d" : "#005fa3";
+                  target.style.transform = "scale(1)";
+                  target.style.backgroundColor = "transparent"; // Reset background color
+                }}
               >
                 {item.label}
               </div>
@@ -151,8 +162,12 @@ export default function GetInvolved() {
 
             <div>
               {activeSection === "InvolvedIntro" && (
-                <InvolvedIntro isMobile={isMobile} />
+                <InvolvedIntro
+                  isMobile={isMobile}
+                  setActiveSection={setActiveSection}
+                />
               )}
+
               {activeSection === "Engagement" && (
                 <Engagement isMobile={isMobile} />
               )}

@@ -75,7 +75,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
 
         {/* Survey Button */}
         <a
-          href="#"
+          href="https://www.surveymonkey.com/r/VJGGYRX"
           target="_blank"
           rel="noopener noreferrer"
           style={{

@@ -79,6 +79,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
         alignSelf: "flex-start",
         marginLeft: isMobile ? "0" : "1.5rem",
         position: "relative",
+        transform: isMobile ? "none" : "translateX(-4.5rem)", // Adjust this to move it closer without affecting content size
       }}
     >
       <h3

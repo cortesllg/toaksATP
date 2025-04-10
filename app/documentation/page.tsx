@@ -72,6 +72,7 @@ export default function Documentation() {
               padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
             }}
           >
             {/* Help Shape the Future Box */}
@@ -114,7 +115,7 @@ export default function Documentation() {
               </p>
 
               <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-                <Link href="https://www.surveylink.com" passHref legacyBehavior>
+                <Link href="https://www.surveymonkey.com/r/VJGGYRX" passHref legacyBehavior>
                   <a
                     style={{
                       backgroundColor: "#007a33",

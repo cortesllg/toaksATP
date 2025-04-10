@@ -84,16 +84,13 @@ export default function RootLayout({
                   <li>
                     <Link href="/contact-us">Send a Message</Link>
                   </li>
-                  <li>
-                    <Link href="/feedback">Website Feedback</Link>
-                  </li>
                 </ul>
               </div>
               <div>
                 <h3>Explore</h3>
                 <ul>
                   <li>
-                    <Link href="/project-status">Ongoing Project Status</Link>
+                    <Link href="https://www.surveymonkey.com/r/VJGGYRX">Take the Survey</Link>
                   </li>
                   <li>
                     <Link href="/project-status">Project Events</Link>
@@ -105,14 +102,13 @@ export default function RootLayout({
               </div>
             </div>
             <div className="footer-contact">
-
-              <p>
+              <h3>
                 Thousand Oaks City Hall
                 <br />
                 2100 Thousand Oaks Blvd.
                 <br />
                 Thousand Oaks, CA 91362
-              </p>
+              </h3>
               <p>805.449.2100</p>
               <p>
                 <a href="mailto:city@toaks.gov">city@toaks.gov</a>
