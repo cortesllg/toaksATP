@@ -11,7 +11,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
         gap: "1.5rem",
         maxWidth: "100%",
         padding: isMobile ? "1rem" : "2rem",
-                  marginTop: "1rem",
+        marginTop: "1rem",
       }}
     >
       {/* Intro Text */}
@@ -25,22 +25,62 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           width: "100%",
         }}
       >
-        Help us make Thousand Oaks safer and more connected by sharing your
-        feedback on our interactive map! Mark locations where you have safety
-        concerns, suggest improvements, or highlight areas you love.
+        We want to hear from you! Share your experiences traveling on the
+        roadways within the City. We are working with StreetMap, developed by
+        SafeTREC and UC Berkeley, where you can mark locations where you've
+        encountered safety challenges—whether you're driving, walking, biking,
+        or using another mode of transportation. You can also highlight specific
+        concerns like speeding, poor lighting, or missing sidewalks. Check out
+        the user guide for how to report on the StreetMap:
       </p>
 
-      {/* Embedded Map */}
+      {/* User Guide and StreetMap Links */}
       <div
         style={{
-          width: "100%",
-          height: isMobile ? "400px" : "600px",
-          borderRadius: "8px",
-          overflow: "hidden",
-          border: "1px solid #d1d5db",
-          boxShadow: "0 2px 8px rgba(0, 0, 0, 0.08)",
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+          marginTop: "1rem",
         }}
-      ></div>
+      >
+        <a
+          href="https://streetstory.berkeley.edu/assets/Street%20Story%20Starter%20Guide%20FY24%20english.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "0.75rem 1.5rem",
+            backgroundColor: "#007a33",
+            color: "#ffffff",
+            textDecoration: "none",
+            borderRadius: "8px",
+            fontWeight: 600,
+            fontSize: isMobile ? "14px" : "16px",
+            textAlign: "center",
+          }}
+        >
+          View User Guide
+        </a>
+
+        <a
+          href="https://streetstory.berkeley.edu/city/thousands-oaks"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "0.75rem 1.5rem",
+            backgroundColor: "#007a33",
+            color: "#ffffff",
+            textDecoration: "none",
+            borderRadius: "8px",
+            fontWeight: 600,
+            fontSize: isMobile ? "14px" : "16px",
+            textAlign: "center",
+          }}
+        >
+          Go to StreetMap
+        </a>
+      </div>
 
       {/* Closing Statement */}
       <p
