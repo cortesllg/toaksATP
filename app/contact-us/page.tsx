@@ -155,6 +155,7 @@ export default function ContactUs() {
             >
               Send a Message
             </div>
+
             {/* Intro Text */}
             <p
               style={{
@@ -187,6 +188,25 @@ export default function ContactUs() {
                   fontSize: "14px",
                   border: "1px solid #d1d5db",
                   borderRadius: "0.375rem",
+                  transition: "all 0.3s ease",
+                }}
+                onFocus={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseOut={(e) => {
+                  if (document.activeElement !== e.currentTarget) {
+                    e.currentTarget.style.backgroundColor = "white";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }
                 }}
               />
 
@@ -199,6 +219,25 @@ export default function ContactUs() {
                   fontSize: "14px",
                   border: "1px solid #d1d5db",
                   borderRadius: "0.375rem",
+                  transition: "all 0.3s ease",
+                }}
+                onFocus={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseOut={(e) => {
+                  if (document.activeElement !== e.currentTarget) {
+                    e.currentTarget.style.backgroundColor = "white";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }
                 }}
               />
 
@@ -209,9 +248,29 @@ export default function ContactUs() {
                 style={{
                   padding: "1rem",
                   fontSize: "14px",
+                  fontFamily: "Arial, sans-serif",
                   border: "1px solid #d1d5db",
                   borderRadius: "0.375rem",
                   resize: "vertical",
+                  transition: "all 0.3s ease",
+                }}
+                onFocus={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseOut={(e) => {
+                  if (document.activeElement !== e.currentTarget) {
+                    e.currentTarget.style.backgroundColor = "white";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }
                 }}
               />
 
@@ -242,7 +301,6 @@ export default function ContactUs() {
               </button>
             </form>
           </div>
-
         </div>
       </section>
     </div>
