@@ -13,7 +13,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           color: "#4b5563",
           fontWeight: 500,
           lineHeight: "1.75",
-          textAlign: "left",
+          textAlign: "justify",
           maxWidth: "100%",
           margin: "0 auto",
           marginTop: "4.5rem",
@@ -64,7 +64,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
               rel="noopener noreferrer"
               style={{ color: "#005fa3", textDecoration: "underline" }}
             >
-              Online Survey
+              Feedback Form
             </a>
           </strong>
         </li>
@@ -108,7 +108,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           color: "#4b5563",
           fontWeight: 500,
           lineHeight: "1.75",
-          textAlign: "left",
+          textAlign: "justify",
           marginTop: "1.5rem",
           maxWidth: "100%",
         }}

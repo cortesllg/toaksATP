@@ -211,6 +211,7 @@ This is the structure of the image and text overlay and goal box
 
 .goal-text {
   color: #444;
+  text-align: justify;
   font-size: clamp(16px, 1.8vw, 20px); /* Shrinks gracefully on smaller screens */
   line-height: 1.6;
   flex: 1;
@@ -288,6 +289,7 @@ This is the structure of the description of what is an ATP
 
 .description-box {
   background-color: #313f58; /* Dark Blue */
+  text-align: justify;
   color: white; /* White text */
   font-weight: bold /* Bold text */;
   padding: 20px;
@@ -390,6 +392,7 @@ This is the structure of the mission statement
 }
 
 .mission-text {
+  text-align: justify;
   font-size: 20px;
   color: #444342;
   line-height: 1.6;

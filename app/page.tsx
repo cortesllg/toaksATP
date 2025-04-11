@@ -64,7 +64,7 @@ export default function Home() {
                     (e.currentTarget.style.backgroundColor = "#007a33")
                   }
                 >
-                  Take the Survey
+                  Take the Feedback Form
                 </a>
               </Link>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
           <h2>Active Transportation Plan Update?</h2>
           <div className="description-box">
             <p>
-              An active transportation plan update focuses specifically on
+              An Active Transportation Plan Update focuses specifically on
               improving infrastructure and policies related to non-motorized
               transportation, such as walking, cycling, and other forms of
               human-powered mobility. This update aims to revise strategies to

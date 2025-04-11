@@ -93,11 +93,11 @@ export default function Documentation() {
                 fontSize: "16px",
                 fontWeight: "bold",
                 lineHeight: "1.5",
-                textAlign: "left",
+                textAlign: "justify",
               }}
             >
               Your feedback is essential towards making improvements in Thousand
-              Oaks. Take our quick survey to share your thoughts!
+              Oaks. Take our quick feedback form to share your thoughts!
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
@@ -130,7 +130,7 @@ export default function Documentation() {
                     (e.currentTarget.style.backgroundColor = "#007a33")
                   }
                 >
-                  Take the Survey
+                  Take the Feedback Form
                 </a>
               </Link>
             </div>

@@ -19,7 +19,7 @@ const Contact = ({ isMobile }: ContactProps) => {
           fontSize: isMobile ? "15px" : "16px",
           color: "#4b5563",
           fontWeight: 500,
-          textAlign: "left",
+          textAlign: "justify",
           lineHeight: "1.75",
         }}
       >

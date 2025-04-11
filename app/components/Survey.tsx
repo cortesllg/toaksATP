@@ -19,12 +19,12 @@ const Survey = ({ isMobile }: SurveyProps) => {
           fontSize: isMobile ? "15px" : "16px",
           color: "#4b5563",
           fontWeight: 500,
-          textAlign: "left",
+          textAlign: "justify",
           lineHeight: "1.75",
         }}
       >
         Help shape the future of active transportation in the City of Thousand
-        Oaks! Take a few minutes to complete our online survey and share your
+        Oaks! Take a few minutes to complete our online feedback form and share your
         experiences, concerns, and ideas.
       </p>
 
@@ -49,7 +49,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             margin: 0,
           }}
         >
-          Survey Details
+          Feedback Form Details
         </h2>
 
         <p
@@ -99,7 +99,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             (e.currentTarget.style.backgroundColor = "#007a33")
           }
         >
-          Take the Survey
+          Take the Feedback Form
         </a>
       </div>
 

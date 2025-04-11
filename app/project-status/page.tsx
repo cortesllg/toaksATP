@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import "./project-status.css";
 import Survey from "../components/Survey";
+import Timeline from "../components/Timeline";
 import QuickPoll from "../components/QuickPoll";
 import { useState, useEffect } from "react";
 
@@ -55,8 +56,7 @@ export default function ProjectStatus() {
         <div className="overlay-text1">
           <div className="bg-heading">PROJECT STATUS</div>
           <div className="fg-subtitle">
-            See what is ongoing with the improvements in the City of Thousand
-            Oaks
+            See what is ongoing with the Active Transportation Plan Update in your City
           </div>
         </div>
       </div>
@@ -110,11 +110,11 @@ export default function ProjectStatus() {
                 fontSize: "16px",
                 fontWeight: "bold",
                 lineHeight: "1.5",
-                textAlign: "left",
+                textAlign: "justify",
               }}
             >
               Your feedback is essential towards making improvements in Thousand
-              Oaks. Take our quick survey to share your thoughts!
+              Oaks. Take our quick feedback form to share your thoughts!
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
@@ -147,7 +147,7 @@ export default function ProjectStatus() {
                     (e.currentTarget.style.backgroundColor = "#007a33")
                   }
                 >
-                  Take the Survey
+                  Take the Feedback Form
                 </a>
               </Link>
             </div>
@@ -183,13 +183,14 @@ export default function ProjectStatus() {
                 lineHeight: "1.8",
                 color: "#4b5563",
                 marginBottom: "2.5rem",
-                textAlign: "center",
+                textAlign: "justify",
               }}
             >
               The City of Thousand Oaks, in collaboration with LLG Engineers, a
               transportation consulting firm, is actively working on the Active
-              Transportation Plan (APT) Update. We encourage everyone to share
-              their input and help shape a stronger, more effective APT update
+              Transportation Plan Update. We encourage everyone to share
+              their input and help shape a stronger, more effective Active
+              Transportation Plan Update
               for the City.
             </div>
 
@@ -368,6 +369,8 @@ export default function ProjectStatus() {
           <QuickPoll isMobile={isMobile} />
         </div>
       </div>
+
+      <Timeline />
     </div>
   );
 }

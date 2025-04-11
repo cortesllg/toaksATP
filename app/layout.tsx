@@ -94,7 +94,7 @@ export default function RootLayout({
                 <ul>
                   <li>
                     <Link href="https://www.surveymonkey.com/r/VJGGYRX">
-                      Take the Survey
+                      Take the Feedback Form
                     </Link>
                   </li>
                   <li>
