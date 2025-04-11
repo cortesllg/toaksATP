@@ -6,7 +6,7 @@ interface InvolvedIntroProps {
 
 const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
   const [showThankYou, setShowThankYou] = useState(false);
-  const [selectedOptions, setSelectedOptions] = useState<string[]>([]); // <-- NEW
+  const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
 
   const pollOptions = [
     "People driving too fast",
@@ -59,7 +59,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
 
       console.log("Data sent to SheetDB!");
       setShowThankYou(true);
-      setSelectedOptions([]); // Clear after submit
+      setSelectedOptions([]);
     } catch (error) {
       console.error("Error submitting to SheetDB:", error);
     }
@@ -70,113 +70,119 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
   };
 
   return (
-    <aside
-      style={{
-        flex: isMobile ? "unset" : "0 0 22%",
-        backgroundColor: "white",
-        padding: "1rem",
-        fontSize: "14px",
-        alignSelf: "flex-start",
-        marginLeft: isMobile ? "0" : "1.5rem",
-        position: "relative",
-        transform: isMobile ? "none" : "translateX(-4.5rem)", // Adjust this to move it closer without affecting content size
-      }}
-    >
-      <h3
-        className="sidebar-title"
-        style={{ textDecoration: "underline", textAlign: "center" }}
-      >
-        Quick Poll
-      </h3>
-
-      <p
+    <>
+      <aside
         style={{
-          marginBottom: "1.5rem",
-          color: "#4b5563",
-          fontSize: "16px",
-          fontWeight: "bold",
-          lineHeight: "1.5",
-          textAlign: "left",
+          flex: isMobile ? "unset" : "0 0 22%",
+          backgroundColor: "white",
+          padding: "1rem",
+          fontSize: "14px",
+          alignSelf: "flex-start",
+          marginLeft: isMobile ? "0" : "1.5rem",
+          position: "relative",
+          transform: isMobile ? "none" : "translateX(-4.5rem)",
         }}
       >
-        What do you think are the top three (3) issues affecting your safety in
-        Thousand Oaks?
-      </p>
+        <h3
+          className="sidebar-title"
+          style={{
+            textDecoration: "underline",
+            textAlign: "center",
+          }}
+        >
+          Quick Poll
+        </h3>
 
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "0.75rem",
-        }}
-      >
-        {pollOptions.map((option, index) => (
-          <div
-            key={index}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              fontWeight: "500",
-              cursor: "pointer",
-            }}
-          >
-            <input
-              type="checkbox"
-              id={`option-${index}`}
-              name="safety-concerns"
-              checked={selectedOptions.includes(option)}
-              onChange={() => handleCheckboxChange(option)} // <-- NEW
+        <p
+          style={{
+            marginBottom: "1.5rem",
+            color: "#4b5563",
+            fontSize: "16px",
+            fontWeight: "bold",
+            lineHeight: "1.5",
+            textAlign: "left",
+          }}
+        >
+          What do you think are the top three (3) issues affecting your safety
+          in Thousand Oaks?
+        </p>
+
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
+          }}
+        >
+          {pollOptions.map((option, index) => (
+            <div
+              key={index}
               style={{
-                width: "18px",
-                height: "18px",
-                marginRight: "0.75rem",
-                border: "1.5px solid #d1d5db",
-                borderRadius: "0.25rem",
-                accentColor: "#16a34a",
-              }}
-            />
-            <label
-              htmlFor={`option-${index}`}
-              style={{
-                fontSize: "14px",
-                color: "#313F58",
-                margin: 0,
+                display: "flex",
+                alignItems: "center",
+                fontWeight: "500",
                 cursor: "pointer",
               }}
             >
-              {option}
-            </label>
+              <input
+                type="checkbox"
+                id={`option-${index}`}
+                name="safety-concerns"
+                checked={selectedOptions.includes(option)}
+                onChange={() => handleCheckboxChange(option)}
+                style={{
+                  width: "18px",
+                  height: "18px",
+                  marginRight: "0.75rem",
+                  border: "1.5px solid #d1d5db",
+                  borderRadius: "0.25rem",
+                  accentColor: "#16a34a",
+                }}
+              />
+              <label
+                htmlFor={`option-${index}`}
+                style={{
+                  fontSize: "14px",
+                  color: "#313F58",
+                  margin: 0,
+                  cursor: "pointer",
+                }}
+              >
+                {option}
+              </label>
+            </div>
+          ))}
+
+          <div style={{ paddingTop: "1.5rem", textAlign: "center" }}>
+            <button
+              type="submit"
+              style={{
+                backgroundColor: "#007a33",
+                color: "white",
+                fontWeight: "bold",
+                padding: "0.5rem 1.5rem",
+                fontSize: "14px",
+                borderRadius: "9999px",
+                border: "none",
+                cursor: "pointer",
+                transition: "background-color 0.3s",
+                textTransform: "uppercase",
+              }}
+              onMouseOver={(e) =>
+                (e.currentTarget.style.backgroundColor = "#005fa3")
+              }
+              onMouseOut={(e) =>
+                (e.currentTarget.style.backgroundColor = "#007a33")
+              }
+            >
+              Submit
+            </button>
           </div>
-        ))}
+        </form>
+      </aside>
 
-        <div style={{ paddingTop: "1.5rem", textAlign: "center" }}>
-          <button
-            type="submit"
-            style={{
-              backgroundColor: "#007a33",
-              color: "white",
-              fontWeight: "bold",
-              padding: "0.5rem 1.5rem",
-              fontSize: "14px",
-              borderRadius: "9999px",
-              border: "none",
-              cursor: "pointer",
-              transition: "background-color 0.3s",
-              textTransform: "uppercase",
-            }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#005fa3")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor = "#007a33")
-            }
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-
+      {/* Thank You Modal outside of <aside> */}
       {showThankYou && (
         <div
           style={{
@@ -199,6 +205,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
               borderRadius: "12px",
               textAlign: "center",
               boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+              animation: "fadeIn 0.3s ease", // Optional nice fade animation
             }}
           >
             <h2 style={{ marginBottom: "1rem", color: "#007a33" }}>
@@ -233,7 +240,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
           </div>
         </div>
       )}
-    </aside>
+    </>
   );
 };
 
