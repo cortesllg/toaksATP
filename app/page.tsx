@@ -28,46 +28,46 @@ export default function Home() {
         />
         <div className="overlay-text">
           <h2 className="fade-in">
-            CITY OF THOUSAND OAKS<br />ACTIVE TRANSPORTATION PLAN UPDATE
+            CITY OF THOUSAND OAKS
+            <br />
+            ACTIVE TRANSPORTATION PLAN UPDATE
           </h2>
           <p className="p2 fade-in">Get involved by sharing your input!</p>
-            <div 
-            className="fade-in"
-            style={{textAlign: "center" }}>
-              <Link
-                href="https://www.surveymonkey.com/r/VJGGYRX"
-                passHref
-                legacyBehavior
+          <div className="fade-in" style={{ textAlign: "center" }}>
+            <Link
+              href="https://www.surveymonkey.com/r/VJGGYRX"
+              passHref
+              legacyBehavior
+            >
+              <a
+                style={{
+                  backgroundColor: "#007a33",
+                  color: "white",
+                  fontWeight: "bold",
+                  padding: "0.5rem 1.5rem",
+                  fontSize: "16px",
+                  borderRadius: "9999px",
+                  border: "none",
+                  cursor: "pointer",
+                  fontFamily: "Arial, sans-serif",
+                  transition: "background-color 0.3s",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#005fa3")
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#007a33")
+                }
               >
-                <a
-                  style={{
-                    backgroundColor: "#007a33",
-                    color: "white",
-                    fontWeight: "bold",
-                    padding: "0.5rem 1.5rem",
-                    fontSize: "16px",
-                    borderRadius: "9999px",
-                    border: "none",
-                    cursor: "pointer",
-                    fontFamily: "Arial, sans-serif",
-                    transition: "background-color 0.3s",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    display: "inline-block",
-                  }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseOver={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#005fa3")
-                  }
-                  onMouseOut={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#007a33")
-                  }
-                >
-                  Take the Feedback Form
-                </a>
-              </Link>
-            </div>
+                Take the Feedback Form
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -76,11 +76,12 @@ export default function Home() {
           <span className="goal-title fade-in">OUR GOAL</span>
           <span className="divider"></span>
           <p className="goal-text fade-in">
-            <strong>What we strive for</strong> – to encourage more people to
-            use active transportation by creating a safer, more connected, and
-            sustainable environment for walking and cycling, while also
-            promoting health and reducing traffic congestion and environmental
-            impact for the City of Thousand Oaks.
+            <strong>What we strive for</strong> – to update and enhance Thousand
+            Oaks’ active transportation network to support all forms of
+            non-motorized mobility such as walking, biking, and rolling while
+            promoting public health, and reducing traffic congestion. Through
+            inclusive planning and community engagement, we aim to create a
+            safer, more connected, and equitable City for all.
           </p>
         </div>
       </section>
@@ -132,12 +133,12 @@ export default function Home() {
         <h2 className="mission-title">The Mission of Thousand Oaks</h2>
         <hr className="mission-divider" />
         <p className="mission-text">
-          The City of Thousand Oaks is committed to creating a safe, accessible,
-          and sustainable transportation network for everyone. The Active
-          Transportation Plan Update seeks to enhance mobility through improved
-          pedestrian and bicycle infrastructure, support healthy lifestyles, and
-          foster a more connected community — making active transportation a
-          viable and attractive option for all residents and visitors.
+          The City of Thousand Oaks is committed to advancing a safe, inclusive,
+          and environmentally responsible transportation system for all. The
+          Active Transportation Plan Update aims to improve mobility through an
+          integrated network of walkways, bikeways, and other non-motorized
+          options while promoting equity, public health, and community connectivity
+          while reducing traffic congestion.
         </p>
       </section>
     </div>

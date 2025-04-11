@@ -109,7 +109,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           <br />
           <br />
           <em>Note:</em> This community event may be photographed and/or
-          videotaped for possible use on the city (and library) websites and
+          videotaped for possible use on the City (and library) websites and
           social media. Your participation constitutes consent for the City to
           publish your likeness for publicity purposes.
           <br />

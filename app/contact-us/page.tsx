@@ -90,7 +90,7 @@ export default function ContactUs() {
                 fontSize: "16px",
                 fontWeight: "bold",
                 lineHeight: "1.5",
-                textAlign: "left",
+                textAlign: "justify",
               }}
             >
               Your feedback is essential towards making improvements in Thousand
@@ -161,7 +161,7 @@ export default function ContactUs() {
                 fontSize: isMobile ? "15px" : "16px",
                 color: "#4b5563",
                 fontWeight: 500,
-                textAlign: "left",
+                textAlign: "justify",
                 lineHeight: "1.75",
               }}
             >
