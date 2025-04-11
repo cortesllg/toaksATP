@@ -27,11 +27,11 @@ const Engagement = ({ isMobile }: EngagementProps) => {
       >
         We want to hear from you! Share your experiences traveling on the
         roadways within the City. We are working with StreetMap, developed by
-        SafeTREC and UC Berkeley, where you can mark locations where you've
-        encountered safety challenges—whether you're driving, walking, biking,
-        or using another mode of transportation. You can also highlight specific
-        concerns like speeding, poor lighting, or missing sidewalks. Check out
-        the user guide for how to report on the StreetMap:
+        SafeTREC and UC Berkeley, where you can mark locations where you&apos;ve
+        encountered safety challenges—whether you&apos;re driving, walking,
+        biking, or using another mode of transportation. You can also highlight
+        specific concerns like speeding, poor lighting, or missing sidewalks.
+        Check out the user guide for how to report on the StreetMap:
       </p>
 
       {/* User Guide and StreetMap Links */}

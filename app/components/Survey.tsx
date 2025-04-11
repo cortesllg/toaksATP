@@ -24,8 +24,8 @@ const Survey = ({ isMobile }: SurveyProps) => {
         }}
       >
         Help shape the future of active transportation in the City of Thousand
-        Oaks! Take a few minutes to complete our online feedback form and share your
-        experiences, concerns, and ideas.
+        Oaks! Take a few minutes to complete our online feedback form and share
+        your experiences, concerns, and ideas.
       </p>
 
       {/* Survey Details */}
@@ -70,7 +70,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
           }}
         >
           Your feedback will directly impact transportation planning efforts —
-          don't miss this opportunity to share your voice!
+          don&apos;t miss this opportunity to share your voice!
         </p>
 
         {/* Survey Button */}

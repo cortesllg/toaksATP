@@ -304,8 +304,8 @@ export default function ContactUs() {
               Thank You!
             </h2>
             <p>
-              Your message has been sent successfully. We'll get back to you
-              soon.
+              Your message has been sent successfully. We&apos;ll get back to
+              you soon.
             </p>
             <button
               onClick={closeModal}

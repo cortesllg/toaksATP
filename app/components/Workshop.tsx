@@ -129,7 +129,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           marginTop: "2rem",
         }}
       >
-        Let's work together to make Thousand Oaks safer and more connected!
+        Let&apos;s work together to make Thousand Oaks safer and more connected!
       </p>
     </div>
   );

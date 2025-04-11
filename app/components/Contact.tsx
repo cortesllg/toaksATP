@@ -59,7 +59,7 @@ const Contact = ({ isMobile }: ContactProps) => {
           lineHeight: "1.75",
         }}
       >
-        We'd love to hear from you! Please share your transportation safety
+        We&apos;d love to hear from you! Please share your transportation safety
         concerns or general suggestions to help shape the future of active
         transportation in the City of Thousand Oaks.
       </p>
@@ -231,8 +231,8 @@ const Contact = ({ isMobile }: ContactProps) => {
               Thank You!
             </h2>
             <p>
-              Your message has been sent successfully. We'll get back to you
-              soon.
+              Your message has been sent successfully. We&apos;ll get back to
+              you soon.
             </p>
             <button
               onClick={closeModal}
