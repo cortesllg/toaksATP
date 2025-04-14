@@ -3,6 +3,7 @@
 import Head from "next/head";
 import { useRef, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 import InvolvedIntro from "../components/InvolvedIntro";
 import Engagement from "../components/Engagement";
@@ -192,19 +193,22 @@ export default function GetInvolved() {
             </div>
 
             <div>
-              {activeSection === "InvolvedIntro" && (
-                <InvolvedIntro
-                  isMobile={isMobile}
-                  setActiveSection={setActiveSection}
-                />
-              )}
-
-              {activeSection === "Engagement" && (
-                <Engagement isMobile={isMobile} />
-              )}
-              {activeSection === "Survey" && <Survey isMobile={isMobile} />}
-              {activeSection === "Workshop" && <Workshop isMobile={isMobile} />}
-              {activeSection === "Contact" && <Contact isMobile={isMobile} />}
+              <Suspense fallback={<div>Loading...</div>}>
+                {activeSection === "InvolvedIntro" && (
+                  <InvolvedIntro
+                    isMobile={isMobile}
+                    setActiveSection={setActiveSection}
+                  />
+                )}
+                {activeSection === "Engagement" && (
+                  <Engagement isMobile={isMobile} />
+                )}
+                {activeSection === "Survey" && <Survey isMobile={isMobile} />}
+                {activeSection === "Workshop" && (
+                  <Workshop isMobile={isMobile} />
+                )}
+                {activeSection === "Contact" && <Contact isMobile={isMobile} />}
+              </Suspense>
             </div>
           </main>
 
