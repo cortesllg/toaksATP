@@ -35,7 +35,7 @@ export default function Home() {
           <p className="p2 fade-in">Get involved by sharing your input!</p>
           <div className="fade-in" style={{ textAlign: "center" }}>
             <Link
-              href="https://www.surveymonkey.com/r/VJGGYRX"
+              href="/get-involved?section=Survey"
               passHref
               legacyBehavior
             >
@@ -55,7 +55,6 @@ export default function Home() {
                   textDecoration: "none",
                   display: "inline-block",
                 }}
-                target="_blank"
                 rel="noopener noreferrer"
                 onMouseOver={(e) =>
                   (e.currentTarget.style.backgroundColor = "#005fa3")
@@ -64,7 +63,7 @@ export default function Home() {
                   (e.currentTarget.style.backgroundColor = "#007a33")
                 }
               >
-                Take the Feedback Form
+                Fill out the Feedback Form
               </a>
             </Link>
           </div>

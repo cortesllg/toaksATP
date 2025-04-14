@@ -119,7 +119,7 @@ export default function ProjectStatus() {
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
               <Link
-                href="https://www.surveymonkey.com/r/VJGGYRX"
+                href="/get-involved?section=Survey"
                 passHref
                 legacyBehavior
               >
@@ -138,7 +138,6 @@ export default function ProjectStatus() {
                     textDecoration: "none",
                     display: "inline-block",
                   }}
-                  target="_blank"
                   rel="noopener noreferrer"
                   onMouseOver={(e) =>
                     (e.currentTarget.style.backgroundColor = "#005fa3")
@@ -147,7 +146,7 @@ export default function ProjectStatus() {
                     (e.currentTarget.style.backgroundColor = "#007a33")
                   }
                 >
-                  Take the Feedback Form
+                  Fill out Feedback Form
                 </a>
               </Link>
             </div>

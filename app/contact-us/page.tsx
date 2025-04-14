@@ -131,7 +131,7 @@ export default function ContactUs() {
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
               <Link
-                href="https://www.surveymonkey.com/r/VJGGYRX"
+                href="/get-involved?section=Survey"
                 passHref
                 legacyBehavior
               >
@@ -150,7 +150,6 @@ export default function ContactUs() {
                     textDecoration: "none",
                     display: "inline-block",
                   }}
-                  target="_blank"
                   rel="noopener noreferrer"
                   onMouseOver={(e) =>
                     (e.currentTarget.style.backgroundColor = "#005fa3")
@@ -159,7 +158,7 @@ export default function ContactUs() {
                     (e.currentTarget.style.backgroundColor = "#007a33")
                   }
                 >
-                  Take the Feedback Form
+                  Fill out the Feedback Form
                 </a>
               </Link>
             </div>
@@ -211,6 +210,24 @@ export default function ContactUs() {
                   borderRadius: "0.375rem",
                   transition: "all 0.3s ease",
                 }}
+                onFocus={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseOut={(e) => {
+                  if (document.activeElement !== e.currentTarget) {
+                    e.currentTarget.style.backgroundColor = "white";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }
+                }}
               />
 
               {/* Email Field */}
@@ -225,6 +242,24 @@ export default function ContactUs() {
                   border: "1px solid #d1d5db",
                   borderRadius: "0.375rem",
                   transition: "all 0.3s ease",
+                }}
+                onFocus={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseOut={(e) => {
+                  if (document.activeElement !== e.currentTarget) {
+                    e.currentTarget.style.backgroundColor = "white";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }
                 }}
               />
 
@@ -242,6 +277,24 @@ export default function ContactUs() {
                   borderRadius: "0.375rem",
                   resize: "vertical",
                   transition: "all 0.3s ease",
+                }}
+                onFocus={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onBlur={(e) => {
+                  e.currentTarget.style.backgroundColor = "white";
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#c8e6c9";
+                  e.currentTarget.style.transform = "scale(1.02)";
+                }}
+                onMouseOut={(e) => {
+                  if (document.activeElement !== e.currentTarget) {
+                    e.currentTarget.style.backgroundColor = "white";
+                    e.currentTarget.style.transform = "scale(1)";
+                  }
                 }}
               />
 

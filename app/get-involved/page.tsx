@@ -1,7 +1,8 @@
 "use client";
 
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 import InvolvedIntro from "../components/InvolvedIntro";
 import Engagement from "../components/Engagement";
@@ -13,8 +14,12 @@ import QuickPoll from "../components/QuickPoll";
 import "./get-involved.css";
 
 export default function GetInvolved() {
+  const mainContentRef = useRef<HTMLDivElement | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [activeSection, setActiveSection] = useState("InvolvedIntro");
+
+  const searchParams = useSearchParams();
+  const sectionParam = searchParams.get("section");
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,6 +29,29 @@ export default function GetInvolved() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (
+      sectionParam &&
+      ["InvolvedIntro", "Engagement", "Survey", "Workshop", "Contact"].includes(
+        sectionParam
+      )
+    ) {
+      setActiveSection(sectionParam);
+
+      // Delay scroll slightly to wait for DOM/render
+      setTimeout(() => {
+        if (mainContentRef.current) {
+          const offset = isMobile ? 80 : 120; // adjust this for your header height
+          const top =
+            mainContentRef.current.getBoundingClientRect().top +
+            window.scrollY -
+            offset;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
+      }, 100); // delay to ensure content is rendered
+    }
+  }, [sectionParam, isMobile]);
 
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
@@ -55,7 +83,8 @@ export default function GetInvolved() {
         <div className="overlay-text1">
           <div className="bg-heading">GET INVOLVED</div>
           <div className="fg-subtitle">
-            Learn how you can get involved with Active Transportation Plan Update improvements in your City
+            Learn how you can get involved with Active Transportation Plan
+            Update improvements in your City
           </div>
         </div>
       </div>
@@ -140,6 +169,7 @@ export default function GetInvolved() {
 
           {/* Center Content */}
           <main
+            ref={mainContentRef}
             className="overview-text-group"
             style={{
               padding: isMobile ? "1rem" : "2rem 5rem",

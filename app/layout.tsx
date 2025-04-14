@@ -93,8 +93,8 @@ export default function RootLayout({
                 <h3>Explore</h3>
                 <ul>
                   <li>
-                    <Link href="https://www.surveymonkey.com/r/VJGGYRX">
-                      Take the Feedback Form
+                    <Link href="/get-involved?section=Survey">
+                      Fill out the Feedback Form
                     </Link>
                   </li>
                   <li>
