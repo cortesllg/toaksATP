@@ -73,34 +73,69 @@ const Survey = ({ isMobile }: SurveyProps) => {
           don&apos;t miss this opportunity to share your voice!
         </p>
 
-        {/* Survey Button */}
-        <a
-          href="https://www.surveymonkey.com/r/VJGGYRX"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Survey Buttons */}
+        <div
           style={{
-            backgroundColor: "#007a33",
-            color: "white",
-            fontWeight: "bold",
-            padding: "0.5rem 1.5rem",
-            fontSize: "14px",
-            borderRadius: "9999px",
-            textDecoration: "none",
-            textTransform: "uppercase",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.75rem",
             marginTop: "1rem",
-            display: "inline-block",
-            alignSelf: "center",
-            transition: "background-color 0.3s",
           }}
-          onMouseOver={(e) =>
-            (e.currentTarget.style.backgroundColor = "#005fa3")
-          }
-          onMouseOut={(e) =>
-            (e.currentTarget.style.backgroundColor = "#007a33")
-          }
         >
-          Take the Feedback Form
-        </a>
+          {/* English Survey Button */}
+          <a
+            href="https://www.surveymonkey.com/r/VJGGYRX"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              backgroundColor: "#007a33",
+              color: "white",
+              fontWeight: "bold",
+              padding: "0.5rem 1.5rem",
+              fontSize: "14px",
+              borderRadius: "9999px",
+              textDecoration: "none",
+              display: "inline-block",
+              alignSelf: "center",
+              transition: "background-color 0.3s",
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.backgroundColor = "#005fa3")
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.style.backgroundColor = "#007a33")
+            }
+          >
+            Fill Out The Feedback Form (English)
+          </a>
+
+          {/* Spanish Survey Button */}
+          <a
+            href="https://www.surveymonkey.com/r/MTJQKSB"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              backgroundColor: "#007a33",
+              color: "white",
+              fontWeight: "bold",
+              padding: "0.5rem 1.5rem",
+              fontSize: "14px",
+              borderRadius: "9999px",
+              textDecoration: "none",
+              display: "inline-block",
+              alignSelf: "center",
+              transition: "background-color 0.3s",
+            }}
+            onMouseOver={(e) =>
+              (e.currentTarget.style.backgroundColor = "#005fa3")
+            }
+            onMouseOut={(e) =>
+              (e.currentTarget.style.backgroundColor = "#007a33")
+            }
+          >
+            Llene El Formulario De Comentarios (Español)
+          </a>
+        </div>
       </div>
 
       {/* Call to Action */}
