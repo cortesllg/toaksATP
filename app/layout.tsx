@@ -32,7 +32,7 @@ export default function RootLayout({
         <header className="hero">
           <Link href={"/"}>
             <img
-              src="/images/TO ATP Logo-FINAL.png"
+              src="/images/ATP 2025@1080x-100.jpg"
               alt="City of Thousand Oaks Logo"
             />
           </Link>
@@ -70,7 +70,7 @@ export default function RootLayout({
           <div className="footer-container">
             <div className="footer-logo">
               <img
-                src="/images/admin-logo-white.png"
+                src="/images/ATP 2025@1080x.png"
                 alt="City of Thousand Oaks"
               />
             </div>
