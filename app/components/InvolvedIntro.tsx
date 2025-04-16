@@ -51,7 +51,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
                 cursor: "pointer",
               }}
             >
-              Engagement Platform
+              Online Comment Map
             </span>
           </strong>
         </li>

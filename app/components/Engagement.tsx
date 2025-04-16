@@ -46,7 +46,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
         }}
       >
         <a
-          href="https://streetstory.berkeley.edu/assets/Street%20Story%20Starter%20Guide%20FY24%20english.pdf"
+          href="/User-Guide-for-Street-Map-for-Thousand-Oaks.pdf"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -64,7 +64,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
         </a>
 
         <a
-          href="https://streetstory.berkeley.edu/city/thousands-oaks"
+          href="https://streetstory.berkeley.edu/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
