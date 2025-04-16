@@ -24,12 +24,23 @@ header.hero {
 
 header.hero img {
   max-height: 129px; /* Limit the size of the image */
-  max-width: 120%; /* Ensure image scales responsively */
+  max-width: 100%; /* Ensure image scales responsively */
 }
 
 section {
   padding: 20px;
   margin: 20px 0;
+}
+
+.translate-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.translate-button .goog-te-gadget {
+  font-size: 14px;
 }
 
 /***************************************************
@@ -101,8 +112,39 @@ The button overlay that is shared between all pages
   .cta-description {
     font-size: 0.75rem; /* Smaller secondary text */
   }
-}
+  .overlay-text {
+    transform: translate(-50%, -80%) !important; /* Adjust vertical centering */
+    padding: 10px 15px;
+    font-size: 1rem;
+    max-width: 90%;
+    align-self: auto;
+  }
 
+  .overlay-text h2 {
+    font-size: 1rem;
+  }
+
+  .overlay-text .p2 {
+    font-size: 0.7rem;
+  }
+
+  .overlay-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .goal-box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    transform: translate(-50%, -35%) !important;
+    padding: 10px;
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+  }
+}
 
 /***************************************************
 ****************************************************
@@ -212,7 +254,11 @@ This is the structure of the image and text overlay and goal box
 .goal-text {
   color: #444;
   text-align: justify;
-  font-size: clamp(16px, 1.8vw, 20px); /* Shrinks gracefully on smaller screens */
+  font-size: clamp(
+    16px,
+    1.8vw,
+    20px
+  ); /* Shrinks gracefully on smaller screens */
   line-height: 1.6;
   flex: 1;
   margin: 0;
@@ -226,8 +272,6 @@ This is the structure of the image and text overlay and goal box
   width: 0.1px;
 }
 
-
-/* Optional: Changes the 'What we strive for to green */
 .goal-text strong {
   color: #537744; /* Same green as .goal-title */
 }
@@ -426,8 +470,6 @@ This is the structure of the mission statement
   }
 }
 
-
-
 /* Style the image itself */
 .header-image {
   width: 100%; /* Ensure the image spans the full width of the container */
@@ -435,7 +477,6 @@ This is the structure of the mission statement
   object-fit: cover; /* Cover the container while maintaining the aspect ratio */
   display: block; /* Remove any unwanted space below the image */
 }
-
 
 /***************************************************
 ****************************************************
@@ -465,7 +506,7 @@ such as: project-status/page.tsx
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 50px solid #537744;     /* Shorter height (vertical) */
+  border-bottom: 50px solid #537744; /* Shorter height (vertical) */
   border-left: 80vw solid transparent; /* Longer length (horizontal) */
   z-index: 5;
 }
@@ -492,9 +533,9 @@ such as: project-status/page.tsx
   color: rgba(255, 255, 255, 0.2);
   z-index: 1;
   white-space: normal; /* allow wrapping */
-  max-width: 90vw;     /* prevent overflow */
+  max-width: 90vw; /* prevent overflow */
   text-shadow: none;
-  line-height: 1;      /* tighter line spacing for big text */
+  line-height: 1; /* tighter line spacing for big text */
   word-break: break-word; /* Ensures long words break instead of overflowing */
 }
 
@@ -502,7 +543,6 @@ such as: project-status/page.tsx
 .overlay-text1 .fg-subtitle {
   position: relative;
   font-size: clamp(18px, 2vw, 28px);
-  ;
   top: 35px;
   left: 0; /* Remove large left offset */
   margin-left: clamp(10px, 6vw, 80px); /* Responsive left margin */
@@ -515,8 +555,6 @@ such as: project-status/page.tsx
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-break: break-word; /* Ensures long words break instead of overflowing */
 }
-
-
 
 /***************************************************
 ****************************************************
@@ -544,11 +582,11 @@ This is the structure of the footer
   margin: 0 auto;
 }
 
-
 .footer-logo img {
   align-self: center;
   margin-top: 15px;
-  max-width: 370px;
+  max-height: 108px; /* Limit the size of the image */
+  max-width: 100%; /* Ensure image scales responsively */
 }
 
 .footer-links {
@@ -603,7 +641,7 @@ This is the structure of the footer
 
 .social-icons a {
   margin-right: 10px;
-  color: #A3C7C7;
+  color: #a3c7c7;
   transition: color 0.3s ease;
 }
 

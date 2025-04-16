@@ -57,14 +57,23 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
         </li>
         <li>
           <strong>
-            Complete Our{" "}
+            Complete Our{" "} 
             <a
               href="https://www.surveymonkey.com/r/VJGGYRX"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#005fa3", textDecoration: "underline" }}
             >
-              Feedback Form
+              Feedback Form (English)
+            </a>
+            /{" "}
+            <a
+              href="https://es.surveymonkey.com/r/MTJQKSB"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#005fa3", textDecoration: "underline" }}
+            >
+              Formulario De Comentarios (Español)
             </a>
           </strong>
         </li>

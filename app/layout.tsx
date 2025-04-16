@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
+        
         {/* Header with logo */}
         <header className="hero">
           <Link href={"/"}>
@@ -114,10 +115,6 @@ export default function RootLayout({
                 <br />
                 Thousand Oaks, CA 91362
               </h3>
-              <p>805.449.2100</p>
-              <p>
-                <a href="mailto:city@toaks.gov">city@toaks.gov</a>
-              </p>
               <div className="social-icons">
                 <a
                   href="https://www.facebook.com/CityofThousandOaks/"
@@ -146,9 +143,6 @@ export default function RootLayout({
                   rel="noopener noreferrer"
                 >
                   <FaXTwitter size={24} />
-                </a>
-                <a href="mailto:city@toaks.gov">
-                  <FaEnvelope size={24} />
                 </a>
               </div>
             </div>

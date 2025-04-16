@@ -69,7 +69,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          🕙 <strong>Time:</strong> 10:00 AM – 12:00 PM
+          🕙 <strong>Time:</strong> 10:00 AM – 2:00 PM
         </p>
 
         <p

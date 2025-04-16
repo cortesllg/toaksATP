@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const timelineEvents = [
   { title: "Project Kickoff", date: "March 2025", completed: true },
@@ -23,25 +23,32 @@ const timelineEvents = [
 
 const Timeline = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const [lineHeight, setLineHeight] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    handleResize();
+
+    handleResize(); // initial check
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    if (timelineRef.current) {
+      const timelineBox = timelineRef.current.getBoundingClientRect();
+      setLineHeight(timelineBox.height - 60); // adjust if needed
+    }
+  }, [isMobile]);
 
   const completedIndex =
     timelineEvents.findIndex((e) => !e.completed && !e.current) === -1
       ? timelineEvents.length
       : timelineEvents.findIndex((e) => !e.completed && !e.current);
 
-  const lineHeight = (timelineEvents.length - 1) * 110; // Fix line height based on events count
-
-  // Adjust the line length for mobile view
-  const adjustedLineHeight = isMobile ? lineHeight * 1.07 : lineHeight;
+  const progressHeight = (completedIndex / timelineEvents.length) * lineHeight;
 
   return (
     <div
@@ -51,9 +58,9 @@ const Timeline = () => {
         borderRadius: "12px",
         boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
         maxWidth: "900px",
-        margin: "0 auto", // Center the timeline
+        margin: "0 auto",
         marginBottom: "2rem",
-        transform: "translateY(-3rem)", // Move the box up by 20px (adjust this value)
+        transform: "translateY(-3rem)",
       }}
     >
       <h2
@@ -61,17 +68,13 @@ const Timeline = () => {
           textAlign: "center",
           fontSize: "1.75rem",
           marginBottom: "2rem",
-            color: "#007c41",
+          color: "#007c41",
         }}
       >
         Project Timeline
       </h2>
 
-      <div
-        style={{
-          position: "relative",
-        }}
-      >
+      <div style={{ position: "relative" }} ref={timelineRef}>
         {/* Base Timeline Line */}
         <div
           style={{
@@ -79,7 +82,7 @@ const Timeline = () => {
             top: "0",
             left: "50%",
             width: "4px",
-            height: `${adjustedLineHeight}px`, // Dynamically adjust height to the last event
+            height: `${lineHeight}px`,
             backgroundColor: "#ddd",
             zIndex: 1,
             transform: "translateX(-50%)",
@@ -93,9 +96,7 @@ const Timeline = () => {
             top: "0",
             left: "50%",
             width: "4px",
-            height: `${
-              (completedIndex / timelineEvents.length) * adjustedLineHeight
-            }px`, // Adjust progress line height
+            height: `${progressHeight}px`,
             backgroundColor: "#5a8f00",
             zIndex: 2,
             transform: "translateX(-50%)",
@@ -112,10 +113,9 @@ const Timeline = () => {
               style={{
                 position: "relative",
                 width: "100%",
-                marginBottom: "30px", // Adjust spacing between events
+                marginBottom: "30px",
               }}
             >
-              {/* Event Box */}
               <div
                 style={{
                   position: "relative",
@@ -128,11 +128,12 @@ const Timeline = () => {
                   zIndex: 3,
                 }}
               >
+                {/* Circle Dot */}
                 <div
                   style={{
                     position: "absolute",
                     top: "50%",
-                    left: "-16px", // Adjust to place the dot overlapping the line
+                    left: "-16px",
                     transform: "translateY(-50%)",
                     width: "24px",
                     height: "24px",
@@ -167,7 +168,7 @@ const Timeline = () => {
                   )}
                 </div>
 
-                {/* Info block */}
+                {/* Text */}
                 <div style={{ textAlign: "center" }}>
                   {isCurrent && (
                     <div
