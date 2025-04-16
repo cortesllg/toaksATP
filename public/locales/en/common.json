@@ -1,0 +1,14 @@
+{
+    "title": "Welcome to Our Website",
+    "greeting": "Hello, how are you?",
+    "footerText": "All rights reserved.",
+    "home": {
+      "cta": "Click here to get started",
+      "intro": "This is the homepage of our website."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "formTitle": "Fill out the form to get in touch"
+    }
+  }
+  

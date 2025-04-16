@@ -336,6 +336,7 @@ This is the structure of the description of what is an ATP
   text-align: justify;
   color: white; /* White text */
   font-weight: bold /* Bold text */;
+  font-size: 18px; /* Font size */
   padding: 20px;
   width: 100%;
   max-width: 800px; /* Keep it from stretching too wide */

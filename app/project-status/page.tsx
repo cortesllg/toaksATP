@@ -261,7 +261,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> 10:00 AM – 12:00 PM
+                  🕙 <strong>Time:</strong> 10:00 AM – 2:00 PM
                 </div>
 
                 <div

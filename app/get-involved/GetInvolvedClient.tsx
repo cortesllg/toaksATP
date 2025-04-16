@@ -53,7 +53,7 @@ export default function GetInvolvedClient() {
 
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
-    { label: "Engagement Platform", section: "Engagement" },
+    { label: "Online Comment Map", section: "Engagement" },
     { label: "Online Feedback Form", section: "Survey" },
     { label: "Public Workshops", section: "Workshop" },
     { label: "Contact Us", section: "Contact" },
@@ -70,8 +70,8 @@ export default function GetInvolvedClient() {
         <div className="overlay-text1">
           <div className="bg-heading">GET INVOLVED</div>
           <div className="fg-subtitle">
-            Learn how you can get involved with Active Transportation Plan
-            Update improvements in your City
+            Learn how you can get involved with the Active Transportation Plan
+            Update in your City
           </div>
         </div>
       </div>

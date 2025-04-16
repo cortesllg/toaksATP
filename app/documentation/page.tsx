@@ -101,11 +101,7 @@ export default function Documentation() {
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link
-                href="/get-involved?section=Survey"
-                passHref
-                legacyBehavior
-              >
+              <Link href="/get-involved?section=Survey" passHref legacyBehavior>
                 <a
                   style={{
                     backgroundColor: "#007a33",
@@ -165,13 +161,12 @@ export default function Documentation() {
                 lineHeight: "1.8",
                 color: "#4b5563",
                 marginBottom: "2.5rem",
-                textAlign: "center",
+                textAlign: "justify",
               }}
             >
-              We are currently preparing the Active Transportation Plan Update
-              Plan for this project. Please check in back later to access the
-              latest report and resources related to to our transportation plan
-              initiatives.
+              We are currently preparing the Active Transportation Plan Update.
+              Please check in back later to access the latest report and
+              resources related to to our transportation plan initiatives.
             </div>
 
             {/* Events Section */}
@@ -226,7 +221,7 @@ export default function Documentation() {
                 </p>
 
                 {/* 📄 Final Report Box Inserted Here */}
-                <div
+                {/* <div
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -282,7 +277,7 @@ export default function Documentation() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <p
                   className="documentation-subtext"

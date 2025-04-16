@@ -1,0 +1,13 @@
+{
+    "title": "Bienvenue sur notre site Web",
+    "greeting": "Bonjour, comment ça va?",
+    "footerText": "Tous droits réservés.",
+    "home": {
+      "cta": "Cliquez ici pour commencer",
+      "intro": "Ceci est la page d'accueil de notre site Web."
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "formTitle": "Remplissez le formulaire pour nous contacter"
+    }
+  }

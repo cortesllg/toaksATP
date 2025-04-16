@@ -12,15 +12,15 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
     "People driving too fast",
     "Drivers not yielding or stopping at intersections",
     "Distracted driving",
-    "Lack of connected sidewalks/bike paths",
-    "Poor maintenance of sidewalks/bike paths",
-    "Lack of crosswalks",
-    "Lack of protected bike lanes",
+    "Lack of connected sidewalks/bikeways",
+    "Poor maintenance of sidewalks/bikeways",
+    "Lack of electronically enchanced crosswalks",
+    "Lack of separated bike lanes",
     "Lack of lighting",
     "Poor visibility at intersections",
     "Lack of traffic violation enforcement",
     "Potholes",
-    "Other (please specify)",
+    "Other",
   ];
 
   const handleCheckboxChange = (option: string) => {
@@ -100,7 +100,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
             fontSize: "16px",
             fontWeight: "bold",
             lineHeight: "1.5",
-            textAlign: "left",
+            textAlign: "justify",
           }}
         >
           What do you think are the top three (3) issues affecting your safety
