@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import GoogleTranslate from "./components/GoogleTranslate";
 
 import {
   FaFacebook,
@@ -28,10 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        
-        {/* Header with logo */}
+        {/* Header with logo + Translation button on top right*/}
         <header className="hero">
-          <Link href={"/"}>
+          <div className="translate-button">
+            <GoogleTranslate />
+          </div>
+          <Link href="/">
             <img
               src="/images/ATP 2025@1080x-100.jpg"
               alt="City of Thousand Oaks Logo"

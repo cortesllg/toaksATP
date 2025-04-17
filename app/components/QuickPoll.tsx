@@ -134,6 +134,8 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
                 style={{
                   width: "18px",
                   height: "18px",
+                  minWidth: "18px",
+                  minHeight: "18px",
                   marginRight: "0.75rem",
                   border: "1.5px solid #d1d5db",
                   borderRadius: "0.25rem",

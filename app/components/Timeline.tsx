@@ -23,6 +23,7 @@ const timelineEvents = [
 
 const Timeline = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isTranslated, setIsTranslated] = useState(false);
   const timelineRef = useRef<HTMLDivElement>(null);
   const [lineHeight, setLineHeight] = useState(0);
 
@@ -36,13 +37,37 @@ const Timeline = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Recalculate timeline height on resize or translation
   useEffect(() => {
-    if (timelineRef.current) {
-      const timelineBox = timelineRef.current.getBoundingClientRect();
-      setLineHeight(timelineBox.height - 60); // adjust if needed
-    }
-  }, [isMobile]);
+    const updateTimelineHeight = () => {
+      if (timelineRef.current) {
+        const timelineBox = timelineRef.current.getBoundingClientRect();
+        setLineHeight(timelineBox.height - 60); // adjust as needed
+      }
+    };
 
+    updateTimelineHeight(); // initial set
+
+    const observer = new MutationObserver(() => {
+      setIsTranslated(true); // track translation state
+      updateTimelineHeight(); // recalculate on content change
+    });
+
+    const targetNode = document.body;
+    if (targetNode) {
+      observer.observe(targetNode, {
+        childList: true,
+        subtree: true,
+        characterData: true,
+      });
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isMobile]); // recalculates on mobile state change
+
+  // Use this to calculate the progress height
   const completedIndex =
     timelineEvents.findIndex((e) => !e.completed && !e.current) === -1
       ? timelineEvents.length

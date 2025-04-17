@@ -148,7 +148,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            Next BAT Meeting Details
+            Next Bicycle Advisory Team (BAT) Meeting Details
           </h2>
 
           <p
@@ -194,14 +194,9 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             style={{
               fontSize: "15px",
               color: "#4b5563",
-              marginTop: "1.5rem",
               lineHeight: "1.7",
             }}
           >
-            <strong>No registration needed</strong> — just show up and get
-            involved!
-            <br />
-            <br />
             The Bicycle Avisory Team (BAT) meeting begins at 4:00 PM in the Park Room
             at 2100 East Thousand Oaks Boulevard 3rd Floor.
             <br />

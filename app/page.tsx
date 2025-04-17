@@ -28,17 +28,14 @@ export default function Home() {
         />
         <div className="overlay-text">
           <h2 className="fade-in">
-            CITY OF THOUSAND OAKS
+            CITY OF <span className="notranslate"> THOUSAND OAKS</span>
             <br />
             ACTIVE TRANSPORTATION PLAN UPDATE
           </h2>
+
           <p className="p2 fade-in">Get involved by sharing your input!</p>
           <div className="fade-in" style={{ textAlign: "center" }}>
-            <Link
-              href="/get-involved?section=Survey"
-              passHref
-              legacyBehavior
-            >
+            <Link href="/get-involved?section=Survey" passHref legacyBehavior>
               <a
                 style={{
                   backgroundColor: "#007a33",
@@ -72,7 +69,7 @@ export default function Home() {
 
       <section className="goal-box">
         <div className="goal-content">
-          <span className="goal-title fade-in">OUR GOAL</span>
+          <span className="goal-title fade-in">OUR <br /> GOAL</span>
           <span className="divider"></span>
           <p className="goal-text fade-in">
             <strong>What we strive for</strong> – To update and enhance Thousand
@@ -106,8 +103,8 @@ export default function Home() {
           <h2>Active Transportation Plan?</h2>
           <div className="description-box">
             <p>
-              An Active Transportation Plan focuses specifically on
-              improving infrastructure and policies related to non-motorized
+              An Active Transportation Plan focuses specifically on improving
+              infrastructure and policies related to non-motorized
               transportation, such as walking, cycling, and other forms of
               human-powered mobility. This update aims to revise strategies to
               enhance the safety, accessibility, and convenience of active
@@ -132,12 +129,12 @@ export default function Home() {
         <h2 className="mission-title">The Mission of Thousand Oaks</h2>
         <hr className="mission-divider" />
         <p className="mission-text">
-          The City of Thousand Oaks is committed to advancing a safer, more inclusive,
-          and environmentally responsible transportation system for all. The
-          Active Transportation Plan Update aims to improve mobility through an
-          integrated network of walkways, bikeways, and other non-motorized
-          options while promoting equity, public health, and community connectivity
-          while reducing traffic congestion.
+          The City of Thousand Oaks is committed to advancing a safer, more
+          inclusive, and environmentally responsible transportation system for
+          all. The Active Transportation Plan Update aims to improve mobility
+          through an integrated network of walkways, bikeways, and other
+          non-motorized options while promoting equity, public health, and
+          community connectivity while reducing traffic congestion.
         </p>
       </section>
     </div>

@@ -7,18 +7,22 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
 i18n
-  .use(HttpBackend) // Load translations via HTTP
-  .use(LanguageDetector) // Detect user language
-  .use(initReactI18next) // Bind react-i18next to i18n
+  .use(HttpBackend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     fallbackLng: 'en',
     supportedLngs: ['en', 'es', 'fr', 'de', 'zh'],
     debug: false,
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // react already safes from xss
     },
     backend: {
       loadPath: '/locales/{{lng}}/common.json',
+    },
+    detection: {
+      order: ['querystring', 'cookie', 'localStorage', 'navigator'],
+      caches: ['localStorage', 'cookie'],
     },
   });
 

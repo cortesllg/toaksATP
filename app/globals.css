@@ -13,23 +13,18 @@ body {
   flex-direction: column;
 }
 
-/* Header - Remove previous styles and add image */
+/* Header - keep image centered, add translation top-right */
 header.hero {
+  position: relative;
   display: flex;
-  justify-content: center; /* Align image to the center */
-  align-items: center; /* Vertically center the image */
-  padding: 18px; /* Adjust padding to fit your layout */
-  /* padding-left: 318px; Add left padding for spacing */
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
 }
 
 header.hero img {
-  max-height: 129px; /* Limit the size of the image */
-  max-width: 100%; /* Ensure image scales responsively */
-}
-
-section {
-  padding: 20px;
-  margin: 20px 0;
+  max-height: 129px;
+  max-width: 100%;
 }
 
 .translate-button {
@@ -42,6 +37,12 @@ section {
 .translate-button .goog-te-gadget {
   font-size: 14px;
 }
+
+/* To avoid having certain parts translating such as 'Thousand Oaks' -> keep it in English */
+.notranslate {
+  translate: no;
+}
+
 
 /***************************************************
 ****************************************************
@@ -98,6 +99,22 @@ The button overlay that is shared between all pages
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
+  header.hero {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px; /* extra top space for translate */
+  }
+
+  .translate-button {
+    position: static; /* remove absolute positioning */
+    margin-bottom: 10px;
+    z-index: auto;
+  }
+
+  .translate-button .goog-te-gadget {
+    font-size: 16px;
+    text-align: center;
+  }
   .button-container {
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center-align items */
@@ -139,10 +156,21 @@ The button overlay that is shared between all pages
     transform: translate(-50%, -35%) !important;
     padding: 10px;
   }
-  .divider {
-    width: 100%;
-    height: 2px;
-    margin: 10px 0;
+
+  .description-content .description-box {
+    font-size: 1rem;
+  }
+
+  .goal-content .divider {
+    min-height: 0.1px;
+    width: 20px;
+  }
+  .mission-section .mission-title {
+    font-size: 2rem;
+    word-wrap: break-word; /* Break long words to prevent overflow */
+  }
+  .mission-section .mission-text {
+    font-size: 1rem;
   }
 }
 
@@ -249,13 +277,14 @@ This is the structure of the image and text overlay and goal box
   font-size: clamp(18px, 2.5vw, 22px); /* Responsive with upper/lower limit */
   white-space: nowrap;
   padding-top: 4px;
+  text-align: right; /* Align text to the right */
 }
 
 .goal-text {
   color: #444;
   text-align: justify;
   font-size: clamp(
-    16px,
+    15px,
     1.8vw,
     20px
   ); /* Shrinks gracefully on smaller screens */
@@ -329,6 +358,7 @@ This is the structure of the description of what is an ATP
   font-weight: bold;
   color: #313f58; /* Dark blue */
   margin: 5px 0;
+  text-align: center;
 }
 
 .description-box {
@@ -415,7 +445,7 @@ This is the structure of the mission statement
 */
 
 .mission-section {
-  margin: 10px auto 20px; /* Less space on top, keep nice spacing on bottom */
+  margin: 10px auto 45px; /* Less space on top, keep nice spacing on bottom */
   width: 70%;
   text-align: center;
 }
