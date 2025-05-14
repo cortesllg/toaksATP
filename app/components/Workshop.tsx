@@ -197,7 +197,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            The Bicycle Avisory Team (BAT) meeting begins at 4:00 PM in the Park Room
+            The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in the Park Room
             at 2100 East Thousand Oaks Boulevard 3rd Floor.
             <br />
             <br />

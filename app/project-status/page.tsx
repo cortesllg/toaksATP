@@ -56,13 +56,13 @@ export default function ProjectStatus() {
         <div className="overlay-text1">
           <div className="bg-heading">PROJECT STATUS</div>
           <div className="fg-subtitle">
-            See what is ongoing with the Active Transportation Plan Update in your City
+            See what is ongoing with the Active Transportation Plan Update in
+            your City
           </div>
         </div>
       </div>
 
-      <div className="content-section"
-        style={{ marginTop: "1.25rem"}}>
+      <div className="content-section" style={{ marginTop: "1.25rem" }}>
         {/* Move title outside the grid to align only with right content */}
 
         <div
@@ -118,11 +118,7 @@ export default function ProjectStatus() {
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link
-                href="/get-involved?section=Survey"
-                passHref
-                legacyBehavior
-              >
+              <Link href="/get-involved?section=Survey" passHref legacyBehavior>
                 <a
                   style={{
                     backgroundColor: "#007a33",
@@ -187,10 +183,9 @@ export default function ProjectStatus() {
             >
               The City of Thousand Oaks, in collaboration with LLG Engineers, a
               transportation consulting firm, is actively working on the Active
-              Transportation Plan Update. We encourage everyone to share
-              their input and help shape a stronger, more effective Active
-              Transportation Plan Update
-              for the City.
+              Transportation Plan Update. We encourage everyone to share their
+              input and help shape a stronger, more effective Active
+              Transportation Plan Update for the City.
             </div>
 
             {/* Events Section */}
@@ -230,7 +225,7 @@ export default function ProjectStatus() {
                     color: "#007a33",
                   }}
                 >
-                  Upcoming Event: Community Workshop
+                  Upcoming Event: Bicycle Advisory Team (BAT) Meeting
                 </h3>
 
                 <h4
@@ -242,6 +237,109 @@ export default function ProjectStatus() {
                   }}
                 >
                   Next Workshop Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> May 15th (Thursday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 4:00 PM – 6:00 PM
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Park Room
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
+                  the Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+                  <br />
+                  <br />
+                  <em>Note:</em> This community event may be photographed and/or
+                  videotaped for possible use on the City (and library) websites
+                  and social media. Your participation constitutes consent for
+                  the City to publish your likeness for publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+              </div>
+
+              {/* Past Events */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#f9f9f9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  🕒
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Events
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Community Workshop Details
                 </h4>
 
                 <div
@@ -309,55 +407,6 @@ export default function ProjectStatus() {
                   <br />
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
-                </p>
-              </div>
-
-              {/* Past Events */}
-              <div
-                className="event-card"
-                style={{
-                  background: "#f9f9f9",
-                  padding: "2rem",
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-                  textAlign: "center",
-                }}
-              >
-                <div
-                  className="event-icon"
-                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
-                >
-                  🕒
-                </div>
-
-                <h3
-                  className="event-title"
-                  style={{
-                    fontSize: "1.75rem",
-                    marginBottom: "1rem",
-                    color: "#1f2937",
-                  }}
-                >
-                  Past Events
-                </h3>
-
-                <p
-                  className="event-text"
-                  style={{
-                    fontSize: "1rem",
-                    marginBottom: "0.5rem",
-                    color: "#374151",
-                  }}
-                >
-                  Check back for more information to stay up-to-date.
-                </p>
-
-                <p
-                  className="event-subtext"
-                  style={{ fontSize: "0.9rem", color: "#6b7280" }}
-                >
-                  Previous project milestones and community events will be
-                  documented here.
                 </p>
               </div>
             </div>
