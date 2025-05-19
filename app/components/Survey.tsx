@@ -23,9 +23,10 @@ const Survey = ({ isMobile }: SurveyProps) => {
           lineHeight: "1.75",
         }}
       >
-        Help shape the future of active transportation in the City of Thousand
-        Oaks! Take a few minutes to complete our online feedback form and share
-        your experiences, concerns, and ideas.
+        Thank you for helping shape the future of active transportation in the
+        City of Thousand Oaks! We appreciate everyone who took the time to
+        complete our online feedback form and share their experiences, concerns,
+        and ideas.
       </p>
 
       {/* Survey Details */}
@@ -55,7 +56,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
         <p
           style={{
             fontSize: "16px",
-            color: "#1f2937",
+            color: "red",
             margin: 0,
           }}
         >
@@ -70,8 +71,23 @@ const Survey = ({ isMobile }: SurveyProps) => {
           }}
         >
           Your feedback will directly impact transportation planning efforts —
-          don&apos;t miss this opportunity to share your voice!
+          thank you for taking this opportunity to share your voice!
         </p>
+
+        <div
+          style={{
+            backgroundColor: "#fffbeb",
+            fontSize: "14px",
+            color: "#92400e",
+            fontWeight: "bold",
+            padding: "12px 20px",
+            borderRadius: "4px",
+            borderLeft: "4px solid #f59e0b",
+            textAlign: "center",
+          }}
+        >
+          The feedback form period ended May 17, 2025.
+        </div>
 
         {/* Survey Buttons */}
         <div
@@ -83,13 +99,12 @@ const Survey = ({ isMobile }: SurveyProps) => {
           }}
         >
           {/* English Survey Button */}
-          <a
-            href="https://www.surveymonkey.com/r/VJGGYRX"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* English Disabled Feedback Button */}
+          <span
+            title="Feedback form is now closed"
             style={{
-              backgroundColor: "#007a33",
-              color: "white",
+              backgroundColor: "#cccccc",
+              color: "#666666",
               fontWeight: "bold",
               padding: "0.5rem 1.5rem",
               fontSize: "14px",
@@ -97,26 +112,20 @@ const Survey = ({ isMobile }: SurveyProps) => {
               textDecoration: "none",
               display: "inline-block",
               alignSelf: "center",
-              transition: "background-color 0.3s",
+              cursor: "not-allowed",
+              userSelect: "none",
+              transition: "none",
             }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#005fa3")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor = "#007a33")
-            }
           >
-            Fill Out The Feedback Form (English)
-          </a>
+            Fill Out The Feedback Form (English) (Closed)
+          </span>
 
-          {/* Spanish Survey Button */}
-          <a
-            href="https://www.surveymonkey.com/r/MTJQKSB"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* Spanish Disabled Feedback Button */}
+          <span
+            title="El formulario de comentarios está cerrado"
             style={{
-              backgroundColor: "#007a33",
-              color: "white",
+              backgroundColor: "#cccccc",
+              color: "#666666",
               fontWeight: "bold",
               padding: "0.5rem 1.5rem",
               fontSize: "14px",
@@ -124,17 +133,13 @@ const Survey = ({ isMobile }: SurveyProps) => {
               textDecoration: "none",
               display: "inline-block",
               alignSelf: "center",
-              transition: "background-color 0.3s",
+              cursor: "not-allowed",
+              userSelect: "none",
+              transition: "none",
             }}
-            onMouseOver={(e) =>
-              (e.currentTarget.style.backgroundColor = "#005fa3")
-            }
-            onMouseOut={(e) =>
-              (e.currentTarget.style.backgroundColor = "#007a33")
-            }
           >
-            Llene El Formulario De Comentarios (Español)
-          </a>
+            Llene El Formulario De Comentarios (Español) (Cerrado)
+          </span>
         </div>
       </div>
 

@@ -68,7 +68,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> April 19th (Saturday)
+            📅 <strong>Date:</strong> TBD
           </p>
           <p
             style={{
@@ -77,17 +77,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            🕙 <strong>Time:</strong> 10:00 AM – 2:00 PM
-          </p>
-
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              margin: 0,
-            }}
-          >
-            📍 <strong>Location:</strong> Thousand Oaks Community Center
+            🕙 <strong>Time:</strong> TBD
           </p>
 
           <p
@@ -97,7 +87,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            2525 N. Moorpark Rd., Thousand Oaks {" "}
+            📍 <strong>Location:</strong> TBD
           </p>
 
           <p
@@ -108,12 +98,9 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            <strong>No registration needed</strong> — just show up and get
-            involved!
-            <br />
-            <br />
-            The festivities begin at 10:00 AM in the park area and parking lot
-            of the Thousand Oaks Community Center at 2525 N. Moorpark Road.
+            Details for the next workshop are{" "}
+            <strong>To Be Determined (TBD)</strong>. Please check back for
+            updates regarding future workshop dates and details.
             <br />
             <br />
             <em>Note:</em> This community event may be photographed and/or
@@ -122,8 +109,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             publish your likeness for publicity purposes.
             <br />
             <br />
-            Activities, events, and times listed above are subject to change.
-            Please check back for updates.
+            Activities, events, and times are subject to change.
           </p>
         </div>
 
@@ -158,7 +144,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> May 15th (Thursday)
+            📅 <strong>Date:</strong> TBD
           </p>
           <p
             style={{
@@ -167,17 +153,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            🕙 <strong>Time:</strong> 4:00 PM
-          </p>
-
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              margin: 0,
-            }}
-          >
-            📍 <strong>Location:</strong> Park Room
+            🕙 <strong>Time:</strong> TBD
           </p>
 
           <p
@@ -187,7 +163,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+            📍 <strong>Location:</strong> TBD
           </p>
 
           <p
@@ -197,8 +173,9 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in the Park Room
-            at 2100 East Thousand Oaks Boulevard 3rd Floor.
+            Details for the next Bicycle Advisory Team (BAT) Meeting are{" "}
+            <strong>To Be Determined (TBD)</strong>. Please check back for
+            updates regarding future BAT Meeting dates and details.
             <br />
             <br />
             <em>Note:</em> This community event may be photographed and/or

@@ -20,10 +20,10 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
         }}
       >
         We believe the best ideas come from the people who live, work, and
-        travel in our community every day — and that includes you! The City of
-        Thousand Oaks is updating its Active Transportation Plan, and your input
-        is critical to ensuring the plan reflects your real needs. There are
-        four ways to get involved:
+        travel in our community every day — and you’ve helped shape this plan!
+        The City of Thousand Oaks is updating its Active Transportation Plan,
+        and thanks to your input, the plan is being crafted to reflect the
+        community’s real needs. There were four ways to get involved:
       </p>
 
       {/* Steps List */}
@@ -42,39 +42,43 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
       >
         <li>
           <strong>
-            Visit Our{" "}
+            View Our{" "}
             <span
               onClick={() => setActiveSection("Engagement")}
               style={{
-                color: "#005fa3",
+                color: "gray",
                 textDecoration: "underline",
                 cursor: "pointer",
               }}
             >
-              Online Comment Map
+              Online Comment Map (Closed)
             </span>
           </strong>
         </li>
         <li>
           <strong>
-            Complete Our{" "} 
-            <a
-              href="https://www.surveymonkey.com/r/VJGGYRX"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#005fa3", textDecoration: "underline" }}
+            Complete Our{" "}
+            <span
+              title="The feedback form is now closed"
+              style={{
+                color: "gray",
+                textDecoration: "underline",
+                cursor: "not-allowed",
+              }}
             >
-              Feedback Form (English)
-            </a>
+              Feedback Form (English) (Closed)
+            </span>
             /{" "}
-            <a
-              href="https://es.surveymonkey.com/r/MTJQKSB"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#005fa3", textDecoration: "underline" }}
+            <span
+              title="El formulario de comentarios está cerrado"
+              style={{
+                color: "gray",
+                textDecoration: "underline",
+                cursor: "not-allowed",
+              }}
             >
-              Formulario De Comentarios (Español)
-            </a>
+              Formulario De Comentarios (Español) (Cerrado)
+            </span>
           </strong>
         </li>
         <li>

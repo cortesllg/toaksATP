@@ -125,42 +125,31 @@ export default function ContactUs() {
                 textAlign: "justify",
               }}
             >
-              Your feedback is essential towards making improvements in Thousand
-              Oaks. Take our quick feedback form to share your thoughts!
+              Your feedback will directly impact transportation planning
+              efforts! Thank you for taking this opportunity to share your
+              voice!
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link
-                href="/get-involved?section=Survey"
-                passHref
-                legacyBehavior
+              <span
+                style={{
+                  backgroundColor: "#cccccc",
+                  color: "#666666",
+                  fontWeight: "bold",
+                  padding: "0.5rem 1.5rem",
+                  fontSize: "14px",
+                  borderRadius: "9999px",
+                  border: "none",
+                  cursor: "not-allowed",
+                  transition: "background-color 0.3s",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+                title="Feedback form has now been closed"
               >
-                <a
-                  style={{
-                    backgroundColor: "#007a33",
-                    color: "white",
-                    fontWeight: "bold",
-                    padding: "0.5rem 1.5rem",
-                    fontSize: "14px",
-                    borderRadius: "9999px",
-                    border: "none",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    display: "inline-block",
-                  }}
-                  rel="noopener noreferrer"
-                  onMouseOver={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#005fa3")
-                  }
-                  onMouseOut={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#007a33")
-                  }
-                >
-                  Fill out the Feedback Form
-                </a>
-              </Link>
+                Fill out Feedback Form (Closed)
+              </span>
             </div>
           </aside>
 

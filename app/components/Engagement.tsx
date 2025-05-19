@@ -25,13 +25,14 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           width: "100%",
         }}
       >
-        We want to hear from you! Share your experiences traveling on the
-        roadways within the City. We are working with StreetMap, developed by
-        SafeTREC and UC Berkeley, where you can mark locations where you&apos;ve
-        encountered safety challenges—whether you&apos;re driving, walking,
-        biking, or using another mode of transportation. You can also highlight
-        specific concerns like speeding, poor lighting, or missing sidewalks.
-        Check out the user guide for how to report on the StreetMap:
+        Thank you for your input! We're no longer accepting new comments through
+        StreetMap, but your shared experiences have been invaluable. Using
+        StreetMap which was developed by SafeTREC and UC Berkeley. Participants
+        marked locations where they encountered safety challenges while driving,
+        walking, biking, or using other forms of transportation. These
+        contributions helped identify concerns such as speeding, poor lighting,
+        and missing sidewalks. You can still view the user guide to see how the
+        StreetMap reporting process worked:
       </p>
 
       {/* User Guide and StreetMap Links */}
@@ -63,23 +64,23 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           View User Guide
         </a>
 
-        <a
-          href="https://streetstory.berkeley.edu/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <span
+          title="StreetMap input is now closed - Thank you for your feedback!"
           style={{
+            display: "inline-block",
             padding: "0.75rem 1.5rem",
-            backgroundColor: "#007a33",
-            color: "#ffffff",
+            backgroundColor: "#cccccc",
+            color: "#666666",
             textDecoration: "none",
             borderRadius: "8px",
             fontWeight: 600,
             fontSize: isMobile ? "14px" : "16px",
             textAlign: "center",
+            cursor: "not-allowed",
           }}
         >
-          Go to StreetMap
-        </a>
+          StreetMap (Closed)
+        </span>
       </div>
 
       {/* Closing Statement */}
@@ -92,7 +93,7 @@ const Engagement = ({ isMobile }: EngagementProps) => {
           marginTop: "2rem",
         }}
       >
-        Your input makes a difference — start mapping today!
+        Your input makes a difference — Thank you!
       </p>
     </div>
   );

@@ -85,7 +85,6 @@ export default function Documentation() {
             >
               Help Shape the Future
             </h3>
-
             <p
               style={{
                 marginBottom: "1.5rem",
@@ -96,38 +95,31 @@ export default function Documentation() {
                 textAlign: "justify",
               }}
             >
-              Your feedback is essential towards making improvements in Thousand
-              Oaks. Take our quick feedback form to share your thoughts!
+              Your feedback will directly impact transportation planning
+              efforts! Thank you for taking this opportunity to share your
+              voice!
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link href="/get-involved?section=Survey" passHref legacyBehavior>
-                <a
-                  style={{
-                    backgroundColor: "#007a33",
-                    color: "white",
-                    fontWeight: "bold",
-                    padding: "0.5rem 1.5rem",
-                    fontSize: "14px",
-                    borderRadius: "9999px",
-                    border: "none",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    display: "inline-block",
-                  }}
-                  rel="noopener noreferrer"
-                  onMouseOver={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#005fa3")
-                  }
-                  onMouseOut={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#007a33")
-                  }
-                >
-                  Fill out the Feedback Form
-                </a>
-              </Link>
+              <span
+                style={{
+                  backgroundColor: "#cccccc",
+                  color: "#666666",
+                  fontWeight: "bold",
+                  padding: "0.5rem 1.5rem",
+                  fontSize: "14px",
+                  borderRadius: "9999px",
+                  border: "none",
+                  cursor: "not-allowed",
+                  transition: "background-color 0.3s",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+                title="Feedback form has now been closed"
+              >
+                Fill out Feedback Form (Closed)
+              </span>
             </div>
           </aside>
 
@@ -285,6 +277,70 @@ export default function Documentation() {
                 >
                   Project details and information will be documented here. Stay
                   tuned to see what is going on in the City of Thousand Oaks!
+                </p>
+              </div>
+
+              {/* Old 2019 ATP Document for Thousand Oaks */}
+
+              <div
+                className="documentation-card"
+                style={{
+                  background: "#f9f9f9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  className="documentation-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📄
+                </div>
+
+                <h3
+                  className="documentation-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "2rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Thousand Oaks Active Transportation Plan (2019)
+                </h3>
+
+                <a
+                  href="/2019ActiveTransportationPl.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: "0.75rem 1.5rem",
+                    backgroundColor: "#007a33",
+                    color: "#ffffff",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    fontWeight: 600,
+                    fontSize: isMobile ? "14px" : "16px",
+                    textAlign: "center",
+                  }}
+                >
+                  ATP (2019)
+                </a>
+
+                <p
+                  className="documentation-subtext"
+                  style={{
+                    fontSize: "0.9rem",
+                    color: "#6b7280",
+                    marginTop: "2rem",
+                  }}
+                >
+                  Want to learn more about the previous Active Transportation
+                  Plan (2019) that occurred here in the City of Thousand Oaks? 
+                  You are able to view it here! Click the{" "} 
+                  <strong>ATP (2019) </strong>
+                   button to access the document.
                 </p>
               </div>
             </div>

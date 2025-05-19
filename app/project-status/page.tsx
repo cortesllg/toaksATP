@@ -113,38 +113,31 @@ export default function ProjectStatus() {
                 textAlign: "justify",
               }}
             >
-              Your feedback is essential towards making improvements in Thousand
-              Oaks. Take our quick feedback form to share your thoughts!
+              Your feedback will directly impact transportation planning
+              efforts! Thank you for taking this opportunity to share your
+              voice!
             </p>
 
             <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <Link href="/get-involved?section=Survey" passHref legacyBehavior>
-                <a
-                  style={{
-                    backgroundColor: "#007a33",
-                    color: "white",
-                    fontWeight: "bold",
-                    padding: "0.5rem 1.5rem",
-                    fontSize: "14px",
-                    borderRadius: "9999px",
-                    border: "none",
-                    cursor: "pointer",
-                    transition: "background-color 0.3s",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    display: "inline-block",
-                  }}
-                  rel="noopener noreferrer"
-                  onMouseOver={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#005fa3")
-                  }
-                  onMouseOut={(e) =>
-                    (e.currentTarget.style.backgroundColor = "#007a33")
-                  }
-                >
-                  Fill out Feedback Form
-                </a>
-              </Link>
+              <span
+                style={{
+                  backgroundColor: "#cccccc",
+                  color: "#666666",
+                  fontWeight: "bold",
+                  padding: "0.5rem 1.5rem",
+                  fontSize: "14px",
+                  borderRadius: "9999px",
+                  border: "none",
+                  cursor: "not-allowed",
+                  transition: "background-color 0.3s",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+                title="Feedback form has now been closed"
+              >
+                Fill out Feedback Form (Closed)
+              </span>
             </div>
           </aside>
 
@@ -225,7 +218,7 @@ export default function ProjectStatus() {
                     color: "#007a33",
                   }}
                 >
-                  Upcoming Event: Bicycle Advisory Team (BAT) Meeting
+                  Upcoming Event: To be Determined (TBD){" "}
                 </h3>
 
                 <h4
@@ -246,7 +239,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> May 15th (Thursday)
+                  📅 <strong>Date:</strong> TBD
                 </div>
 
                 <div
@@ -256,7 +249,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> 4:00 PM – 6:00 PM
+                  🕙 <strong>Time:</strong> TBD
                 </div>
 
                 <div
@@ -266,17 +259,7 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> Park Room
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                  📍 <strong>Location:</strong> TBD
                 </div>
 
                 <p
@@ -287,11 +270,12 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
-                  the Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+                  Details for the next workshop are{" "}
+                  <strong>To Be Determined (TBD)</strong>. Please check back for
+                  updates regarding future workshop dates and details.
                   <br />
                   <br />
-                  <em>Note:</em> This community event may be photographed and/or
+                  <em>Note:</em> This upcoming community event may be photographed and/or
                   videotaped for possible use on the City (and library) websites
                   and social media. Your participation constitutes consent for
                   the City to publish your likeness for publicity purposes.
@@ -331,6 +315,7 @@ export default function ProjectStatus() {
                   Past Events
                 </h3>
 
+                {/* Past Events will be listed below */}
                 <h4
                   style={{
                     fontSize: "1.25rem",
@@ -397,6 +382,89 @@ export default function ProjectStatus() {
                   The festivities begin at 10:00 AM in the park area and parking
                   lot of the Thousand Oaks Community Center at 2525 N. Moorpark
                   Road.
+                  <br />
+                  <br />
+                  <em>Note:</em> This community event may be photographed and/or
+                  videotaped for possible use on the city (and library) websites
+                  and social media. Your participation constitutes consent for
+                  the City to publish your likeness for publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+
+                {/* Link to the past event details (2) BAT Meeting */}
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Bicycle Advisory Team (BAT) Meeting Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> May 15th (Thursday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Park Room
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
+                  the Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
                   <br />
                   <br />
                   <em>Note:</em> This community event may be photographed and/or

@@ -96,11 +96,7 @@ export default function RootLayout({
               <div>
                 <h3>Explore</h3>
                 <ul>
-                  <li>
-                    <Link href="/get-involved?section=Survey">
-                      Fill out the Feedback Form
-                    </Link>
-                  </li>
+
                   <li>
                     <Link href="/project-status">Project Events</Link>
                   </li>
