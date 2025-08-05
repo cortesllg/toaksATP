@@ -6,14 +6,16 @@ const timelineEvents = [
   {
     title: "Review and Analyze Existing Conditions",
     date: "March - July 2025",
-    current: true,
+    completed: true,
   },
   {
     title: "Public Outreach & Engagement",
     date: "April - December 2025",
     current: true,
   },
-  { title: "Needs Analysis", date: "July - December 2025" },
+  { title: "Needs Analysis", 
+    date: "July - December 2025", 
+    current: true },
   {
     title: "Draft Active Transportation Plan",
     date: "September - December 2025",

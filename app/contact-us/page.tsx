@@ -76,7 +76,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <section className="content-section">
+      <section className="content-section" style={{ marginTop: "1.25rem" }}>
         <div
           className="overview-grid"
           style={{
@@ -98,6 +98,9 @@ export default function ContactUs() {
               padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              border: "1px solid #e5e7eb",
+              borderRadius: "0.5rem",
+              boxShadow: "0 1px 3px rgba(0, 0, 0, 0.05)",
               transform: isMobile ? "none" : "translateX(3rem)",
             }}
           >

@@ -34,13 +34,14 @@ export default function Home() {
           </h2>
 
           <p className="p2 fade-in">Thank you for sharing your input!</p>
-
         </div>
       </div>
 
       <section className="goal-box">
         <div className="goal-content">
-          <span className="goal-title fade-in">OUR <br /> GOAL</span>
+          <span className="goal-title fade-in">
+            OUR <br /> GOAL
+          </span>
           <span className="divider"></span>
           <p className="goal-text fade-in">
             <strong>What we strive for</strong> – To update and enhance Thousand

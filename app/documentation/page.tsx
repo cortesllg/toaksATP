@@ -61,7 +61,6 @@ export default function Documentation() {
           }}
         >
           {/* Left Sidebar - Survey */}
-          {/* Left Sidebar - Survey */}
           <aside
             style={{
               flex: isMobile ? "unset" : "0 0 22%",
@@ -69,6 +68,9 @@ export default function Documentation() {
               padding: "1rem 1rem",
               fontSize: "14px",
               alignSelf: "flex-start",
+              border: "1px solid #e5e7eb",
+              borderRadius: "0.5rem",
+              boxShadow: "0 1px 3px rgba(0, 0, 0, 0.05)",
               transform: isMobile ? "none" : "translateX(3rem)", // Adjust this to move it closer without affecting content size
             }}
           >
@@ -337,10 +339,10 @@ export default function Documentation() {
                   }}
                 >
                   Want to learn more about the previous Active Transportation
-                  Plan (2019) that occurred here in the City of Thousand Oaks? 
-                  You are able to view it here! Click the{" "} 
+                  Plan (2019) that occurred here in the City of Thousand Oaks?
+                  You are able to view it here! Click the{" "}
                   <strong>ATP (2019) </strong>
-                   button to access the document.
+                  button to access the document.
                 </p>
               </div>
             </div>

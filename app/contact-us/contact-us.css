@@ -8,6 +8,11 @@
  ***************************************************/
 
 /* Wrapper around the overview + events */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .content-section {
   padding: 3rem 1.5rem;
   background-color: #ffffff;

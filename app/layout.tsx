@@ -96,7 +96,6 @@ export default function RootLayout({
               <div>
                 <h3>Explore</h3>
                 <ul>
-
                   <li>
                     <Link href="/project-status">Project Events</Link>
                   </li>
@@ -145,6 +144,12 @@ export default function RootLayout({
                 </a>
               </div>
             </div>
+          </div>
+          <div className="footer-copyright">
+            <p>
+              &copy; {new Date().getFullYear()} All Rights Reserved Thousand
+              Oaks
+            </p>
           </div>
         </footer>
       </body>

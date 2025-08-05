@@ -51,10 +51,14 @@ export default function GetInvolvedClient() {
     }
   }, [sectionParam, isMobile]);
 
+  /*
+  Used to be within our selection, however, now that we have closed this section. There is no need to 
+  keep it.
+  { label: "Online Comment Map", section: "Engagement" },
+  */
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
-    { label: "Online Comment Map", section: "Engagement" },
-    { label: "Online Feedback Form", section: "Survey" },
+    { label: "Online Feedback Form (Closed)", section: "Survey" },
     { label: "Public Workshops", section: "Workshop" },
     { label: "Contact Us", section: "Contact" },
   ];
@@ -76,7 +80,7 @@ export default function GetInvolvedClient() {
         </div>
       </div>
 
-      <section className="content-section">
+      <section className="content-section" style={{ marginTop: "1.25rem" }}>
         <div
           className="overview-grid"
           style={{
@@ -186,9 +190,7 @@ export default function GetInvolvedClient() {
                 <Engagement isMobile={isMobile} />
               )}
               {activeSection === "Survey" && <Survey isMobile={isMobile} />}
-              {activeSection === "Workshop" && (
-                <Workshop isMobile={isMobile} />
-              )}
+              {activeSection === "Workshop" && <Workshop isMobile={isMobile} />}
               {activeSection === "Contact" && <Contact isMobile={isMobile} />}
             </Suspense>
           </main>

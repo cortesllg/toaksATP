@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif; /* Arial for default body text */
   background-color: white;
@@ -42,7 +48,6 @@ header.hero img {
 .notranslate {
   translate: no;
 }
-
 
 /***************************************************
 ****************************************************
@@ -683,6 +688,14 @@ This is the structure of the footer
 .social-icons img {
   width: 24px;
   height: 24px;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px; /* Adjust if needed */
 }
 
 .footer-links ul {

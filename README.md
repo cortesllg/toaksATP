@@ -1,36 +1,82 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+This website is dedicated to the City of Thousand Oaks for the Active Transportation Plan Update.
+## City of Thousand Oaks Active Transportation Plan Update
 
-First, run the development server:
+Contains details about an Active Tranportation Plan Update (such as documentation) and methods for residents to get involved through community engagement:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Home page
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contains details regarding what is an Active Transportation Plan (ATP) Update, what it entails, goals,and mission of the City.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Get Involved
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Gives users a rundown of their options for getting involved in the Project in the `get started` page.
 
-## Learn More
+#### Polling Section (Right)
 
-To learn more about Next.js, take a look at the following resources:
+Contains a side quick poll to gather quick community feedback if the user decides to not to use other methods (if open) of community engagement such as:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Feedback Form
+- Comment Map 
+- Public Workshops
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Online Comment Map
 
-## Deploy on Vercel
+Subpage to lead users to view documentation (to assist on guidance towards adding submissions) and submit street concerns within the City of Thousand Oaks through a third party site (StreetMap - developed by SafeTREC an UC Berkeley).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Online Feedback Form
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contains information for the feedback form (survey) for users to express their concerns,
+experiences, and ideas. In addition to details to its time period and redirecting links to SurveyMonkey.
+
+### Public Workshops
+
+Contains details of public workshops in where the public are able to join in to share their ideas or concerns. Contains details of possible future dates of future workshops.
+
+### Contact us
+
+A method for users to directly contact the team.
+
+## Project Status
+
+Showcases the Project Overview alongside upcoming events that will occur, and have occurred, that involves the ATP Project for the City.
+
+Additionally, it contains a timeline of the project.
+
+#### Feedback Form (Survey) Section (Left)
+
+Contains a section where it would redirect users to the main Feedback Form subsection in the `Get Involved` page to take the feedback form (survey).
+
+#### Polling Section (Right)
+
+Contains a side quick poll to gather quick community feedback if the user decides to not to use other methods (if open) of community engagement such as:
+
+- Feedback Form
+- Comment Map 
+- Public Workshops
+
+## Documentation
+
+The ATP 2025 (when finalized) will be updated and uploaded here for users to view. It additionally contains the 2019 ATP for users to reference back to. 
+
+
+#### Feedback Form (Survey) Section (Left)
+
+Contains a section where it would redirect users to the main Feedback Form subsection in the `Get Involved` page to take the feedback form (survey).
+
+#### Polling Section (Right)
+
+Contains a side quick poll to gather quick community feedback if the user decides to not to use other methods (if open) of community engagement such as:
+
+- Feedback Form
+- Comment Map 
+- Public Workshops
+
+## Contact Us
+
+The same main page contents as found in `Get Involved - Contact Us`. Only this time it is dedicated for allowing users to send a message to the Team.
+
+#### Feedback Form (Survey) Section (Left)
+
+Contains a section where it would redirect users to the main Feedback Form subsection in the `Get Involved` page to take the feedback form (survey).
