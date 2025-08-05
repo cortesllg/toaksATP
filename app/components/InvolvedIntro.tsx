@@ -13,6 +13,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
   const [showHint, setShowHint] = useState(false);
   const lastPos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const imgRef = useRef<HTMLImageElement>(null);
+  const pinchStartDist = useRef<number | null>(null);
 
   // Block all background scroll (mouse & touch) when modal is open
   useEffect(() => {
@@ -91,26 +92,46 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
 
   // Touch drag handlers
   const handleTouchStart = (e: React.TouchEvent<HTMLImageElement>) => {
-    if (zoom === 1) return;
-    setDragging(true);
-    const touch = e.touches[0];
-    lastPos.current = { x: touch.clientX, y: touch.clientY };
+    if (e.touches.length === 2) {
+      // Pinch start
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      pinchStartDist.current = Math.sqrt(dx * dx + dy * dy);
+    } else if (zoom > 1 && e.touches.length === 1) {
+      setDragging(true);
+      const touch = e.touches[0];
+      lastPos.current = { x: touch.clientX, y: touch.clientY };
+    }
   };
 
   const handleTouchMove = (e: React.TouchEvent<HTMLImageElement>) => {
-    if (!dragging) return;
-    const touch = e.touches[0];
-    const dx = touch.clientX - lastPos.current.x;
-    const dy = touch.clientY - lastPos.current.y;
-    lastPos.current = { x: touch.clientX, y: touch.clientY };
-    setOffset((prev) => ({
-      x: prev.x + dx,
-      y: prev.y + dy,
-    }));
+    if (e.touches.length === 2 && pinchStartDist.current !== null) {
+      // Pinch move
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      let scaleChange = dist / pinchStartDist.current;
+      let newZoom = Math.max(1, Math.min(zoom * scaleChange, 4));
+      setZoom(newZoom);
+      pinchStartDist.current = dist;
+      setDragging(false);
+    } else if (dragging && e.touches.length === 1) {
+      const touch = e.touches[0];
+      const dx = touch.clientX - lastPos.current.x;
+      const dy = touch.clientY - lastPos.current.y;
+      lastPos.current = { x: touch.clientX, y: touch.clientY };
+      setOffset((prev) => ({
+        x: prev.x + dx,
+        y: prev.y + dy,
+      }));
+    }
   };
 
-  const handleTouchEnd = () => {
+  const handleTouchEnd = (e: React.TouchEvent<HTMLImageElement>) => {
     setDragging(false);
+    if (e.touches.length < 2) {
+      pinchStartDist.current = null;
+    }
   };
 
   // Limit pan so image stays within modal bounds
@@ -382,9 +403,46 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
             onClick={handleImageClick}
             onWheel={handleWheel}
             onMouseDown={handleMouseDown}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            onTouchStart={(e) => {
+              if (e.touches.length === 2) {
+                // Pinch start
+                const dx = e.touches[0].clientX - e.touches[1].clientX;
+                const dy = e.touches[0].clientY - e.touches[1].clientY;
+                pinchStartDist.current = Math.sqrt(dx * dx + dy * dy);
+              } else if (zoom > 1 && e.touches.length === 1) {
+                setDragging(true);
+                const touch = e.touches[0];
+                lastPos.current = { x: touch.clientX, y: touch.clientY };
+              }
+            }}
+            onTouchMove={(e) => {
+              if (e.touches.length === 2 && pinchStartDist.current !== null) {
+                // Pinch move
+                const dx = e.touches[0].clientX - e.touches[1].clientX;
+                const dy = e.touches[0].clientY - e.touches[1].clientY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                let scaleChange = dist / pinchStartDist.current;
+                let newZoom = Math.max(1, Math.min(zoom * scaleChange, 4));
+                setZoom(newZoom);
+                pinchStartDist.current = dist;
+                setDragging(false);
+              } else if (dragging && e.touches.length === 1) {
+                const touch = e.touches[0];
+                const dx = touch.clientX - lastPos.current.x;
+                const dy = touch.clientY - lastPos.current.y;
+                lastPos.current = { x: touch.clientX, y: touch.clientY };
+                setOffset((prev) => ({
+                  x: prev.x + dx,
+                  y: prev.y + dy,
+                }));
+              }
+            }}
+            onTouchEnd={(e) => {
+              setDragging(false);
+              if (e.touches.length < 2) {
+                pinchStartDist.current = null;
+              }
+            }}
             draggable={false}
           />
         </div>
