@@ -38,93 +38,6 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           marginTop: "2rem",
         }}
       >
-        {/* Currently BAT meeting is on top of the general workshop */}
-        {/* meeting as it is the soonest event that will happen for the community */}
-        {/* Upcoming BAT Meeting */}
-        <div
-          style={{
-            backgroundColor: "#f9fafb",
-            padding: "1.5rem",
-            borderRadius: "8px",
-            border: "1px solid #d1d5db",
-            textAlign: "center",
-            display: "flex",
-            flexDirection: "column",
-            gap: "1rem",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "20px",
-              fontWeight: "bold",
-              color: "#007a33",
-              margin: 0,
-            }}
-          >
-            Next Bicycle Advisory Team (BAT) Meeting Details
-          </h2>
-
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              margin: 0,
-            }}
-          >
-            📅 <strong>Date:</strong> October 16th (Thursday)
-          </p>
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              margin: 0,
-            }}
-          >
-            🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
-          </p>
-
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              margin: 0,
-            }}
-          >
-            📍 <strong>Location:</strong> Park Room
-          </p>
-
-          <p
-            style={{
-              fontSize: "16px",
-              color: "#1f2937",
-              margin: 0,
-            }}
-          >
-            2100 East Thousand Oaks Boulevard 3rd Floor
-          </p>
-
-          <p
-            style={{
-              fontSize: "15px",
-              color: "#4b5563",
-              lineHeight: "1.7",
-            }}
-          >
-            The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in the
-            Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
-            <br />
-            <br />
-            <em>Note:</em> This community event may be photographed and/or
-            videotaped for possible use on the City (and library) websites and
-            social media. Your participation constitutes consent for the City to
-            publish your likeness for publicity purposes.
-            <br />
-            <br />
-            Activities, events, and times listed above are subject to change.
-            Please check back for updates.
-          </p>
-        </div>
-
         {/* Currently TTAC meeting is second of the general workshop */}
         {/* meeting may be soonest event that will happen for the community */}
         {/* Upcoming TTAC Meeting */}
@@ -148,7 +61,8 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            Traffic and Transportation Advisory Commission (TTAC) Meeting Details
+            Traffic and Transportation Advisory Commission (TTAC) Meeting
+            Details
           </h2>
 
           <p
@@ -158,7 +72,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> TBD
+            📅 <strong>Date:</strong> September 24th (Wednesday)
           </p>
           <p
             style={{
@@ -167,7 +81,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            🕙 <strong>Time:</strong> TBD
+            🕙 <strong>Time:</strong> 6:00 PM
           </p>
 
           <p
@@ -177,7 +91,17 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📍 <strong>Location:</strong> TBD
+            📍 <strong>Location:</strong> Board Room
+          </p>
+
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#1f2937",
+              margin: 0,
+            }}
+          >
+            2100 East Thousand Oaks Boulevard 3rd Floor
           </p>
 
           <p
@@ -187,6 +111,11 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
+            The Traffic and Transportation Advisory Commission (TTAC) meeting
+            begins at 6:00 PM in the Board Room at 2100 East Thousand Oaks
+            Boulevard 3rd Floor.
+            <br />
+            <br />
             <em>Note:</em> This community event may be photographed and/or
             videotaped for possible use on the City (and library) websites and
             social media. Your participation constitutes consent for the City to
@@ -197,7 +126,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             Please check back for updates.
           </p>
         </div>
-
+        {/* CVUSD Workshop (Virtual) */}
         <div
           style={{
             backgroundColor: "#f9fafb",
@@ -218,7 +147,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            Next Workshop Details
+            Conejo Valley School District (CVUSD) Virtual Workshop
           </h2>
 
           <p
@@ -228,7 +157,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> TBD
+            📅 <strong>Date:</strong> October (TBD)
           </p>
           <p
             style={{
@@ -247,7 +176,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📍 <strong>Location:</strong> TBD
+            📍 <strong>Location:</strong> Virtual (Not In-Person)
           </p>
 
           <p
@@ -258,7 +187,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            Details for the next workshop are{" "}
+            Details for the CVUSD Virtual Workshop are{" "}
             <strong>To Be Determined (TBD)</strong>. Please check back for
             updates regarding future workshop dates and details.
             <br />
@@ -270,8 +199,95 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             <br />
             <br />
             Activities, events, and times are subject to change.
+            Please check back for updates.
           </p>
         </div>
+      </div>
+      {/* Currently BAT meeting is on top of the general workshop */}
+      {/* meeting as it is the soonest event that will happen for the community */}
+      {/* Upcoming BAT Meeting */}
+      <div
+        style={{
+          backgroundColor: "#f9fafb",
+          padding: "1.5rem",
+          borderRadius: "8px",
+          border: "1px solid #d1d5db",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#007a33",
+            margin: 0,
+          }}
+        >
+          Next Bicycle Advisory Team (BAT) Meeting Details
+        </h2>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📅 <strong>Date:</strong> November 20th (Thursday)
+        </p>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📍 <strong>Location:</strong> Park Room
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          2100 East Thousand Oaks Boulevard 3rd Floor
+        </p>
+
+        <p
+          style={{
+            fontSize: "15px",
+            color: "#4b5563",
+            lineHeight: "1.7",
+          }}
+        >
+          The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in the Park
+          Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+          <br />
+          <br />
+          <em>Note:</em> This community event may be photographed and/or
+          videotaped for possible use on the City (and library) websites and
+          social media. Your participation constitutes consent for the City to
+          publish your likeness for publicity purposes.
+          <br />
+          <br />
+          Activities, events, and times listed above are subject to change.
+          Please check back for updates.
+        </p>
       </div>
 
       {/* Call to Action */}

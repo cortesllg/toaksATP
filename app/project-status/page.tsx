@@ -194,101 +194,6 @@ export default function ProjectStatus() {
                 marginTop: "2rem",
               }}
             >
-              {/* Upcoming Events - BAT */}
-              <div
-                className="event-card"
-                style={{
-                  background: "#e8f5e9",
-                  padding: "2rem",
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-                  textAlign: "center",
-                  border: "1px solid #c8e6c9",
-                }}
-              >
-                <div
-                  className="event-icon"
-                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
-                >
-                  📅
-                </div>
-
-                <h3
-                  className="event-title"
-                  style={{
-                    fontSize: "1.75rem",
-                    marginBottom: "1.5rem",
-                    color: "#007a33",
-                  }}
-                >
-                  Upcoming Event: Bicycle Advisory Team (BAT){" "}
-                </h3>
-
-                <h4
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "1rem",
-                    color: "#1f2937",
-                  }}
-                >
-                  Next BAT Workshop Details
-                </h4>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  📅 <strong>Date:</strong> October 16th (Thursday)
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  📍 <strong>Location:</strong> Park Room
-                </div>
-
-                <p
-                  style={{
-                    fontSize: "15px",
-                    color: "#4b5563",
-                    marginTop: "1.5rem",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
-                  Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
-                  <br />
-                  <br />
-                  <em>Note:</em> This upcoming community event may be
-                  photographed and/or videotaped for possible use on the City
-                  (and library) websites and social media. Your participation
-                  constitutes consent for the City to publish your likeness for
-                  publicity purposes.
-                  <br />
-                  <br />
-                  Activities, events, and times listed above are subject to
-                  change. Please check back for updates.
-                </p>
-              </div>
-
               {/* Upcoming Events - TTAC */}
               <div
                 className="event-card"
@@ -338,7 +243,114 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> TBD
+                  📅 <strong>Date:</strong> September 24th (Wednesday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 6:00 PM
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Board Room
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Traffic and Transportation Advisory Commission (TTAC)
+                  meeting begins at 6:00 PM in the Board Room at 2100 East
+                  Thousand Oaks Boulevard 3rd Floor.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+              </div>
+
+              {/* Upcoming Events - CVUSD Workshop VIRTUAL */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #c8e6c9",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Upcoming Event: Conejo Valley School District (CVUSD) Virtual
+                  Workshop{" "}
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  CVUSD Virtual Workshop Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> October (TBD)
                 </div>
 
                 <div
@@ -358,7 +370,7 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> TBD
+                  📍 <strong>Location:</strong> Virtual (Not In-Person)
                 </div>
 
                 <p
@@ -369,7 +381,110 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-  
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+              </div>
+              {/* Upcoming Events - BAT */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #c8e6c9",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Upcoming Event: Bicycle Advisory Team (BAT){" "}
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Next BAT Workshop Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> November 20th (Thursday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Park Room
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
+                  the Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+                  <br />
+                  <br />
                   <em>Note:</em> This upcoming community event may be
                   photographed and/or videotaped for possible use on the City
                   (and library) websites and social media. Your participation
