@@ -2,7 +2,10 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const timelineEvents = [
-  { title: "Project Kickoff", date: "March 2025", completed: true },
+  { title: "Project Kickoff", 
+    date: "March 2025", 
+    completed: true 
+  },
   {
     title: "Review and Analyze Existing Conditions",
     date: "March - July 2025",
@@ -15,12 +18,16 @@ const timelineEvents = [
   },
   { title: "Needs Analysis", 
     date: "July - December 2025", 
-    current: true },
+    current: true 
+  },
   {
     title: "Draft Active Transportation Plan",
     date: "September - December 2025",
+    current: true,
   },
-  { title: "Project Completion", date: "February 2026" },
+  { title: "Project Completion", 
+    date: "February 2026" 
+  },
 ];
 
 const Timeline = () => {
@@ -195,7 +202,7 @@ const Timeline = () => {
                   )}
                 </div>
 
-                {/* Text */}
+                {/* If the event is current (true), does the following - adding `Current Phase` */}
                 <div style={{ textAlign: "center" }}>
                   {isCurrent && (
                     <div

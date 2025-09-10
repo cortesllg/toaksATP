@@ -157,7 +157,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            📅 <strong>Date:</strong> October (TBD)
+            📅 <strong>Date:</strong> October 14th (Tuesday)
           </p>
           <p
             style={{
@@ -166,7 +166,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               margin: 0,
             }}
           >
-            🕙 <strong>Time:</strong> TBD
+            🕙 <strong>Time:</strong> 6:00 PM
           </p>
 
           <p

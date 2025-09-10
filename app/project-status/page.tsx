@@ -350,7 +350,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> October (TBD)
+                  📅 <strong>Date:</strong> October 14th (Tuesday)
                 </div>
 
                 <div
@@ -360,7 +360,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> TBD
+                  🕙 <strong>Time:</strong> 6:00 PM
                 </div>
 
                 <div
