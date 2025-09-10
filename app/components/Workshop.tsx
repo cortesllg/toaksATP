@@ -187,9 +187,8 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
               lineHeight: "1.7",
             }}
           >
-            Details for the CVUSD Virtual Workshop are{" "}
-            <strong>To Be Determined (TBD)</strong>. Please check back for
-            updates regarding future workshop dates and details.
+            The Conejo Valley School District (CVUSD) Virtual Workshop meeting
+            begins at 6:00 PM and will take place virtually (not in-person).
             <br />
             <br />
             <em>Note:</em> This community event may be photographed and/or

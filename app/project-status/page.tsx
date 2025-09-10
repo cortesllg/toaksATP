@@ -381,6 +381,11 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
+                  The Conejo Valley School District (CVUSD) Virtual Workshop
+                  meeting begins at 6:00 PM and will take place virtually (not
+                  in-person).
+                  <br />
+                  <br />
                   <em>Note:</em> This upcoming community event may be
                   photographed and/or videotaped for possible use on the City
                   (and library) websites and social media. Your participation
