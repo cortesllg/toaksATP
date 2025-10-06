@@ -23,10 +23,9 @@ const Survey = ({ isMobile }: SurveyProps) => {
           lineHeight: "1.75",
         }}
       >
-        Thank you for helping shape the future of active transportation in the
-        City of Thousand Oaks! We appreciate everyone who took the time to
-        complete our online feedback form and share their experiences, concerns,
-        and ideas.
+        Help shape the future of active transportation in the City of Thousand
+        Oaks! Take a few minutes to complete our online feedback form and share
+        your experiences, concerns, and ideas.
       </p>
 
       {/* Survey Details */}
@@ -60,7 +59,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             margin: 0,
           }}
         >
-          📝 <strong>Deadline:</strong> May 17, 2025
+          📝 <strong>Deadline:</strong> October 17, 2025
         </p>
 
         <p
@@ -71,76 +70,61 @@ const Survey = ({ isMobile }: SurveyProps) => {
           }}
         >
           Your feedback will directly impact transportation planning efforts —
-          thank you for taking this opportunity to share your voice!
+          don&apos;t miss this opportunity to share your voice!
         </p>
 
-        <div
+        <a
+          href="https://www.surveymonkey.com/r/VJGGYRX"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            backgroundColor: "#fffbeb",
-            fontSize: "14px",
-            color: "#92400e",
+            backgroundColor: "#007a33",
+            color: "white",
             fontWeight: "bold",
-            padding: "12px 20px",
-            borderRadius: "4px",
-            borderLeft: "4px solid #f59e0b",
-            textAlign: "center",
+            padding: "0.5rem 1.5rem",
+            fontSize: "14px",
+            borderRadius: "9999px",
+            textDecoration: "none",
+            display: "inline-block",
+            alignSelf: "center",
+            transition: "background-color 0.3s",
           }}
+          onMouseOver={(e) =>
+            (e.currentTarget.style.backgroundColor = "#005fa3")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.style.backgroundColor = "#007a33")
+          }
         >
-          The feedback form period ended May 17, 2025.
-        </div>
+          Fill Out The Feedback Form (English)
+        </a>
 
-        {/* Survey Buttons */}
-        <div
+        {/* Spanish Survey Button */}
+        <a
+          href="https://www.surveymonkey.com/r/MTJQKSB"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.75rem",
-            marginTop: "1rem",
+            backgroundColor: "#007a33",
+            color: "white",
+            fontWeight: "bold",
+            padding: "0.5rem 1.5rem",
+            fontSize: "14px",
+            borderRadius: "9999px",
+            textDecoration: "none",
+            display: "inline-block",
+            alignSelf: "center",
+            transition: "background-color 0.3s",
           }}
+          onMouseOver={(e) =>
+            (e.currentTarget.style.backgroundColor = "#005fa3")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.style.backgroundColor = "#007a33")
+          }
         >
-          {/* English Survey Button */}
-          {/* English Disabled Feedback Button */}
-          <span
-            title="Feedback form is now closed"
-            style={{
-              backgroundColor: "#cccccc",
-              color: "#666666",
-              fontWeight: "bold",
-              padding: "0.5rem 1.5rem",
-              fontSize: "14px",
-              borderRadius: "9999px",
-              textDecoration: "none",
-              display: "inline-block",
-              alignSelf: "center",
-              cursor: "not-allowed",
-              userSelect: "none",
-              transition: "none",
-            }}
-          >
-            Fill Out The Feedback Form (English) (Closed)
-          </span>
-
-          {/* Spanish Disabled Feedback Button */}
-          <span
-            title="El formulario de comentarios está cerrado"
-            style={{
-              backgroundColor: "#cccccc",
-              color: "#666666",
-              fontWeight: "bold",
-              padding: "0.5rem 1.5rem",
-              fontSize: "14px",
-              borderRadius: "9999px",
-              textDecoration: "none",
-              display: "inline-block",
-              alignSelf: "center",
-              cursor: "not-allowed",
-              userSelect: "none",
-              transition: "none",
-            }}
-          >
-            Llene El Formulario De Comentarios (Español) (Cerrado)
-          </span>
-        </div>
+          Llene El Formulario De Comentarios (Español)
+        </a>
       </div>
 
       {/* Call to Action */}

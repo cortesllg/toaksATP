@@ -121,26 +121,34 @@ export default function ProjectStatus() {
               voice!
             </p>
 
-            <div style={{ paddingTop: "0.5rem", textAlign: "center" }}>
-              <span
-                style={{
-                  backgroundColor: "#cccccc",
-                  color: "#666666",
-                  fontWeight: "bold",
-                  padding: "0.5rem 1.5rem",
-                  fontSize: "14px",
-                  borderRadius: "9999px",
-                  border: "none",
-                  cursor: "not-allowed",
-                  transition: "background-color 0.3s",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                  display: "inline-block",
-                }}
-                title="Feedback form has now been closed"
-              >
-                Fill out Feedback Form (Closed)
-              </span>
+            <div style={{ textAlign: "center" }}>
+              <Link href="/get-involved?section=Survey" passHref legacyBehavior>
+                <a
+                  style={{
+                    backgroundColor: "#007a33",
+                    color: "white",
+                    fontWeight: "bold",
+                    padding: "0.5rem 1.5rem",
+                    fontSize: "14px",
+                    borderRadius: "9999px",
+                    border: "none",
+                    cursor: "pointer",
+                    transition: "background-color 0.3s",
+                    textTransform: "uppercase",
+                    textDecoration: "none",
+                    display: "inline-block",
+                  }}
+                  rel="noopener noreferrer"
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#005fa3")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#007a33")
+                  }
+                >
+                  Fill out Feedback Form
+                </a>
+              </Link>
             </div>
           </aside>
 
@@ -266,6 +274,29 @@ export default function ProjectStatus() {
                   📍 <strong>Location:</strong> Virtual (Not In-Person)
                 </div>
 
+                {/* Registration Link */}
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <em>Register here → </em>
+                  <a
+                    href="https://toaks.co/atpzoom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "#007a33",
+                      textDecoration: "underline",
+                      fontStyle: "italic",
+                      fontWeight: 500,
+                    }}
+                  >
+                    https://toaks.co/atpzoom
+                  </a>
+                </div>
                 <p
                   style={{
                     fontSize: "15px",
@@ -289,7 +320,108 @@ export default function ProjectStatus() {
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
                 </p>
+
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+
+                {/* Inserted School Outreach Flyer */}
+                <p>
+                  <span
+                    style={{
+                      fontSize: "15px",
+                      display: "block",
+                      textAlign: "center",
+                      color: "#007a33",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                      margin: "0.5rem 0",
+                      fontStyle: "italic",
+                    }}
+                    onClick={() =>
+                      window.open("/ATP_School_Outreach_Flyer.pdf", "_blank")
+                    }
+                  >
+                    Click on me or the flyer to view the flyer closer!
+                  </span>
+                </p>
+
+                <a
+                  href="/ATP_School_Outreach_Flyer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "block" }}
+                >
+                  <img
+                    src="/images/ATP_School_Outreach_Flyer-English.jpg"
+                    alt="ATP School Outreach Flyer"
+                    style={{
+                      display: "block",
+                      margin: "1rem auto",
+                      maxWidth: "100%",
+                      height: "auto",
+                      border: "1px solid #ccc",
+                      borderRadius: "8px",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                      cursor: "pointer",
+                    }}
+                  />
+                </a>
+
+                {/* Inserted School Outreach Flyer Español */}
+                <p>
+                  <span
+                    style={{
+                      fontSize: "15px",
+                      display: "block",
+                      textAlign: "center",
+                      color: "#007a33",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                      margin: "3rem 0 1rem 0",
+                      fontStyle: "italic",
+                    }}
+                    onClick={() =>
+                      window.open(
+                        "/ATP_School_Outreach_Flyer-Spanish.pdf",
+                        "_blank"
+                      )
+                    }
+                  >
+                    ¡Haz clic en mí o en el volante para verlo con más detalle
+                    en español!
+                  </span>
+                </p>
+
+                <a
+                  href="/ATP_School_Outreach_Flyer-Spanish.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "block" }}
+                >
+                  <img
+                    src="/images/ATP_School_Outreach_Flyer-Spanish.jpg"
+                    alt="ATP School Outreach Flyer"
+                    style={{
+                      display: "block",
+                      margin: "1rem auto",
+                      maxWidth: "100%",
+                      height: "auto",
+                      border: "1px solid #ccc",
+                      borderRadius: "8px",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                      cursor: "pointer",
+                    }}
+                  />
+                </a>
               </div>
+
               {/* Upcoming Events - BAT */}
               <div
                 className="event-card"

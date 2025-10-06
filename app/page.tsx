@@ -33,7 +33,37 @@ export default function Home() {
             ACTIVE TRANSPORTATION PLAN UPDATE
           </h2>
 
-          <p className="p2 fade-in">Thank you for sharing your input!</p>
+          <p className="p2 fade-in">Share your input regarding the Active Transportation Plan!</p>
+          <div className="fade-in" style={{ textAlign: "center" }}>
+            <Link href="/get-involved?section=Survey" passHref legacyBehavior>
+              <a
+                style={{
+                  backgroundColor: "#007a33",
+                  color: "white",
+                  fontWeight: "bold",
+                  padding: isMobile ?  "0.5rem 1.2rem": "0.6rem 1.5rem",
+                  fontSize: isMobile ? "14px": "16px",
+                  borderRadius: "9999px",
+                  border: "none",
+                  cursor: "pointer",
+                  fontFamily: "Arial, sans-serif",
+                  transition: "background-color 0.3s",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+                rel="noopener noreferrer"
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#005fa3")
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.backgroundColor = "#007a33")
+                }
+              >
+                Fill out the Feedback Form
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
 

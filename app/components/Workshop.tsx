@@ -38,7 +38,6 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           marginTop: "2rem",
         }}
       >
-        
         {/* CVUSD Workshop (Virtual) */}
         <div
           style={{
@@ -92,11 +91,35 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             📍 <strong>Location:</strong> Virtual (Not In-Person)
           </p>
 
+          {/* Registration Link */}
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#4b5563",
+              margin: 0,
+            }}
+          >
+            <em>Register here → </em>
+            <a
+              href="https://toaks.co/atpzoom"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#007a33",
+                textDecoration: "underline",
+                fontStyle: "italic",
+                fontWeight: 500,
+              }}
+            >
+              https://toaks.co/atpzoom
+            </a>
+          </p>
+
           <p
             style={{
               fontSize: "15px",
               color: "#4b5563",
-              marginTop: "1.5rem",
+              marginTop: "1rem",
               lineHeight: "1.7",
             }}
           >
@@ -110,9 +133,105 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             publish your likeness for publicity purposes.
             <br />
             <br />
-            Activities, events, and times are subject to change.
-            Please check back for updates.
+            Activities, events, and times are subject to change. Please check
+            back for updates.
           </p>
+
+          <hr
+            style={{
+              border: "none",
+              borderTop: "1px solid #ccc",
+              margin: "0",
+            }}
+          />
+
+          {/* Inserted School Outreach Flyer */}
+          <p>
+            <span
+              style={{
+                fontSize: "15px",
+                display: "block",
+                textAlign: "center",
+                color: "#007a33",
+                fontWeight: "bold",
+                cursor: "pointer",
+                textDecoration: "underline",
+                margin: "0",
+                fontStyle: "italic",
+              }}
+              onClick={() =>
+                window.open("/ATP_School_Outreach_Flyer.pdf", "_blank")
+              }
+            >
+              Click on me or the flyer to view the flyer closer!
+            </span>
+          </p>
+
+          <a
+            href="/ATP_School_Outreach_Flyer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "block" }}
+          >
+            <img
+              src="/images/ATP_School_Outreach_Flyer-English.jpg"
+              alt="ATP School Outreach Flyer"
+              style={{
+                display: "block",
+                margin: "rem auto",
+                maxWidth: "100%",
+                height: "auto",
+                border: "1px solid #ccc",
+                borderRadius: "8px",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                cursor: "pointer",
+              }}
+            />
+          </a>
+          {/* Inserted School Outreach Flyer Español */}
+          <p>
+            <span
+              style={{
+                fontSize: "15px",
+                display: "block",
+                textAlign: "center",
+                color: "#007a33",
+                fontWeight: "bold",
+                cursor: "pointer",
+                textDecoration: "underline",
+                margin: "1rem 0 0rem",
+                fontStyle: "italic",
+              }}
+              onClick={() =>
+                window.open("/ATP_School_Outreach_Flyer-Spanish.pdf", "_blank")
+              }
+            >
+              ¡Haz clic en mí o en el volante para verlo con más detalle en
+              español!
+            </span>
+          </p>
+
+          <a
+            href="/ATP_School_Outreach_Flyer-Spanish.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "block" }}
+          >
+            <img
+              src="/images/ATP_School_Outreach_Flyer-Spanish.jpg"
+              alt="ATP School Outreach Flyer"
+              style={{
+                display: "block",
+                margin: "rem auto",
+                maxWidth: "100%",
+                height: "auto",
+                border: "1px solid #ccc",
+                borderRadius: "8px",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                cursor: "pointer",
+              }}
+            />
+          </a>
         </div>
       </div>
       {/* Currently BAT meeting is on top of the general workshop */}
