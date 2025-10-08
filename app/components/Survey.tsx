@@ -123,7 +123,7 @@ const Survey = ({ isMobile }: SurveyProps) => {
             (e.currentTarget.style.backgroundColor = "#007a33")
           }
         >
-          Llene El Formulario De Comentarios (Español)
+          <span className="notranslate"> Llene El Formulario De Comentarios (Español)</span>
         </a>
       </div>
 
