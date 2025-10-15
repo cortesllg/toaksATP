@@ -202,226 +202,6 @@ export default function ProjectStatus() {
                 marginTop: "2rem",
               }}
             >
-              {/* Upcoming Events - CVUSD Workshop VIRTUAL */}
-              <div
-                className="event-card"
-                style={{
-                  background: "#e8f5e9",
-                  padding: "2rem",
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-                  textAlign: "center",
-                  border: "1px solid #c8e6c9",
-                }}
-              >
-                <div
-                  className="event-icon"
-                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
-                >
-                  📅
-                </div>
-
-                <h3
-                  className="event-title"
-                  style={{
-                    fontSize: "1.75rem",
-                    marginBottom: "1.5rem",
-                    color: "#007a33",
-                  }}
-                >
-                  Upcoming Event: Conejo Valley School District (CVUSD) Virtual
-                  Workshop{" "}
-                </h3>
-
-                <h4
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "1rem",
-                    color: "#1f2937",
-                  }}
-                >
-                  CVUSD Virtual Workshop Details
-                </h4>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  📅 <strong>Date:</strong> October 14th (Tuesday)
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  🕙 <strong>Time:</strong> 6:00 PM
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  📍 <strong>Location:</strong> Virtual (Not In-Person)
-                </div>
-
-                {/* Registration Link */}
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  <em>Register here → </em>
-                  <a
-                    href="https://toaks.co/atpzoom"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      color: "#007a33",
-                      textDecoration: "underline",
-                      fontStyle: "italic",
-                      fontWeight: 500,
-                    }}
-                  >
-                    https://toaks.co/atpzoom
-                  </a>
-                </div>
-                <p
-                  style={{
-                    fontSize: "15px",
-                    color: "#4b5563",
-                    marginTop: "1.5rem",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  The Conejo Valley School District (CVUSD) Virtual Workshop
-                  meeting begins at 6:00 PM and will take place virtually (not
-                  in-person).
-                  <br />
-                  <br />
-                  <em>Note:</em> This upcoming community event may be
-                  photographed and/or videotaped for possible use on the City
-                  (and library) websites and social media. Your participation
-                  constitutes consent for the City to publish your likeness for
-                  publicity purposes.
-                  <br />
-                  <br />
-                  Activities, events, and times listed above are subject to
-                  change. Please check back for updates.
-                </p>
-
-                <hr
-                  style={{
-                    border: "none",
-                    borderTop: "1px solid #ccc",
-                    margin: "2rem 0",
-                  }}
-                />
-
-                {/* Inserted School Outreach Flyer */}
-                <p>
-                  <span
-                    style={{
-                      fontSize: "15px",
-                      display: "block",
-                      textAlign: "center",
-                      color: "#007a33",
-                      fontWeight: "bold",
-                      cursor: "pointer",
-                      textDecoration: "underline",
-                      margin: "0.5rem 0",
-                      fontStyle: "italic",
-                    }}
-                    onClick={() =>
-                      window.open("/ATP_School_Outreach_Flyer.pdf", "_blank")
-                    }
-                  >
-                    Click on me or the flyer to view the flyer closer!
-                  </span>
-                </p>
-
-                <a
-                  href="/ATP_School_Outreach_Flyer.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ display: "block" }}
-                >
-                  <img
-                    src="/images/ATP_School_Outreach_Flyer-English.jpg"
-                    alt="ATP School Outreach Flyer"
-                    style={{
-                      display: "block",
-                      margin: "1rem auto",
-                      maxWidth: "100%",
-                      height: "auto",
-                      border: "1px solid #ccc",
-                      borderRadius: "8px",
-                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                      cursor: "pointer",
-                    }}
-                  />
-                </a>
-
-                {/* Inserted School Outreach Flyer Español */}
-                <p>
-                  <span
-                    style={{
-                      fontSize: "15px",
-                      display: "block",
-                      textAlign: "center",
-                      color: "#007a33",
-                      fontWeight: "bold",
-                      cursor: "pointer",
-                      textDecoration: "underline",
-                      margin: "3rem 0 1rem 0",
-                      fontStyle: "italic",
-                    }}
-                    onClick={() =>
-                      window.open(
-                        "/ATP_School_Outreach_Flyer-Spanish.pdf",
-                        "_blank"
-                      )
-                    }
-                  >
-                    ¡Haz clic en mí o en el volante para verlo con más detalle
-                    en español!
-                  </span>
-                </p>
-
-                <a
-                  href="/ATP_School_Outreach_Flyer-Spanish.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ display: "block" }}
-                >
-                  <img
-                    src="/images/ATP_School_Outreach_Flyer-Spanish.jpg"
-                    alt="ATP School Outreach Flyer"
-                    style={{
-                      display: "block",
-                      margin: "1rem auto",
-                      maxWidth: "100%",
-                      height: "auto",
-                      border: "1px solid #ccc",
-                      borderRadius: "8px",
-                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                      cursor: "pointer",
-                    }}
-                  />
-                </a>
-              </div>
-
               {/* Upcoming Events - BAT */}
               <div
                 className="event-card"
@@ -544,7 +324,6 @@ export default function ProjectStatus() {
                 >
                   🕒
                 </div>
-
                 <h3
                   className="event-title"
                   style={{
@@ -555,7 +334,6 @@ export default function ProjectStatus() {
                 >
                   Past Events
                 </h3>
-
                 {/* Past Events will be listed below */}
                 <h4
                   style={{
@@ -567,7 +345,6 @@ export default function ProjectStatus() {
                 >
                   Past Community Workshop Details
                 </h4>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -577,7 +354,6 @@ export default function ProjectStatus() {
                 >
                   📅 <strong>Date:</strong> April 19th (Saturday)
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -587,7 +363,6 @@ export default function ProjectStatus() {
                 >
                   🕙 <strong>Time:</strong> 10:00 AM – 2:00 PM
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -597,7 +372,6 @@ export default function ProjectStatus() {
                 >
                   📍 <strong>Location:</strong> Thousand Oaks Community Center
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -607,7 +381,6 @@ export default function ProjectStatus() {
                 >
                   2525 N. Moorpark Rd., Thousand Oaks {" "}
                 </div>
-
                 <p
                   style={{
                     fontSize: "15px",
@@ -634,7 +407,7 @@ export default function ProjectStatus() {
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
                 </p>
-
+                {/* Horizontal line to separate past events */}
                 <hr
                   style={{
                     border: "none",
@@ -642,9 +415,7 @@ export default function ProjectStatus() {
                     margin: "2rem 0",
                   }}
                 />
-
                 {/* Link to the past event details (2) BAT Meeting */}
-
                 <h4
                   style={{
                     fontSize: "1.25rem",
@@ -655,7 +426,6 @@ export default function ProjectStatus() {
                 >
                   Past Bicycle Advisory Team (BAT) Meeting Details
                 </h4>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -665,7 +435,6 @@ export default function ProjectStatus() {
                 >
                   📅 <strong>Date:</strong> May 15th (Thursday)
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -675,7 +444,6 @@ export default function ProjectStatus() {
                 >
                   🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -685,7 +453,6 @@ export default function ProjectStatus() {
                 >
                   📍 <strong>Location:</strong> Park Room
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -695,7 +462,6 @@ export default function ProjectStatus() {
                 >
                   2100 East Thousand Oaks Boulevard 3rd Floor {" "}
                 </div>
-
                 <p
                   style={{
                     fontSize: "15px",
@@ -717,7 +483,6 @@ export default function ProjectStatus() {
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
                 </p>
-
                 <hr
                   style={{
                     border: "none",
@@ -725,9 +490,7 @@ export default function ProjectStatus() {
                     margin: "2rem 0",
                   }}
                 />
-
                 {/* Information regarding the already past TTAC meeting  */}
-
                 <h4
                   style={{
                     fontSize: "1.25rem",
@@ -739,7 +502,6 @@ export default function ProjectStatus() {
                   Past Traffic and Transportation Advisory Commission (TTAC)
                   Meeting Details
                 </h4>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -749,7 +511,6 @@ export default function ProjectStatus() {
                 >
                   📅 <strong>Date:</strong> September 24th (Wednesday)
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -759,7 +520,6 @@ export default function ProjectStatus() {
                 >
                   🕙 <strong>Time:</strong> 6:00 PM
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -769,7 +529,6 @@ export default function ProjectStatus() {
                 >
                   📍 <strong>Location:</strong> Board Room
                 </div>
-
                 <div
                   style={{
                     fontSize: "1.1rem",
@@ -779,7 +538,6 @@ export default function ProjectStatus() {
                 >
                   2100 East Thousand Oaks Boulevard 3rd Floor {" "}
                 </div>
-
                 <p
                   style={{
                     fontSize: "15px",
@@ -803,6 +561,172 @@ export default function ProjectStatus() {
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
                 </p>
+                {/* Horizontal line to separate past events */}
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+                {/* Information regarding past meeting details for CVUSD */}
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Conejo Valley School District (CVUSD) Virtual Workshop{" "}
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> October 14th (Tuesday)
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 6:00 PM
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Virtual (Not In-Person)
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Conejo Valley School District (CVUSD) Virtual Workshop
+                  meeting begins at 6:00 PM and will take place virtually (not
+                  in-person).
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px dashed #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+                {/* Inserted School Outreach Flyer */}
+                <p>
+                  <span
+                    style={{
+                      fontSize: "15px",
+                      display: "block",
+                      textAlign: "center",
+                      color: "#007a33",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                      margin: "0.5rem 0",
+                      fontStyle: "italic",
+                    }}
+                    onClick={() =>
+                      window.open("/ATP_School_Outreach_Flyer.pdf", "_blank")
+                    }
+                  >
+                    Click on me or the flyer to view the flyer closer!
+                  </span>
+                </p>
+                <a
+                  href="/ATP_School_Outreach_Flyer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "block" }}
+                >
+                  <img
+                    src="/images/ATP_School_Outreach_Flyer-English.jpg"
+                    alt="ATP School Outreach Flyer"
+                    style={{
+                      display: "block",
+                      margin: "1rem auto",
+                      maxWidth: "100%",
+                      height: "auto",
+                      border: "1px solid #ccc",
+                      borderRadius: "8px",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                      cursor: "pointer",
+                    }}
+                  />
+                </a>
+                {/* Inserted School Outreach Flyer Español */}
+                <p>
+                  <span
+                    style={{
+                      fontSize: "15px",
+                      display: "block",
+                      textAlign: "center",
+                      color: "#007a33",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                      textDecoration: "underline",
+                      margin: "3rem 0 1rem 0",
+                      fontStyle: "italic",
+                    }}
+                    onClick={() =>
+                      window.open(
+                        "/ATP_School_Outreach_Flyer-Spanish.pdf",
+                        "_blank"
+                      )
+                    }
+                  >
+                    ¡Haz clic en mí o en el volante para verlo con más detalle
+                    en español!
+                  </span>
+                </p>
+                <a
+                  href="/ATP_School_Outreach_Flyer-Spanish.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "block" }}
+                >
+                  <img
+                    src="/images/ATP_School_Outreach_Flyer-Spanish.jpg"
+                    alt="ATP School Outreach Flyer"
+                    style={{
+                      display: "block",
+                      margin: "1rem auto",
+                      maxWidth: "100%",
+                      height: "auto",
+                      border: "1px solid #ccc",
+                      borderRadius: "8px",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                      cursor: "pointer",
+                    }}
+                  />
+                </a>
               </div>
             </div>
           </div>
