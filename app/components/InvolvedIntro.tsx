@@ -172,7 +172,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           travel in our community every day — and you’ve helped shape this plan!
           The City of Thousand Oaks is updating its Active Transportation Plan,
           and thanks to your input, the plan is being crafted to reflect the
-          community’s real needs. There are still 3 ways you can get involved:
+          community’s real needs. There are still 2 ways you can get involved:
         </p>
 
         <ol
@@ -188,21 +188,6 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
             marginTop: "1rem",
           }}
         >
-          <li>
-            <strong>
-              Take the{" "}
-              <span
-                onClick={() => setActiveSection("Survey")}
-                style={{
-                  color: "#005fa3",
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                }}
-              >
-                Feedback Form
-              </span>{" "}
-            </strong>
-          </li>
           <li>
             <strong>
               Attend a{" "}

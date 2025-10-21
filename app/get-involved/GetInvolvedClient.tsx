@@ -58,7 +58,7 @@ export default function GetInvolvedClient() {
   */
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
-    { label: "Online Feedback Form (Open Again!)", section: "Survey" },
+    { label: "Online Feedback Form (Closed)", section: "Survey" },
     { label: "Public Workshops", section: "Workshop" },
     { label: "Contact Us", section: "Contact" },
   ];
