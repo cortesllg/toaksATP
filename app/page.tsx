@@ -34,7 +34,7 @@ export default function Home() {
           </h2>
 
           <p className="p2 fade-in">
-            Share your input regarding the Active Transportation Plan!
+            Thank you for sharing your input!
           </p>
           {/* Feedback form button  below here*/}
         </div>
