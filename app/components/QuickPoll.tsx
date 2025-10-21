@@ -171,7 +171,7 @@ const QuickPoll = ({ isMobile }: InvolvedIntroProps) => {
                 borderRadius: "9999px",
                 border: "none",
                 cursor: "pointer",
-                transition: "background-color 0.3s",
+                transition: "all 0.3s ease",
                 textTransform: "uppercase",
               }}
               onMouseOver={(e) =>

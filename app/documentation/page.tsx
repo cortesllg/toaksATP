@@ -325,7 +325,10 @@ export default function Documentation() {
                     fontWeight: 600,
                     fontSize: isMobile ? "14px" : "16px",
                     textAlign: "center",
+                    transition: "all 0.3s ease",
                   }}
+                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#005fa3")}
+                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#007a33")}
                 >
                   ATP (2019)
                 </a>

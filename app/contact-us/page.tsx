@@ -364,6 +364,7 @@ export default function ContactUs() {
                 borderRadius: "9999px",
                 border: "none",
                 cursor: "pointer",
+                transition: "all 0.3s ease",
               }}
               onMouseOver={(e) =>
                 (e.currentTarget.style.backgroundColor = "#005fa3")
