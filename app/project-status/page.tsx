@@ -244,7 +244,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> January 15th 2026 (Thursday)
+                  📅 <strong>Date:</strong> February 12th 2026 (Thursday)
                 </div>
 
                 <div

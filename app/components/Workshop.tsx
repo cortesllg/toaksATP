@@ -65,7 +65,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          📅 <strong>Date:</strong> January 15th 2026 (Thursday)
+          📅 <strong>Date:</strong> February 12th 2026 (Thursday)
         </p>
         <p
           style={{

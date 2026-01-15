@@ -60,7 +60,7 @@ export default function GetInvolvedClient() {
     { label: "Get Started", section: "InvolvedIntro" },
     { label: "Online Feedback Form (Closed)", section: "Survey" },
     { label: "Public Workshops", section: "Workshop" },
-    { label: "Contact Us", section: "Contact" },
+    { label: "Stay in Touch", section: "Contact" },
   ];
 
   return (

@@ -61,8 +61,8 @@ export default function RootLayout({
             <div className="cta-description">Available Documentation</div>
           </Link>
           <Link href="/contact-us" className="cta-button">
-            <span>CONTACT US</span>
-            <div className="cta-description">Get in Touch, Send a Message</div>
+            <span>GET IN TOUCH</span>
+            <div className="cta-description"> Stay in Touch with the ATP</div>
           </Link>
         </nav>
 
@@ -89,7 +89,7 @@ export default function RootLayout({
                     <Link href="/get-involved">Get Involved</Link>
                   </li>
                   <li>
-                    <Link href="/contact-us">Send a Message</Link>
+                    <Link href="/contact-us">Stay in Touch with the ATP</Link>
                   </li>
                 </ul>
               </div>

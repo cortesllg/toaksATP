@@ -71,7 +71,7 @@ export default function ContactUs() {
         <div className="overlay-text1">
           <div className="bg-heading">GET IN TOUCH</div>
           <div className="fg-subtitle">
-            Have a question or message? Send a message to the team!
+            Provide your information to stay in touch!
           </div>
         </div>
       </div>
@@ -176,7 +176,22 @@ export default function ContactUs() {
                 textAlign: "center",
               }}
             >
-              Send a Message
+              Get in Touch
+            </div>
+
+            <div
+              className="project-overview-text"
+              style={{
+                fontSize: isMobile ? "15px" : "16px",
+                lineHeight: "1.8",
+                color: "#4b5563",
+                marginBottom: "2.5rem",
+                textAlign: "justify",
+              }}
+            >
+              Provide us your contact information to stay in touch and to be
+              notified when the Thousand Oaks Active Transportation Plan (ATP)
+              Update is public!
             </div>
 
             {/* Contact Form */}
@@ -255,39 +270,11 @@ export default function ContactUs() {
                 }}
               />
 
-              {/* Message Field */}
-              <textarea
+              {/* Message Field (No message field - currently hidden and only used for providing a name and email) */}
+              <input
+                type="hidden"
                 name="message"
-                placeholder="Your Message or Suggestions"
-                rows={12}
-                required
-                style={{
-                  padding: "1rem",
-                  fontSize: "14px",
-                  fontFamily: "Arial, sans-serif",
-                  border: "1px solid #d1d5db",
-                  borderRadius: "0.375rem",
-                  resize: "vertical",
-                  transition: "all 0.3s ease",
-                }}
-                onFocus={(e) => {
-                  e.currentTarget.style.backgroundColor = "#c8e6c9";
-                  e.currentTarget.style.transform = "scale(1.02)";
-                }}
-                onBlur={(e) => {
-                  e.currentTarget.style.backgroundColor = "white";
-                  e.currentTarget.style.transform = "scale(1)";
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = "#c8e6c9";
-                  e.currentTarget.style.transform = "scale(1.02)";
-                }}
-                onMouseOut={(e) => {
-                  if (document.activeElement !== e.currentTarget) {
-                    e.currentTarget.style.backgroundColor = "white";
-                    e.currentTarget.style.transform = "scale(1)";
-                  }
-                }}
+                value="No message provided, Fill-in response is only meant for providing a name and email."
               />
 
               {/* Submit Button */}

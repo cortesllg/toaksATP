@@ -213,9 +213,9 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
                   cursor: "pointer",
                 }}
               >
-                Contact Us
+                Stay in Touch
               </span>{" "}
-              Directly
+                With the ATP Update
             </strong>
           </li>
         </ol>
