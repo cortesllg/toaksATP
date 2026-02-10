@@ -173,7 +173,9 @@ export default function Documentation() {
                 marginTop: "2rem",
               }}
             >
-              {/* Documentations */}
+              {/* Thousand Oakd Active Transportation Plan Update */}
+              {/* Thousand Oakd Active Transportation Plan Update */}
+              {/* Thousand Oakd Active Transportation Plan Update */}
               <div
                 className="documentation-card"
                 style={{
@@ -195,93 +197,123 @@ export default function Documentation() {
                   className="documentation-title"
                   style={{
                     fontSize: "1.75rem",
-                    marginBottom: "1rem",
+                    marginBottom: "2rem",
                     color: "#007a33",
                   }}
                 >
-                  Documentation (Coming Soon)
+                  Thousand Oakd Active Transportation Plan Update
                 </h3>
 
-                <p
-                  className="documentation-text"
+                <a
+                  href="/City of Thousand Oaks Draft ATP Update 2026 (02-09-26).pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
-                    fontSize: "1rem",
-                    marginBottom: "0.5rem",
-                    color: "#374151",
+                    padding: "0.75rem 1.5rem",
+                    backgroundColor: "#007a33",
+                    color: "#ffffff",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    fontWeight: 600,
+                    fontSize: isMobile ? "14px" : "16px",
+                    textAlign: "center",
+                    transition: "all 0.3s ease",
                   }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#005fa3")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#007a33")
+                  }
                 >
-                  Check back in the future for more information to stay
-                  up-to-date.
-                </p>
-
-                {/* 📄 Final Report Box Inserted Here CURRENTLY NOT RENDERED ON SITE- WAS ASKED TO BE REMOVED BUT COULD BE USED IN THE FUTURE */}
-                {/* <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginBottom: "1.5rem",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.75rem",
-                      padding: "1.25rem 2rem",
-                      borderRadius: "12px",
-                      backgroundColor: "#ffffff",
-                      boxShadow: "0 2px 6px rgba(0, 0, 0, 0.06)",
-                      width: "fit-content",
-                    }}
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="#6b7280"
-                      style={{ width: "32px", height: "32px" }}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.5 14.25v1.125c0 .621-.504 1.125-1.125 
-              1.125h-12.75A1.125 1.125 0 015 15.375V14.25m14.5-4.5v-1.125c0-.621-.504-1.125-1.125-1.125h-12.75A1.125 
-              1.125 0 015 8.625V9.75m14.5-4.5V4.125C19.5 3.504 18.996 3 18.375 3H5.625C5.004 3 4.5 3.504 4.5 
-              4.125V5.25"
-                      />
-                    </svg>
-                    <div style={{ textAlign: "left" }}>
-                      <div
-                        style={{
-                          fontWeight: "600",
-                          fontSize: "1rem",
-                          color: "#4b5563",
-                        }}
-                      >
-                        Final Report
-                      </div>
-                      <div
-                        style={{
-                          fontSize: "0.85rem",
-                          color: "#9ca3af",
-                        }}
-                      >
-                        Coming soon
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                  ATP Update (Draft)
+                </a>
 
                 <p
                   className="documentation-subtext"
-                  style={{ fontSize: "0.9rem", color: "#6b7280" }}
+                  style={{
+                    fontSize: "0.9rem",
+                    color: "#6b7280",
+                    marginTop: "2rem",
+                  }}
                 >
-                  Project details and information will be documented here. Stay
-                  tuned to see what is going on in the City of Thousand Oaks!
+                  We've completed our Draft Active Transportation Plan to make
+                  getting around smoother and easier for everyone!
+                </p>
+              </div>
+              {/* Project Summarization (not Entire Draft) */}
+              {/* Project Summarization (not Entire Draft) */}
+              {/* Project Summarization (not Entire Draft) */}
+
+              <div
+                className="documentation-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  className="documentation-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📄
+                </div>
+
+                <h3
+                  className="documentation-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "2rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Thousand Oaks Project Improvement Summary
+                </h3>
+
+                <a
+                  href="/Project Improvements Summary.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: "0.75rem 1.5rem",
+                    backgroundColor: "#007a33",
+                    color: "#ffffff",
+                    textDecoration: "none",
+                    borderRadius: "8px",
+                    fontWeight: 600,
+                    fontSize: isMobile ? "14px" : "16px",
+                    textAlign: "center",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#005fa3")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#007a33")
+                  }
+                >
+                  Summary
+                </a>
+
+                <p
+                  className="documentation-subtext"
+                  style={{
+                    fontSize: "0.9rem",
+                    color: "#6b7280",
+                    marginTop: "2rem",
+                  }}
+                >
+                  Want to learn more about the Active Transportation Plan
+                  Update? This document is a summary of proposed project
+                  improvements within the City of Thousand Oaks.
                 </p>
               </div>
 
+              {/* Old 2019 ATP Document for Thousand Oaks */}
+              {/* Old 2019 ATP Document for Thousand Oaks */}
               {/* Old 2019 ATP Document for Thousand Oaks */}
 
               <div
@@ -327,8 +359,12 @@ export default function Documentation() {
                     textAlign: "center",
                     transition: "all 0.3s ease",
                   }}
-                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#005fa3")}
-                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#007a33")}
+                  onMouseOver={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#005fa3")
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.style.backgroundColor = "#007a33")
+                  }
                 >
                   ATP (2019)
                 </a>
