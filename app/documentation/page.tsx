@@ -201,7 +201,7 @@ export default function Documentation() {
                     color: "#007a33",
                   }}
                 >
-                  Thousand Oakd Active Transportation Plan Update
+                  Thousand Oaks Active Transportation Plan Update
                 </h3>
 
                 <a
