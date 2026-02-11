@@ -102,6 +102,7 @@ export default function GetInvolvedClient() {
               fontSize: "14px",
               alignSelf: isMobile ? "center" : "flex-start",
               width: isMobile ? "100%" : "auto",
+              marginRight: isMobile ? "0" : "3rem",
               transform: isMobile ? "none" : "translateX(3rem)",
               boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -160,7 +161,7 @@ export default function GetInvolvedClient() {
             ref={mainContentRef}
             className="overview-text-group"
             style={{
-              padding: isMobile ? "1rem" : "2rem 5rem",
+              padding: isMobile ? "1rem" : "2rem 0rem",
               maxWidth: "800px",
               margin: "0 auto",
             }}
@@ -195,7 +196,6 @@ export default function GetInvolvedClient() {
             </Suspense>
           </main>
 
-          <QuickPoll isMobile={isMobile} />
         </div>
       </section>
     </>
