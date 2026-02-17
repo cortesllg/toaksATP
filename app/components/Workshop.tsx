@@ -52,7 +52,8 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          Next Workshop Details
+          Upcoming Event: Traffic and Transportation Advisory Commission
+          (TTAC){" "}
         </h2>
 
         <p
@@ -62,7 +63,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          📅 <strong>Date:</strong> To be Determined (TBD)
+          📅 <strong>Date:</strong> February 25th (Wednesday)
         </p>
         <p
           style={{
@@ -71,7 +72,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          🕙 <strong>Time:</strong> TBD
+          🕙 <strong>Time:</strong> 6:00 PM
         </p>
 
         <p
@@ -81,7 +82,17 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          📍 <strong>Location:</strong> TBD
+          📍 <strong>Location:</strong> Board Room
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          2100 East Thousand Oaks Boulevard 3rd Floor {" "}
         </p>
 
         <p
@@ -91,15 +102,15 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             lineHeight: "1.7",
           }}
         >
-          Details for the next workshop is{" "}
-          <strong>To Be Determined (TBD)</strong>. Please check back for updates
-          regarding future workshop dates and details.
+          The Traffic and Transportation Advisory Commission (TTAC) meeting
+          begins at 6:00 PM in the Board Room at 2100 East Thousand Oaks
+          Boulevard 3rd Floor.
           <br />
           <br />
-          <em>Note:</em> This community event may be photographed and/or
-          videotaped for possible use on the City (and library) websites and
-          social media. Your participation constitutes consent for the City to
-          publish your likeness for publicity purposes.
+          <em>Note:</em> This upcoming community event may be photographed
+          and/or videotaped for possible use on the City (and library) websites
+          and social media. Your participation constitutes consent for the City
+          to publish your likeness for publicity purposes.
           <br />
           <br />
           Activities, events, and times listed above are subject to change.

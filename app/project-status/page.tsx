@@ -157,7 +157,8 @@ export default function ProjectStatus() {
                     color: "#007a33",
                   }}
                 >
-                  Upcoming Event: To be Determined{" "}
+                  Upcoming Event: Traffic and Transportation Advisory Commission
+                  (TTAC){" "}
                 </h3>
 
                 <h4
@@ -168,7 +169,7 @@ export default function ProjectStatus() {
                     color: "#1f2937",
                   }}
                 >
-                  Next Workshop Details
+                  Next Meeting Details
                 </h4>
 
                 <div
@@ -178,7 +179,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> TBD
+                  📅 <strong>Date:</strong> February 25th (Wednesday)
                 </div>
 
                 <div
@@ -188,7 +189,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> TBD
+                  🕙 <strong>Time:</strong> 6:00 PM
                 </div>
 
                 <div
@@ -198,7 +199,7 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> TBD
+                  📍 <strong>Location:</strong> Board Room
                 </div>
 
                 {/* Street address of location of where event will be held */}
@@ -208,7 +209,9 @@ export default function ProjectStatus() {
                     color: "#374151",
                     marginBottom: "1rem",
                   }}
-                ></div>
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
 
                 <p
                   style={{
@@ -218,19 +221,21 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  Details for the next Community Workshop are{" "}
-                  <strong>To Be Determined (TBD)</strong>. Please check back for
-                  updates regarding future workshop dates and details.
+                  The Traffic and Transportation Advisory Commission (TTAC)
+                  meeting begins at 6:00 PM in the Board Room at 2100 East
+                  Thousand Oaks Boulevard 3rd Floor.
                   <br />
                   <br />
                   <em>Note:</em> This upcoming community event may be
                   photographed and/or videotaped for possible use on the City
                   (and library) websites and social media. Your participation
                   constitutes consent for the City to publish your likeness for
-                  publicity purposes. Activities, events, and times listed above
+                  publicity purposes. 
+                  <br />
+                  <br />
+                  Activities, events, and times listed above
                   are subject to change. Please check back for updates.
                   <br />
-
                 </p>
               </div>
 
