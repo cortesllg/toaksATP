@@ -78,7 +78,6 @@ export default function ProjectStatus() {
             marginBottom: "2rem",
           }}
         >
-
           {/* Center Text Section */}
           <div
             className="overview-text-group"
@@ -129,7 +128,6 @@ export default function ProjectStatus() {
                 marginTop: "2rem",
               }}
             >
-
               {/* Upcoming Events - BAT Meeting No.2 */}
               {/* Upcoming Events - BAT January 2026 */}
               {/* Upcoming Events - BAT */}
@@ -159,7 +157,7 @@ export default function ProjectStatus() {
                     color: "#007a33",
                   }}
                 >
-                  Upcoming Event: Bicycle Advisory Team (BAT){" "}
+                  Upcoming Event: To be Determined{" "}
                 </h3>
 
                 <h4
@@ -170,7 +168,7 @@ export default function ProjectStatus() {
                     color: "#1f2937",
                   }}
                 >
-                  Next BAT Workshop Details
+                  Next Workshop Details
                 </h4>
 
                 <div
@@ -180,7 +178,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> February 12th 2026 (Thursday)
+                  📅 <strong>Date:</strong> TBD
                 </div>
 
                 <div
@@ -190,7 +188,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
+                  🕙 <strong>Time:</strong> TBD
                 </div>
 
                 <div
@@ -200,18 +198,17 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> Park Room
+                  📍 <strong>Location:</strong> TBD
                 </div>
 
+                {/* Street address of location of where event will be held */}
                 <div
                   style={{
                     fontSize: "1.1rem",
                     color: "#374151",
                     marginBottom: "1rem",
                   }}
-                >
-                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
-                </div>
+                ></div>
 
                 <p
                   style={{
@@ -221,19 +218,19 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
-                  the Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+                  Details for the next Community Workshop are{" "}
+                  <strong>To Be Determined (TBD)</strong>. Please check back for
+                  updates regarding future workshop dates and details.
                   <br />
                   <br />
                   <em>Note:</em> This upcoming community event may be
                   photographed and/or videotaped for possible use on the City
                   (and library) websites and social media. Your participation
                   constitutes consent for the City to publish your likeness for
-                  publicity purposes.
+                  publicity purposes. Activities, events, and times listed above
+                  are subject to change. Please check back for updates.
                   <br />
-                  <br />
-                  Activities, events, and times listed above are subject to
-                  change. Please check back for updates.
+
                 </p>
               </div>
 
@@ -509,7 +506,8 @@ export default function ProjectStatus() {
                     color: "#1f2937",
                   }}
                 >
-                  Past Conejo Valley School District (CVUSD) Virtual Workshop{" "}
+                  Past Conejo Valley School District (CVUSD) Virtual
+                  Workshop{" "}
                 </h4>
 
                 <div
@@ -629,7 +627,7 @@ export default function ProjectStatus() {
                     onClick={() =>
                       window.open(
                         "/ATP_School_Outreach_Flyer-Spanish.pdf",
-                        "_blank"
+                        "_blank",
                       )
                     }
                   >
@@ -735,11 +733,86 @@ export default function ProjectStatus() {
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
                 </p>
+                {/* Dividing line between events */}
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+                {/* Link to the past event details (3) BAT Meeting */}
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Bicycle Advisory Team (BAT) Meeting Details
+                </h4>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> February 12th (Thursday)
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Park Room
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in
+                  the Park Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+                  <br />
+                  <br />
+                  <em>Note:</em> This community event may be photographed and/or
+                  videotaped for possible use on the city (and library) websites
+                  and social media. Your participation constitutes consent for
+                  the City to publish your likeness for publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
                 {/* End of list regarding past events */}
               </div>
             </div>
           </div>
-
         </div>
       </div>
 

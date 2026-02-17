@@ -31,10 +31,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
 
       {/* Workshop Details */}
 
-
-      {/* Second BAT Meeting */}
-      {/* Currently 2 BAT meeting, this one is for the Draft I believe */}
-      {/* Upcoming BAT Meeting */}
+      {/*Unknown upcoming meetings */}
       <div
         style={{
           backgroundColor: "#f9fafb",
@@ -55,7 +52,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          Next Bicycle Advisory Team (BAT) Meeting Details
+          Next Workshop Details
         </h2>
 
         <p
@@ -65,7 +62,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          📅 <strong>Date:</strong> February 12th 2026 (Thursday)
+          📅 <strong>Date:</strong> To be Determined (TBD)
         </p>
         <p
           style={{
@@ -74,17 +71,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          🕙 <strong>Time:</strong> 4:00 PM - 6:00 PM
-        </p>
-
-        <p
-          style={{
-            fontSize: "16px",
-            color: "#1f2937",
-            margin: 0,
-          }}
-        >
-          📍 <strong>Location:</strong> Park Room
+          🕙 <strong>Time:</strong> TBD
         </p>
 
         <p
@@ -94,7 +81,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             margin: 0,
           }}
         >
-          2100 East Thousand Oaks Boulevard 3rd Floor
+          📍 <strong>Location:</strong> TBD
         </p>
 
         <p
@@ -104,8 +91,9 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
             lineHeight: "1.7",
           }}
         >
-          The Bicycle Advisory Team (BAT) meeting begins at 4:00 PM in the Park
-          Room at 2100 East Thousand Oaks Boulevard 3rd Floor.
+          Details for the next workshop is{" "}
+          <strong>To Be Determined (TBD)</strong>. Please check back for updates
+          regarding future workshop dates and details.
           <br />
           <br />
           <em>Note:</em> This community event may be photographed and/or
