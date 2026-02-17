@@ -125,9 +125,9 @@ export default function Documentation() {
                 textAlign: "justify",
               }}
             >
-              We are currently preparing the Active Transportation Plan Update.
-              Please check in back later to access the latest report and
-              resources related to to our transportation plan initiatives.
+             
+              Below are a selection of options showcasing the available documents including the 
+              completed Draft Active Transportation Plan Update.
             </div>
 
             {/* Events Section */}
