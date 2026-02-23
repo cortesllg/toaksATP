@@ -128,9 +128,10 @@ export default function ProjectStatus() {
                 marginTop: "2rem",
               }}
             >
-              {/* Upcoming Events - BAT Meeting No.2 */}
-              {/* Upcoming Events - BAT January 2026 */}
-              {/* Upcoming Events - BAT */}
+              {/* Upcoming Events - TTAC Feb 25 */}
+              {/* Upcoming Events - Bicycle Repari Workshop */}
+
+              {/* Upcoming Events - TTAC */}
               <div
                 className="event-card"
                 style={{
@@ -230,15 +231,235 @@ export default function ProjectStatus() {
                   photographed and/or videotaped for possible use on the City
                   (and library) websites and social media. Your participation
                   constitutes consent for the City to publish your likeness for
-                  publicity purposes. 
+                  publicity purposes.
                   <br />
                   <br />
-                  Activities, events, and times listed above
-                  are subject to change. Please check back for updates.
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
                   <br />
                 </p>
               </div>
 
+              {/* Upcoming Events - Adelante Comunidad Conejo */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #c8e6c9",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Upcoming Event: Adelante Comunidad Conejo - Community Free
+                  Marketplace{" "}
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Next Community Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> February 28th (Saturday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 9:30 AM - 11:00 AM
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Conejo Academy Elementary School
+                  Campus
+                </div>
+
+                {/* Street address of location of where event will be held */}
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  280 N. Conejo School Rd, Thousand Oaks, 91362{" "}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Adelante Comunidad Conejo - Community Free Marketplace
+                  begins at 9:30 AM in the Conejo Academy Elementary School
+                  Campus at 280 N. Conejo School Rd, Thousand Oaks, 91362.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                  <br />
+                </p>
+              </div>
+
+              {/* Upcoming Events - Bicycle Repair Workshop */}
+              <div
+                className="event-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #c8e6c9",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Upcoming Event: Bicycle Repair Workshop{" "}
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Next Meeting Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> March 7th (Saturday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 2:00 PM - 4:00 PM
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Dos Vientos Community Center
+                </div>
+
+                {/* Street address of location of where event will be held */}
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  4801 Borchard Rd, Newbury Park, CA 91320 {" "}
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Bicycle Repair Workshop begins at 2:00 PM in the Dos
+                  Vientos Community Center at 4801 Borchard Rd, Newbury Park, CA
+                  91320.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                  <br />
+                </p>
+              </div>
+
+              {/* Past Events */}
+              {/* Past Events */}
               {/* Past Events */}
               <div
                 className="event-card"

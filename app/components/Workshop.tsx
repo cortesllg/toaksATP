@@ -31,7 +31,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
 
       {/* Workshop Details */}
 
-      {/*Unknown upcoming meetings */}
+      {/*Upcoming Meetings - TTAC */}
       <div
         style={{
           backgroundColor: "#f9fafb",
@@ -105,6 +105,178 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
           The Traffic and Transportation Advisory Commission (TTAC) meeting
           begins at 6:00 PM in the Board Room at 2100 East Thousand Oaks
           Boulevard 3rd Floor.
+          <br />
+          <br />
+          <em>Note:</em> This upcoming community event may be photographed
+          and/or videotaped for possible use on the City (and library) websites
+          and social media. Your participation constitutes consent for the City
+          to publish your likeness for publicity purposes.
+          <br />
+          <br />
+          Activities, events, and times listed above are subject to change.
+          Please check back for updates.
+        </p>
+      </div>
+
+      {/*Upcoming Meetings - Adelante Comunidad Conejo */}
+      <div
+        style={{
+          backgroundColor: "#f9fafb",
+          padding: "1.5rem",
+          borderRadius: "8px",
+          border: "1px solid #d1d5db",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#007a33",
+            margin: 0,
+          }}
+        >
+          Upcoming Event: Adelante Comunidad Conejo - Community Free
+          Marketplace{" "}
+        </h2>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📅 <strong>Date:</strong> February 28th (Saturday)
+        </p>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          🕙 <strong>Time:</strong> 9:30 AM - 11:00 AM
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📍 <strong>Location:</strong> Conejo Academy Elementary School Campus
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          280 N. Conejo School Rd, Thousand Oaks, 91362{" "}
+        </p>
+
+        <p
+          style={{
+            fontSize: "15px",
+            color: "#4b5563",
+            lineHeight: "1.7",
+          }}
+        >
+          The Adelante Comunidad Conejo - Community Free Marketplace begins at
+          9:30 AM in the Conejo Academy Elementary School Campus at 280 N.
+          Conejo School Rd, Thousand Oaks, 91362.
+          <br />
+          <br />
+          <em>Note:</em> This upcoming community event may be photographed
+          and/or videotaped for possible use on the City (and library) websites
+          and social media. Your participation constitutes consent for the City
+          to publish your likeness for publicity purposes.
+          <br />
+          <br />
+          Activities, events, and times listed above are subject to change.
+          Please check back for updates.
+        </p>
+      </div>
+
+      {/*Upcoming Meetings - Bicycle Repair Workshop */}
+      <div
+        style={{
+          backgroundColor: "#f9fafb",
+          padding: "1.5rem",
+          borderRadius: "8px",
+          border: "1px solid #d1d5db",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#007a33",
+            margin: 0,
+          }}
+        >
+          Upcoming Event: Bicycle Repair Workshop
+        </h2>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📅 <strong>Date:</strong> March 7th (Saturday)
+        </p>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          🕙 <strong>Time:</strong> 2:00 PM - 4:00 PM
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📍 <strong>Location:</strong> Dos Vientos Community Center
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          4801 Borchard Rd, Newbury Park, CA 91320 {" "}
+        </p>
+
+        <p
+          style={{
+            fontSize: "15px",
+            color: "#4b5563",
+            lineHeight: "1.7",
+          }}
+        >
+          The Bicycle Repair Workshop begins at 2:00 PM in the Dos Vientos
+          Community Center at 4801 Borchard Rd, Newbury Park, CA 91320.
           <br />
           <br />
           <em>Note:</em> This upcoming community event may be photographed
