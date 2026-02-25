@@ -63,6 +63,17 @@ const Contact = ({ isMobile }: ContactProps) => {
         concerns or general suggestions to help shape the future of active
         transportation in the City of Thousand Oaks.
       </p>
+      <span
+        style={{
+          color: "red",
+          fontWeight: "bold",
+          fontStyle: "italic",
+        }}
+      >
+        The online comment period will remain open until{" "}
+        <span style={{ textDecoration: "underline" }}>March 10th</span>, Please
+        send us your thoughts and suggestions by then!
+      </span>
 
       {/* Contact Form */}
       <form

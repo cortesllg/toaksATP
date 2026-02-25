@@ -90,8 +90,6 @@ export default function ContactUs() {
             marginBottom: "2rem",
           }}
         >
-
-
           {/* Center Text Section with Send a Message Section */}
           <div
             className="overview-text-group"
@@ -128,6 +126,19 @@ export default function ContactUs() {
               We&apos;d love to hear from you! Please share your transportation
               safety concerns or general suggestions to help shape the future of
               active transportation in the City of Thousand Oaks.
+              <br />
+              <br />
+              <span
+                style={{
+                  color: "red",
+                  fontWeight: "bold",
+                  fontStyle: "italic",
+                }}
+              >
+                The online comment period will remain open until{" "}
+                <span style={{ textDecoration: "underline" }}>March 10th</span>,
+                Please send us your thoughts and suggestions by then!
+              </span>
             </div>
 
             {/* Contact Form */}

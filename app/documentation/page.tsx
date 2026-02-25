@@ -125,9 +125,9 @@ export default function Documentation() {
                 textAlign: "justify",
               }}
             >
-             
-              Below are a selection of options showcasing the available documents including the 
-              completed Draft Active Transportation Plan Update.
+              Below are a selection of options showcasing the available
+              documents including the completed Draft Active Transportation Plan
+              Update.
             </div>
 
             {/* Events Section */}
@@ -398,6 +398,19 @@ export default function Documentation() {
               We&apos;d love to hear from you! Please share your transportation
               safety concerns or general suggestions to help shape the future of
               active transportation in the City of Thousand Oaks.
+              <br />
+              <br />
+              <span
+                style={{
+                  color: "red",
+                  fontWeight: "bold",
+                  fontStyle: "italic",
+                }}
+              >
+                The online comment period will remain open until{" "}
+                <span style={{ textDecoration: "underline" }}>March 10th</span>,
+                Please send us your thoughts and suggestions by then!
+              </span>
             </div>
 
             {/* Contact Form */}
