@@ -240,7 +240,7 @@ export default function ProjectStatus() {
                 </p>
               </div>
 
-              {/* Upcoming Events - Adelante Comunidad Conejo */}
+              {/* Upcoming Events - Adelante Comunidad Conejo - Community Free Marketplace*/}
               <div
                 className="event-card"
                 style={{
@@ -443,6 +443,114 @@ export default function ProjectStatus() {
                   The Bicycle Repair Workshop begins at 2:00 PM in the Dos
                   Vientos Community Center at 4801 Borchard Rd, Newbury Park, CA
                   91320.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                  <br />
+                </p>
+              </div>
+
+              {/* Upcoming Events - Community Free Marketplace (Details TBD)*/}
+              <div
+                className="event-card"
+                style={{
+                  background: "#e8f5e9",
+                  padding: "2rem",
+                  borderRadius: "12px",
+                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
+                  textAlign: "center",
+                  border: "1px solid #c8e6c9",
+                }}
+              >
+                <div
+                  className="event-icon"
+                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
+                >
+                  📅
+                </div>
+
+                <h3
+                  className="event-title"
+                  style={{
+                    fontSize: "1.75rem",
+                    marginBottom: "1.5rem",
+                    color: "#007a33",
+                  }}
+                >
+                  Upcoming Event: A Community Free Marketplace{" "}
+                </h3>
+
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Next Community Details
+                </h4>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> March 14th (Saturday)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> To Be Determined (TBD)
+                </div>
+
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> TBD
+                </div>
+
+                {/* Street address of location of where event will be held (one confirmed to uncomment the bottom <div></div>*/}
+                {/* <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  280 N. Conejo School Rd, Thousand Oaks, 91362{" "}
+                </div> */}
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  Details for the upcoming Community Free Marketplace are{" "}
+                  <strong>To Be Determined (TBD)</strong>. Please check back for
+                  updates regarding future workshop dates and details.
                   <br />
                   <br />
                   <em>Note:</em> This upcoming community event may be

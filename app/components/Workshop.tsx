@@ -31,7 +31,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
 
       {/* Workshop Details */}
 
-      {/*Upcoming Meetings - TTAC */}
+      {/*Upcoming Meetings - TTAC (to be removed after 2/26/2026*/}
       <div
         style={{
           backgroundColor: "#f9fafb",
@@ -118,7 +118,7 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
         </p>
       </div>
 
-      {/*Upcoming Meetings - Adelante Comunidad Conejo */}
+      {/*Upcoming Meetings - Adelante Comunidad Conejo - Community Free Marketplace */}
       <div
         style={{
           backgroundColor: "#f9fafb",
@@ -277,6 +277,95 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
         >
           The Bicycle Repair Workshop begins at 2:00 PM in the Dos Vientos
           Community Center at 4801 Borchard Rd, Newbury Park, CA 91320.
+          <br />
+          <br />
+          <em>Note:</em> This upcoming community event may be photographed
+          and/or videotaped for possible use on the City (and library) websites
+          and social media. Your participation constitutes consent for the City
+          to publish your likeness for publicity purposes.
+          <br />
+          <br />
+          Activities, events, and times listed above are subject to change.
+          Please check back for updates.
+        </p>
+      </div>
+
+      {/*Upcoming Meetings - Community Free Marketplace (Details TBD)*/}
+      <div
+        style={{
+          backgroundColor: "#f9fafb",
+          padding: "1.5rem",
+          borderRadius: "8px",
+          border: "1px solid #d1d5db",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "20px",
+            fontWeight: "bold",
+            color: "#007a33",
+            margin: 0,
+          }}
+        >
+          Upcoming Event: Community Free Marketplace{" "}
+        </h2>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📅 <strong>Date:</strong> March 14th (Saturday)
+        </p>
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          🕙 <strong>Time:</strong> To Be Determined (TBD)
+        </p>
+
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          📍 <strong>Location:</strong> TBD
+        </p>
+
+        {/* Street address of location of where event will be held (one confirmed to uncomment the bottom <div></div>*/}
+
+        {/* 
+        <p
+          style={{
+            fontSize: "16px",
+            color: "#1f2937",
+            margin: 0,
+          }}
+        >
+          280 N. Conejo School Rd, Thousand Oaks, 91362{" "}
+        </p> */}
+
+        <p
+          style={{
+            fontSize: "15px",
+            color: "#4b5563",
+            lineHeight: "1.7",
+          }}
+        >
+          Details for the upcoming Community Free Marketplace are{" "}
+          <strong>To Be Determined (TBD)</strong>. Please check back for updates
+          regarding future workshop dates and details.
           <br />
           <br />
           <em>Note:</em> This upcoming community event may be photographed
