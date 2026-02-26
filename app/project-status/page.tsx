@@ -131,114 +131,6 @@ export default function ProjectStatus() {
               {/* Upcoming Events - TTAC Feb 25 */}
               {/* Upcoming Events - Bicycle Repari Workshop */}
 
-              {/* Upcoming Events - TTAC */}
-              <div
-                className="event-card"
-                style={{
-                  background: "#e8f5e9",
-                  padding: "2rem",
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-                  textAlign: "center",
-                  border: "1px solid #c8e6c9",
-                }}
-              >
-                <div
-                  className="event-icon"
-                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
-                >
-                  📅
-                </div>
-
-                <h3
-                  className="event-title"
-                  style={{
-                    fontSize: "1.75rem",
-                    marginBottom: "1.5rem",
-                    color: "#007a33",
-                  }}
-                >
-                  Upcoming Event: Traffic and Transportation Advisory Commission
-                  (TTAC){" "}
-                </h3>
-
-                <h4
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "1rem",
-                    color: "#1f2937",
-                  }}
-                >
-                  Next Meeting Details
-                </h4>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  📅 <strong>Date:</strong> February 25th (Wednesday)
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  🕙 <strong>Time:</strong> 6:00 PM
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  📍 <strong>Location:</strong> Board Room
-                </div>
-
-                {/* Street address of location of where event will be held */}
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
-                </div>
-
-                <p
-                  style={{
-                    fontSize: "15px",
-                    color: "#4b5563",
-                    marginTop: "1.5rem",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  The Traffic and Transportation Advisory Commission (TTAC)
-                  meeting begins at 6:00 PM in the Board Room at 2100 East
-                  Thousand Oaks Boulevard 3rd Floor.
-                  <br />
-                  <br />
-                  <em>Note:</em> This upcoming community event may be
-                  photographed and/or videotaped for possible use on the City
-                  (and library) websites and social media. Your participation
-                  constitutes consent for the City to publish your likeness for
-                  publicity purposes.
-                  <br />
-                  <br />
-                  Activities, events, and times listed above are subject to
-                  change. Please check back for updates.
-                  <br />
-                </p>
-              </div>
 
               {/* Upcoming Events - Adelante Comunidad Conejo - Community Free Marketplace*/}
               <div
@@ -1138,6 +1030,85 @@ export default function ProjectStatus() {
                   videotaped for possible use on the city (and library) websites
                   and social media. Your participation constitutes consent for
                   the City to publish your likeness for publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+                {/* Horizontal line to separate past events */}
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+                {/* Information regarding the 2nd TTAC meeting  (2/25/2026)*/}
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Traffic and Transportation Advisory Commission (TTAC)
+                  Meeting Details
+                </h4>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> February 25th (Wednesday)
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 6:00 PM
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> Board Room
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  2100 East Thousand Oaks Boulevard 3rd Floor {" "}
+                </div>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Traffic and Transportation Advisory Commission (TTAC)
+                  meeting begins at 6:00 PM in the Board Room at 2100 East
+                  Thousand Oaks Boulevard 3rd Floor.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
                   <br />
                   <br />
                   Activities, events, and times listed above are subject to
