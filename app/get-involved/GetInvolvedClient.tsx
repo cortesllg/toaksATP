@@ -34,7 +34,7 @@ export default function GetInvolvedClient() {
     if (
       sectionParam &&
       ["InvolvedIntro", "Engagement", "Survey", "Workshop", "Contact"].includes(
-        sectionParam
+        sectionParam,
       )
     ) {
       setActiveSection(sectionParam);
@@ -58,9 +58,10 @@ export default function GetInvolvedClient() {
   */
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
-    { label: "Online Feedback Form (Closed)", section: "Survey" },
+    { label: "ATP Update (Draft)", section: "/documentation", external: true },
     { label: "Public Workshops", section: "Workshop" },
     { label: "Get in Touch", section: "Contact" },
+    { label: "Online Feedback Form (Closed)", section: "Survey" },
   ];
 
   return (
@@ -125,7 +126,13 @@ export default function GetInvolvedClient() {
             {participationItems.map((item, index) => (
               <div
                 key={index}
-                onClick={() => setActiveSection(item.section)}
+                onClick={() => {
+                  if (item.external) {
+                    window.location.href = item.section;
+                  } else {
+                    setActiveSection(item.section);
+                  }
+                }}
                 style={{
                   color: activeSection === item.section ? "#313F58" : "#005fa3",
                   fontWeight: activeSection === item.section ? "600" : "400",
@@ -195,7 +202,6 @@ export default function GetInvolvedClient() {
               {activeSection === "Contact" && <Contact isMobile={isMobile} />}
             </Suspense>
           </main>
-
         </div>
       </section>
     </>

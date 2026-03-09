@@ -172,7 +172,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           travel in our community every day — and you’ve helped shape this plan!
           The City of Thousand Oaks is updating its Active Transportation Plan,
           and thanks to your input, the plan is being crafted to reflect the
-          community’s real needs. There are still 2 ways you can get involved:
+          community’s real needs. There are still 3 ways you can get involved:
         </p>
 
         <ol
@@ -188,6 +188,24 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
             marginTop: "1rem",
           }}
         >
+          <li>
+            <strong>
+              Read the {" "}
+              <span
+                onClick={() => { window.location.href = "/documentation"; }}
+                style={{
+                  color: "#005fa3",
+                  textDecoration: "underline",
+                  cursor: "pointer",
+                }}
+              >
+                ATP Update (Draft) {" "}
+              </span>
+              <span style={{ color: 'red', textDecoration: 'underline' }}>
+                (online comment period open until March 10th)
+              </span>
+            </strong>
+          </li>
           <li>
             <strong>
               Attend a{" "}
@@ -213,9 +231,9 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
                   cursor: "pointer",
                 }}
               >
-                Stay in Touch
+                Get in Touch
               </span>{" "}
-                With the ATP Update
+              about the ATP Update
             </strong>
           </li>
         </ol>

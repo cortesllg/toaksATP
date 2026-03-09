@@ -13,31 +13,22 @@ Contains details regarding what is an Active Transportation Plan (ATP) Update, w
 
 Gives users a rundown of their options for getting involved in the Project in the `get started` page.
 
-#### Polling Section (Right)
+### ATP Update (Draft)
 
-Contains a side quick poll to gather quick community feedback if the user decides to not to use other methods (if open) of community engagement such as:
-
-- Feedback Form
-- Comment Map 
-- Public Workshops
-
-### Online Comment Map
-
-Subpage to lead users to view documentation (to assist on guidance towards adding submissions) and submit street concerns within the City of Thousand Oaks through a third party site (StreetMap - developed by SafeTREC an UC Berkeley).
-
-### Online Feedback Form
-
-Contains information for the feedback form (survey) for users to express their concerns,
-experiences, and ideas. In addition to details to its time period and redirecting links to SurveyMonkey.
+A redirecting link that takes the user to the Documentation subpage where the ATP Update (Draft) is.
 
 ### Public Workshops
 
 Contains details of public workshops in where the public are able to join in to share their ideas or concerns. Contains details of possible future dates of future workshops.
 
-### Contact us
+### Get in Touch
 
 A method for users to directly contact the team.
 
+### Online Feedback Form (Closed)
+
+Contains information for the feedback form (survey) for users to express their concerns,
+experiences, and ideas. In addition to details to its time period and redirecting links to SurveyMonkey.
 ## Project Status
 
 Showcases the Project Overview alongside upcoming events that will occur, and have occurred, that involves the ATP Project for the City.
