@@ -128,9 +128,9 @@ export default function ProjectStatus() {
                 marginTop: "2rem",
               }}
             >
-              {/* Upcoming Events - TTAC Feb 25 */}
+              {/* Upcoming Events*/}
 
-              {/* Upcoming Events - Community Free Marketplace (Details TBD)*/}
+              {/* Upcoming Events - Safe Passage - Community Free Marketplace*/}
               <div
                 className="event-card"
                 style={{
@@ -157,7 +157,7 @@ export default function ProjectStatus() {
                     color: "#007a33",
                   }}
                 >
-                  Upcoming Event: A Community Free Marketplace{" "}
+                  Upcoming Event: Safe Passage - Community Free Marketplace{" "}
                 </h3>
 
                 <h4
@@ -188,7 +188,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> To Be Determined (TBD)
+                  🕙 <strong>Time:</strong> 9:30 AM - 11:00 AM
                 </div>
 
                 <div
@@ -198,19 +198,9 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> TBD
+                  📍 <strong>Location:</strong> 1707 Calle Diamonte, Thousand
+                  Oaks, 91320
                 </div>
-
-                {/* Street address of location of where event will be held (one confirmed to uncomment the bottom <div></div>*/}
-                {/* <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  280 N. Conejo School Rd, Thousand Oaks, 91362{" "}
-                </div> */}
 
                 <p
                   style={{
@@ -220,9 +210,8 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  Details for the upcoming Community Free Marketplace are{" "}
-                  <strong>To Be Determined (TBD)</strong>. Please check back for
-                  updates regarding future workshop dates and details.
+                  The Safe Passage Community Free Marketplace begins at 9:30
+                  AM at 1707 Calle Diamonte, Thousand Oaks, 91320.
                   <br />
                   <br />
                   <em>Note:</em> This upcoming community event may be
