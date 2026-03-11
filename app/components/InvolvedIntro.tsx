@@ -202,7 +202,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
                 ATP Update (Draft) {" "}
               </span>
               <span style={{ color: 'red', textDecoration: 'underline' }}>
-                (online comment period open until March 10th)
+                (online comment period open until March 14th)
               </span>
             </strong>
           </li>
