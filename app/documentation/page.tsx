@@ -26,24 +26,6 @@ export default function Documentation() {
 
     if (!form.current) return;
 
-    emailjs
-      .sendForm(
-        "service_ay73hxk",
-        "template_m5kfvif",
-        form.current,
-        "nGDyKMmDutAYPKxKK",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsModalOpen(true);
-          form.current?.reset();
-        },
-        (error) => {
-          console.error(error.text);
-          alert("Failed to send message. Please try again later.");
-        },
-      );
   };
 
   const closeModal = () => {

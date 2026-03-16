@@ -15,24 +15,6 @@ const Contact = ({ isMobile }: ContactProps) => {
 
     if (!form.current) return;
 
-    emailjs
-      .sendForm(
-        "service_ay73hxk",
-        "template_m5kfvif",
-        form.current,
-        "nGDyKMmDutAYPKxKK",
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsModalOpen(true); // Open the Thank You popup
-          form.current?.reset(); // Reset form
-        },
-        (error) => {
-          console.error(error.text);
-          alert("Failed to send message. Please try again later.");
-        },
-      );
   };
 
   const closeModal = () => {
