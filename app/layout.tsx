@@ -50,7 +50,7 @@ export default function RootLayout({
           </Link>
           <Link href="/get-involved" className="cta-button">
             <span>GET INVOLVED</span>
-            <div className="cta-description">Share your input with us</div>
+            <div className="cta-description">Thank you for your interest!</div>
           </Link>
           <Link href="/project-status" className="cta-button">
             <span>PROJECT STATUS</span>
@@ -62,7 +62,7 @@ export default function RootLayout({
           </Link>
           <Link href="/contact-us" className="cta-button">
             <span>CONTACT US</span>
-            <div className="cta-description"> Contact us about the ATP</div>
+            <div className="cta-description"> Thank you for your messages!</div>
           </Link>
         </nav>
 
@@ -80,30 +80,18 @@ export default function RootLayout({
             </div>
             <div className="footer-links">
               <div>
-                <h3>Get in Touch</h3>
-                <ul>
-                  <li>
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link href="/get-involved">Get Involved</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact-us">Contact us About the ATP</Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
                 <h3>Explore</h3>
                 <ul>
                   <li>
                     <Link href="/project-status">Project Events</Link>
                   </li>
+
                   <li>
-                    <Link href="/documentation">Project Information</Link>
+                    <Link href="/documentation">ATP Update (Draft)</Link>
                   </li>
                 </ul>
               </div>
+              <div></div>
             </div>
             <div className="footer-contact">
               <h3>

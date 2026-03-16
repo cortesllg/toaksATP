@@ -157,7 +157,7 @@ export default function ProjectStatus() {
                     color: "#007a33",
                   }}
                 >
-                  Upcoming Event: Safe Passage - Community Free Marketplace{" "}
+                  Upcoming Event: City Council Meeting{" "}
                 </h3>
 
                 <h4
@@ -168,7 +168,7 @@ export default function ProjectStatus() {
                     color: "#1f2937",
                   }}
                 >
-                  Next Community Details
+                  Next Meeting Details
                 </h4>
 
                 <div
@@ -178,7 +178,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> March 14th (Saturday)
+                  📅 <strong>Date:</strong> March 24th (Tuesday)
                 </div>
 
                 <div
@@ -188,7 +188,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  🕙 <strong>Time:</strong> 9:30 AM - 11:00 AM
+                  🕙 <strong>Time:</strong> 6:00 PM
                 </div>
 
                 <div
@@ -198,8 +198,8 @@ export default function ProjectStatus() {
                     marginBottom: "1rem",
                   }}
                 >
-                  📍 <strong>Location:</strong> 1707 Calle Diamonte, Thousand
-                  Oaks, 91320
+                  📍 <strong>Location:</strong> City Hall 2100 Thousand Oaks
+                  Blvd. Thousand Oaks, California 91362
                 </div>
 
                 <p
@@ -210,8 +210,8 @@ export default function ProjectStatus() {
                     lineHeight: "1.7",
                   }}
                 >
-                  The Safe Passage Community Free Marketplace begins at 9:30
-                  AM at 1707 Calle Diamonte, Thousand Oaks, 91320.
+                  The City Council Meeting begins at 6:00 PM at City Hall 2100
+                  Thousand Oaks Blvd. Thousand Oaks, California 91362
                   <br />
                   <br />
                   <em>Note:</em> This upcoming community event may be
@@ -1017,6 +1017,77 @@ export default function ProjectStatus() {
                 >
                   4801 Borchard Rd, Newbury Park, CA 91320 {" "}
                 </div>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The Bicycle Repair Workshop begins at 2:00 PM in the Dos
+                  Vientos Community Center at 4801 Borchard Rd, Newbury Park, CA
+                  91320.
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                </p>
+                {/* Dividing line between events */}
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+                {/* Information regarding the Bicycle Repair Workshop*/}
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  Past Safe Passage - Community Free Marketplace Details
+                </h4>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> March 14th (Saturday)
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 9:30 AM - 11:00 AM
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> 1707 Calle Diamonte, Thousand
+                  Oaks, 91320
+                </div>
+
                 <p
                   style={{
                     fontSize: "15px",

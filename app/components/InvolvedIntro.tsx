@@ -172,7 +172,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           travel in our community every day — and you’ve helped shape this plan!
           The City of Thousand Oaks is updating its Active Transportation Plan,
           and thanks to your input, the plan is being crafted to reflect the
-          community’s real needs. There are still 3 ways you can get involved:
+          community’s real needs. You can still read the ATP Update (Draft):
         </p>
 
         <ol
@@ -190,50 +190,22 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
         >
           <li>
             <strong>
-              Read the {" "}
+              Read the{" "}
               <span
-                onClick={() => { window.location.href = "/documentation"; }}
+                onClick={() => {
+                  window.location.href = "/documentation";
+                }}
                 style={{
                   color: "#005fa3",
                   textDecoration: "underline",
                   cursor: "pointer",
                 }}
               >
-                ATP Update (Draft) {" "}
+                ATP Update (Draft){" "}
               </span>
-              <span style={{ color: 'red', textDecoration: 'underline' }}>
-                (online comment period open until March 14th)
+              <span style={{ color: "red", textDecoration: "underline" }}>
+                (online comment period closed on March 14th)
               </span>
-            </strong>
-          </li>
-          <li>
-            <strong>
-              Attend a{" "}
-              <span
-                onClick={() => setActiveSection("Workshop")}
-                style={{
-                  color: "#005fa3",
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                }}
-              >
-                Public Workshop
-              </span>
-            </strong>
-          </li>
-          <li>
-            <strong>
-              <span
-                onClick={() => setActiveSection("Contact")}
-                style={{
-                  color: "#005fa3",
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                }}
-              >
-                Get in Touch
-              </span>{" "}
-              about the ATP Update
             </strong>
           </li>
         </ol>
@@ -305,19 +277,6 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
           Your experiences are crucial to understanding what’s working — and
           what’s not — on our streets today. Your suggestions will help us
           prioritize future improvements.
-        </p>
-
-        <p
-          style={{
-            fontSize: isMobile ? "17px" : "18px",
-            color: "#007a33",
-            fontWeight: "700",
-            textAlign: "center",
-            marginTop: "2rem",
-            maxWidth: "100%",
-          }}
-        >
-          Get involved today — we’re excited to hear from you!
         </p>
       </div>
 
