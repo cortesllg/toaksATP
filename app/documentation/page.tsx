@@ -154,7 +154,7 @@ export default function Documentation() {
                 </h3>
 
                 <a
-                  href="/City of Thousand Oaks Draft ATP Update 2026 (02-09-26).pdf"
+                  href="/City of Thousand Oaks Draft ATP Update March 2026.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -223,7 +223,7 @@ export default function Documentation() {
                 </h3>
 
                 <a
-                  href="/Project Improvements Summary.pdf"
+                  href="/Project Improvement Summary.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
