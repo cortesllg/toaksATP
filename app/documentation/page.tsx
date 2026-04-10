@@ -153,7 +153,7 @@ export default function Documentation() {
                 </h3>
 
                 <a
-                  href="/City of Thousand Oaks 2026 ATP.pdf"
+                  href="/City of Thousand Oaks 2026 Active Transportation Plan.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
