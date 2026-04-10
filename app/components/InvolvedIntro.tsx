@@ -170,9 +170,9 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
         >
           We believe the best ideas come from the people who live, work, and
           travel in our community every day — and you’ve helped shape this plan!
-          The City of Thousand Oaks is updating its Active Transportation Plan,
-          and thanks to your input, the plan is being crafted to reflect the
-          community’s real needs. You can still read the ATP Update (Draft):
+          The City of Thousand Oaks has updated its Active Transportation Plan,
+          and thanks to your input, the plan has been crafted to reflect the
+          community’s real needs. You can now read the 2026 Active Transportation Plan:
         </p>
 
         <ol
@@ -201,7 +201,7 @@ const InvolvedIntro = ({ isMobile, setActiveSection }: InvolvedIntroProps) => {
                   cursor: "pointer",
                 }}
               >
-                ATP Update (Draft){" "}
+                2026 Active Transportation Plan {" "}
               </span>
               <span style={{ color: "red", textDecoration: "underline" }}>
                 (online comment period closed on March 14th)

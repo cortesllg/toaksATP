@@ -108,8 +108,7 @@ export default function Documentation() {
               }}
             >
               Below are a selection of options showcasing the available
-              documents including the completed Draft Active Transportation Plan
-              Update.
+              documents including the completed 2026 Active Transportation Plan.
             </div>
 
             {/* Events Section */}
@@ -150,11 +149,11 @@ export default function Documentation() {
                     color: "#007a33",
                   }}
                 >
-                  Thousand Oaks Active Transportation Plan Update
+                  City of Thousand Oaks 2026 Active Transportation Plan
                 </h3>
 
                 <a
-                  href="/City of Thousand Oaks Draft ATP Update March 2026.pdf"
+                  href="/City of Thousand Oaks 2026 ATP.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -175,7 +174,7 @@ export default function Documentation() {
                     (e.currentTarget.style.backgroundColor = "#007a33")
                   }
                 >
-                  ATP Update (Draft)
+                  2026 Active Transportation Plan
                 </a>
 
                 <p
@@ -186,7 +185,7 @@ export default function Documentation() {
                     marginTop: "2rem",
                   }}
                 >
-                  We've completed our Draft Active Transportation Plan to make
+                  The 2026 Active Transportation Plan has been unanimously adopted by the City Council to make
                   getting around smoother and easier for everyone!
                 </p>
               </div>

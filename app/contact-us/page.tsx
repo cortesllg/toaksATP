@@ -54,7 +54,7 @@ export default function ContactUs() {
         <div className="overlay-text1">
           <div className="bg-heading">CONTACT US</div>
           <div className="fg-subtitle">
-            Message us about the Active Transportation Plan Update!
+           Thank you for reaching out about the Active Transportation Plan Update!
           </div>
         </div>
       </div>
@@ -114,9 +114,9 @@ export default function ContactUs() {
               </span>
               . We appreciate your feedback and interest in improving
               transportation safety in the City of Thousand Oaks. Your input
-              helps us build a better, safer community for everyone. The revised
-              Active Transportation Plan will be presented to the City Council
-              on March 24, 2026. <br />
+              helps us build a better, safer community for everyone. The 
+              2026 Active Transportation Plan was presented to the City Council
+              on March 24, 2026 and was unanimously adopted. <br />
               <br />
             </div>
 

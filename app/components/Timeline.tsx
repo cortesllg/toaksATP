@@ -23,10 +23,12 @@ const timelineEvents = [
   {
     title: "Draft Active Transportation Plan",
     date: "September 2025 - March 2026",
-    current: true,
+    completed: true,
   },
   { title: "Project Completion", 
-    date: "March 2026" 
+    date: "March 2026",
+    completed: true, 
+    current: false,
   },
 ];
 

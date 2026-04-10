@@ -87,7 +87,7 @@ export default function RootLayout({
                   </li>
 
                   <li>
-                    <Link href="/documentation">ATP Update (Draft)</Link>
+                    <Link href="/documentation">2026 Active Transportation Plan</Link>
                   </li>
                 </ul>
               </div>

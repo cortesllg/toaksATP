@@ -47,7 +47,7 @@ const Contact = ({ isMobile }: ContactProps) => {
         We appreciate your feedback and interest in improving transportation
         safety in the City of Thousand Oaks. Your input helps us build a better,
         safer community for everyone. The revised Active Transportation Plan
-        will be presented to the City Council on March 24, 2026.{" "}
+        was presented to the City Council on March 24, 2026 and was unanimously adopted.{" "}
       </p>
 
       {/* Contact Form Section would go below*/}

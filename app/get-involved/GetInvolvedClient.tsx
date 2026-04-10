@@ -58,7 +58,7 @@ export default function GetInvolvedClient() {
   */
   const participationItems = [
     { label: "Get Started", section: "InvolvedIntro" },
-    { label: "ATP Update (Draft)", section: "/documentation", external: true },
+    { label: "2026 ATP", section: "/documentation", external: true },
     { label: "Public Workshops (Completed)", section: "Workshop" },
     { label: "Get in Touch (Closed)", section: "Contact" },
     { label: "Online Feedback Form (Closed)", section: "Survey" },

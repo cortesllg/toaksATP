@@ -25,9 +25,8 @@ const Workshop = ({ isMobile }: WorkshopProps) => {
       >
         Thank you for joining our public workshops! We appreciate your
         participation and valuable feedback as we continue to improve active
-        transportation in the City of Thousand Oaks. The workshops have been
-        completed, and we are now reviewing all the insights shared by our
-        community.
+        transportation in the City of Thousand Oaks. The workshops have now been
+        completed.
       </p>
 
       {/* Workshop Details would go below */}

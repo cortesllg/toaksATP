@@ -30,7 +30,7 @@ export default function Home() {
           <h2 className="fade-in">
             CITY OF <span className="notranslate"> THOUSAND OAKS</span>
             <br />
-            ACTIVE TRANSPORTATION PLAN UPDATE
+            2026 ACTIVE TRANSPORTATION PLAN
           </h2>
 
           <p className="p2 fade-in">

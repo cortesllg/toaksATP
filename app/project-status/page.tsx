@@ -112,8 +112,8 @@ export default function ProjectStatus() {
               }}
             >
               The City of Thousand Oaks, in collaboration with LLG Engineers, a
-              transportation consulting firm, is actively working on the Active
-              Transportation Plan Update. We encourage everyone to share their
+              transportation consulting firm, worked on the Active
+              Transportation Plan Update. We encouraged everyone to share their
               input and help shape a stronger, more effective Active
               Transportation Plan Update for the City.
             </div>
@@ -128,104 +128,10 @@ export default function ProjectStatus() {
                 marginTop: "2rem",
               }}
             >
+              {/* Upcoming Events - Finished Project -> empty space below*/}
+
               {/* Upcoming Events*/}
 
-              {/* Upcoming Events - Safe Passage - Community Free Marketplace*/}
-              <div
-                className="event-card"
-                style={{
-                  background: "#e8f5e9",
-                  padding: "2rem",
-                  borderRadius: "12px",
-                  boxShadow: "0 4px 10px rgba(0,0,0,0.08)",
-                  textAlign: "center",
-                  border: "1px solid #c8e6c9",
-                }}
-              >
-                <div
-                  className="event-icon"
-                  style={{ fontSize: "2.5rem", marginBottom: "1rem" }}
-                >
-                  📅
-                </div>
-
-                <h3
-                  className="event-title"
-                  style={{
-                    fontSize: "1.75rem",
-                    marginBottom: "1.5rem",
-                    color: "#007a33",
-                  }}
-                >
-                  Upcoming Event: City Council Meeting{" "}
-                </h3>
-
-                <h4
-                  style={{
-                    fontSize: "1.25rem",
-                    fontWeight: "bold",
-                    marginBottom: "1rem",
-                    color: "#1f2937",
-                  }}
-                >
-                  Next Meeting Details
-                </h4>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  📅 <strong>Date:</strong> March 24th (Tuesday)
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  🕙 <strong>Time:</strong> 6:00 PM
-                </div>
-
-                <div
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "#374151",
-                    marginBottom: "1rem",
-                  }}
-                >
-                  📍 <strong>Location:</strong> City Hall 2100 Thousand Oaks
-                  Blvd. Thousand Oaks, California 91362
-                </div>
-
-                <p
-                  style={{
-                    fontSize: "15px",
-                    color: "#4b5563",
-                    marginTop: "1.5rem",
-                    lineHeight: "1.7",
-                  }}
-                >
-                  The City Council Meeting begins at 6:00 PM at City Hall 2100
-                  Thousand Oaks Blvd. Thousand Oaks, California 91362
-                  <br />
-                  <br />
-                  <em>Note:</em> This upcoming community event may be
-                  photographed and/or videotaped for possible use on the City
-                  (and library) websites and social media. Your participation
-                  constitutes consent for the City to publish your likeness for
-                  publicity purposes.
-                  <br />
-                  <br />
-                  Activities, events, and times listed above are subject to
-                  change. Please check back for updates.
-                  <br />
-                </p>
-              </div>
 
               {/* Past Events */}
               {/* Past Events */}
@@ -274,7 +180,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> April 19th (Saturday)
+                  📅 <strong>Date:</strong> April 19th 2025 (Saturday)
                 </div>
                 <div
                   style={{
@@ -355,7 +261,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> May 15th (Thursday)
+                  📅 <strong>Date:</strong> May 15th 2025 (Thursday)
                 </div>
                 <div
                   style={{
@@ -432,7 +338,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> September 24th (Wednesday)
+                  📅 <strong>Date:</strong> September 24th 2025 (Wednesday)
                 </div>
                 <div
                   style={{
@@ -512,7 +418,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> October 14th (Tuesday)
+                  📅 <strong>Date:</strong> October 14th 2025 (Tuesday)
                 </div>
                 <div
                   style={{
@@ -678,7 +584,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> November 20th (Thursday)
+                  📅 <strong>Date:</strong> November 20th 2025 (Thursday)
                 </div>
                 <div
                   style={{
@@ -754,7 +660,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> February 12th (Thursday)
+                  📅 <strong>Date:</strong> February 12th 2026 (Thursday)
                 </div>
                 <div
                   style={{
@@ -831,7 +737,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> February 25th (Wednesday)
+                  📅 <strong>Date:</strong> February 25th 2026 (Wednesday)
                 </div>
                 <div
                   style={{
@@ -910,7 +816,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> February 28th (Saturday)
+                  📅 <strong>Date:</strong> February 28th 2026 (Saturday)
                 </div>
                 <div
                   style={{
@@ -988,7 +894,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> March 7th (Saturday)
+                  📅 <strong>Date:</strong> March 7th 2026 (Saturday)
                 </div>
                 <div
                   style={{
@@ -1066,7 +972,7 @@ export default function ProjectStatus() {
                     marginBottom: "0.5rem",
                   }}
                 >
-                  📅 <strong>Date:</strong> March 14th (Saturday)
+                  📅 <strong>Date:</strong> March 14th 2026 (Saturday)
                 </div>
                 <div
                   style={{
@@ -1110,6 +1016,77 @@ export default function ProjectStatus() {
                   <br />
                   Activities, events, and times listed above are subject to
                   change. Please check back for updates.
+                </p>
+                {/* Dividing line between events */}
+                <hr
+                  style={{
+                    border: "none",
+                    borderTop: "1px solid #ccc",
+                    margin: "2rem 0",
+                  }}
+                />
+                {/* Information regarding the City Council Meeting*/}
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                    marginBottom: "1rem",
+                    color: "#1f2937",
+                  }}
+                >
+                  City Council Meeting Details
+                </h4>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  📅 <strong>Date:</strong> March 24th 2026 (Tuesday)
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  🕙 <strong>Time:</strong> 6:00 PM
+                </div>
+                <div
+                  style={{
+                    fontSize: "1.1rem",
+                    color: "#374151",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  📍 <strong>Location:</strong> City Hall 2100 Thousand Oaks
+                  Blvd. Thousand Oaks, California 91362
+                </div>
+
+                <p
+                  style={{
+                    fontSize: "15px",
+                    color: "#4b5563",
+                    marginTop: "1.5rem",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  The City Council Meeting begins at 6:00 PM at City Hall 2100
+                  Thousand Oaks Blvd. Thousand Oaks, California 91362
+                  <br />
+                  <br />
+                  <em>Note:</em> This upcoming community event may be
+                  photographed and/or videotaped for possible use on the City
+                  (and library) websites and social media. Your participation
+                  constitutes consent for the City to publish your likeness for
+                  publicity purposes.
+                  <br />
+                  <br />
+                  Activities, events, and times listed above are subject to
+                  change. Please check back for updates.
+                  <br />
                 </p>
                 {/* End of list regarding past events */}
               </div>
