@@ -75,7 +75,7 @@ export default function GetInvolvedClient() {
         <div className="overlay-text1">
           <div className="bg-heading">GET INVOLVED</div>
           <div className="fg-subtitle">
-            Learn how you can get involved with the Active Transportation Plan
+            Thank you for getting involved with the Active Transportation Plan
             Update in your City
           </div>
         </div>
