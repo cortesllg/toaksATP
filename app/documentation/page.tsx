@@ -25,7 +25,6 @@ export default function Documentation() {
     e.preventDefault();
 
     if (!form.current) return;
-
   };
 
   const closeModal = () => {
@@ -161,6 +160,7 @@ export default function Documentation() {
                     backgroundColor: "#007a33",
                     color: "#ffffff",
                     textDecoration: "none",
+                    display: "inline-block",
                     borderRadius: "8px",
                     fontWeight: 600,
                     fontSize: isMobile ? "14px" : "16px",
@@ -185,8 +185,9 @@ export default function Documentation() {
                     marginTop: "2rem",
                   }}
                 >
-                  The 2026 Active Transportation Plan has been unanimously adopted by the City Council to make
-                  getting around smoother and easier for everyone!
+                  The 2026 Active Transportation Plan has been unanimously
+                  adopted by the City Council to make getting around smoother
+                  and easier for everyone!
                 </p>
               </div>
               {/* Project Summarization (not Entire Draft) */}

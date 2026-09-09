@@ -60,6 +60,10 @@ export default function RootLayout({
             <span>DOCUMENTATION</span>
             <div className="cta-description">Available Documentation</div>
           </Link>
+          <Link href="/dashboard" className="cta-button">
+            <span>DASHBOARD</span>
+            <div className="cta-description">Project Maps and Figures</div>
+          </Link>
           <Link href="/contact-us" className="cta-button">
             <span>CONTACT US</span>
             <div className="cta-description"> Thank you for your messages!</div>

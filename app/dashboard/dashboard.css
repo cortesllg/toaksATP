@@ -1,0 +1,99 @@
+/***************************************************
+ ****************************************************
+
+ This is the structure of the dashboard page
+
+ ****************************************************
+ ***************************************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Wrapper around the overview + galleries */
+.content-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    padding: 4rem 4rem;
+  }
+}
+
+/* Project Overview Title */
+.project-overview-title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 700;
+  color: #007c41;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-family: Arial, sans-serif;
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .project-overview-title {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-overview-title {
+    padding-left: 0.25rem;
+    text-align: left;
+  }
+}
+
+/* Section underline */
+.with-underline {
+  border-bottom: 2px solid #d8d8d8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Body text consistent */
+.project-overview-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444342;
+  font-family: Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .project-overview-text {
+    font-size: 16px;
+  }
+}
+
+/* Content wrapper for the Dashboard page (title + intro + galleries) */
+.dashboard-content {
+  max-width: 800px;
+  margin: 0.78rem auto 0 auto;
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .dashboard-content {
+    padding: 2rem 0;
+  }
+}
+
+/* Stack of ImageGallery sections */
+.dashboard-galleries {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-galleries {
+    gap: 3rem;
+  }
+}
